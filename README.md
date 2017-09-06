@@ -1,2 +1,4 @@
-# META-Lab-UI-Kit
-Official META+Lab UI Kit
+# META+LAB UI Kit
+> Official META+LAB UI Kit
+
+## Getting Started
