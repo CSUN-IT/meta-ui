@@ -32,9 +32,6 @@ You may find that in certain environments Webpack isn't updating when your files
 $ yarn run watch-poll
 ```
 
-## Development Environment
-IMS development environment runs on [Homestead](https://laravel.com/docs/5.4/homestead). You will need to set this up on your machine if you haven't already.
-
 ## MISC
 
 ### Installing Yarn
