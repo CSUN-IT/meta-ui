@@ -1,0 +1,133 @@
+
+/*
+  " -ms-text-size-adjust " <-- Declaration prevents certain mobile browsers from auto-zooming fonts,
+    -also ensures iOS Safari match the page width to wider lanscape viewports instead of zooming everything.
+
+    - The value of " 100% " allows user to still pinch-zoom
+*/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-webkit-font-smoothing: ;
+  -moz-osx-font-smoothing: ;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+    - often not desired margins are removed
+    _ Normalize to a legible base size font chosen by main font which replaces "sans-serif"
+
+    - "line-height " of " 1 " resets inconsistent browser changes of default "normal"
+      to a more robust base value that will not set undesired spacing.
+
+    - "font-smoothing" <-- font on OSX will look more consistent in other systems that don't render text
+                           using sub-pixel anti-aliasing
+                       <--
+                       <--
+
+*/
+
+body{
+  margin: 0;
+  font:16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*
+   -  fixes " main " tag being unsupported and horribly breaking the layout in even recent versions of IE
+   -  " li " removes little bullets and numbers from list items, instead of removing them manually when making a menu
+      or any other component that is semantically a "list".
+*/
+main,
+li {
+  display: block;
+}
+
+/*
+    -
+*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+}
+
+/*
+    - correct browsers default to bolder font
+*/
+strong {
+  font-weight: bold;
+}
+
+/*
+    - "color:inherit" <-- fix buttons inheritance, when browser does not-inherits text color in most browsers
+*/
+a,
+button {
+  color: inherit;
+  transition: .3s;
+}
+/*
+    - when applying links to certain areas of DOM  takes the decoration that helps with less complex styles
+      when links inherit the color intended for those anchor tags
+*/
+a {
+  text-decoration: none;
+}
+
+/*
+    - "overflow:visible " <-- brings IE into line
+    _ " border , font , letter-spacing, and background " <-- All these rules help to reset the native appearance of
+      all browsers
+    - "-webkit-font-smoothing " <-- fixes buggy inheritance
+    - "cursor" <-- fot he purpose of UX  and consistency with links a good idea to give all buttons a pointer cursor.
+     note:cursor can be omitted if not necessary
+*/
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+/*
+    - undoes firefox psudo code that is added in buttons by the browser that causes them to display larger than expected
+
+*/
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/*
+    - removes user agent that appears when focusing interactive elements
+    - only use it for accessibility purposes when using custom focus style sheets
+*/
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+iframe {
+  border: 0;
+}
