@@ -1,12 +1,13 @@
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
-
 /**
  * Includes legacy browser support IE6/7
  *
  * Set to false if you want to drop support for IE6 and IE7
  */
+
+$legacy_browser_support: false !default;
 
 /* Base
    ========================================================================== */
@@ -20,12 +21,12 @@
  */
 
 html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  @if $legacy_browser_support {
+    *font-size: 100%; /* 3 */
+  }
 }
 
 /**
@@ -71,10 +72,12 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+  @if $legacy_browser_support {
+    *display: inline;
+    *zoom: 1;
+  }
 }
 
 /**
@@ -113,9 +116,10 @@ a {
  * active/hover state.
  */
 
-a:active,
-a:hover {
-  outline: 0;
+a {
+  &:active, &:hover {
+    outline: 0;
+  };
 }
 
 /* Text-level semantics
@@ -138,6 +142,12 @@ strong {
   font-weight: bold;
 }
 
+@if $legacy_browser_support {
+  blockquote {
+    margin: 1em 40px;
+  }
+}
+
 /**
  * Address styling not present in Safari and Chrome.
  */
@@ -156,6 +166,33 @@ h1 {
   margin: 0.67em 0;
 }
 
+@if $legacy_browser_support {
+  h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+  }
+
+  h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+  }
+
+  h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+  }
+}
+
 /**
  * Addresses styling not present in IE 8/9.
  */
@@ -163,6 +200,36 @@ h1 {
 mark {
   background: #ff0;
   color: #000;
+}
+
+@if $legacy_browser_support {
+
+  /**
+   * Addresses margins set differently in IE 6/7.
+   */
+
+  p,
+  pre {
+    *margin: 1em 0;
+  }
+
+  /*
+   * Addresses CSS quotes not supported in IE 6/7.
+   */
+
+  q {
+    *quotes: none;
+  }
+
+  /*
+   * Addresses `quotes` property not supported in Safari 4.
+   */
+
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
 }
 
 /**
@@ -193,6 +260,49 @@ sub {
   bottom: -0.25em;
 }
 
+@if $legacy_browser_support {
+
+  /* ==========================================================================
+     Lists
+     ========================================================================== */
+
+  /*
+   * Addresses margins set differently in IE 6/7.
+   */
+
+  dl,
+  menu,
+  ol,
+  ul {
+    *margin: 1em 0;
+  }
+
+  dd {
+    *margin: 0 0 0 40px;
+  }
+
+  /*
+   * Addresses paddings set differently in IE 6/7.
+   */
+
+  menu,
+  ol,
+  ul {
+    *padding: 0 0 0 40px;
+  }
+
+  /*
+   * Corrects list images handled incorrectly in IE 7.
+   */
+
+  nav ul,
+  nav ol {
+    *list-style: none;
+    *list-style-image: none;
+  }
+
+}
+
 /* Embedded content
    ========================================================================== */
 
@@ -203,6 +313,9 @@ sub {
 
 img {
   border: 0;
+  @if $legacy_browser_support {
+    *-ms-interpolation-mode: bicubic; /* 2 */
+  }
 }
 
 /**
@@ -229,8 +342,7 @@ figure {
  */
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -252,6 +364,9 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
+  @if $legacy_browser_support {
+    _font-family: 'courier new', monospace;
+  }
   font-size: 1em;
 }
 
@@ -276,12 +391,13 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+  @if $legacy_browser_support {
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+  }
 }
 
 /**
@@ -315,13 +431,14 @@ select {
  */
 
 button,
-html input[type="button"],
+html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  @if $legacy_browser_support {
+    *overflow: visible;  /* 4 */
+  }
 }
 
 /**
@@ -360,11 +477,12 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  @if $legacy_browser_support {
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+  }
 }
 
 /**
@@ -384,11 +502,8 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
 }
 
 /**
@@ -420,10 +535,12 @@ fieldset {
  */
 
 legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+  @if $legacy_browser_support {
+    white-space: normal; /* 3 */
+    *margin-left: -7px; /* 4 */
+  }
 }
 
 /**
@@ -459,8 +576,3 @@ td,
 th {
   padding: 0;
 }
-
-body {
-  background-color: pink;
-}
-
