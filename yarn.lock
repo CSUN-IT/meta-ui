@@ -3910,6 +3910,10 @@ normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
 
+normalize-scss@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-scss/-/normalize-scss-7.0.0.tgz#92eaac6554cc376336c06682a0d6a2099bbb0889"
+
 normalize-url@^1.4.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-1.9.1.tgz#2cc0d66b31ea23036458436e3620d85954c66c3c"
@@ -3918,6 +3922,10 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
+
+normalize.scss@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/normalize.scss/-/normalize.scss-0.1.0.tgz#4a21dc25bd4c019c857785f829b658aba2a8f9ab"
 
 npm-run-path@^2.0.0:
   version "2.0.2"
