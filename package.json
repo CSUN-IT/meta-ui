@@ -12,5 +12,8 @@
   "devDependencies": {
     "cross-env": "^5.0.1",
     "laravel-mix": "^1.0"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
   }
 }
