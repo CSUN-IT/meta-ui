@@ -541,11 +541,11 @@ html {
 
 /* Extra Small */
 
-@media (min-width: 377px) {
+@media (min-width: 310px) {
   /*body { background-color: deepskyblue; }*/
 
   .container {
-    width: 377px;
+    width: 310px;
   }
 
   .col-xs-1 {
@@ -601,31 +601,31 @@ html {
   }
 
   .col-xs-offset-2 {
-    margin-left: 16.6666666667%;
+    margin-left: 16.66%;
   }
 
   .col-xs-offset-3 {
-    margin-left: 25%;
+    margin-left: 24.99%;
   }
 
   .col-xs-offset-4 {
-    margin-left: 33.3333333333%;
+    margin-left: 33.33%;
   }
 
   .col-xs-offset-5 {
-    margin-left: 41.6666666667%;
+    margin-left: 41.66;
   }
 
   .col-xs-offset-6 {
-    margin-left: 50%;
+    margin-left: 49.99%;
   }
 
   .col-xs-offset-7 {
-    margin-left: 58.3333333333%;
+    margin-left: 58.33%;
   }
 
   .col-xs-offset-8 {
-    margin-left: 66.6666666667%;
+    margin-left: 66.66%;
   }
 
   .col-xs-offset-9 {
