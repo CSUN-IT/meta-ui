@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Grid System</title>
+    <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>The Grid System</h1>
+            <p> You can use <code> xs sm md lg </code> or <code>xl</code> to adjust the grid system to the appropriate devices.
+            </p>
+            <div class="col-md-12 col--outline">12</div>
+            <div class="col-md-11 col--outline">11</div>
+            <div class="col-md-1 col--outline">1</div>
+            <div class="col-md-10 col--outline">10</div>
+            <div class="col-md-2 col--outline">2</div>
+            <div class="col-md-9 col--outline">9</div>
+            <div class="col-md-3 col--outline">3</div>
+            <div class="col-md-8 col--outline">8</div>
+            <div class="col-md-4 col--outline">4</div>
+            <div class="col-md-7 col--outline">7</div>
+            <div class="col-md-5 col--outline">5</div>
+            <div class="col-md-6 col--outline">6</div>
+            <div class="col-md-6 col--outline">6</div>
+
+
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>HTML Code</h1>
+                <p>It is recommended to wrap your grid inside of a <code> .container </code> class</p>
+                <pre>
+                    <code>
+
+
+
+&lt;div class="container"&gt;<br />
+                    </code>
+    &lt;div class="row"&gt;<br />
+        &lt;div class="col-md-12 col--outline"&gt;12&lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+                    <code>
+&lt;/div&gt;
+
+                    </code>
+                </pre>
+                <h1>CSS Code for Boxes</h1>
+                <pre>
+                    <code>
+
+.col--outline {<br />
+    border: 1px solid #000063;<br />
+    border-radius: 3px;<br />
+    padding: 6px;<br />
+    text-align: center;<br />
+    font-weight: bold;<br />
+    margin-bottom: 5px;<br />
+}
+
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    It is also suggested to wrap your columns in a <code>.row</code> element.
+                    Here is an example of how these columns automatically adjust to the window size.
+                </p>
+                <div class="col-sm-12 col-md-1 col-lg-2 col-xl-4 col--outline">1</div>
+                <div class="col-sm-12 col-md-3 col-lg-8 col-xl-4 col--outline">2</div>
+                <div class="col-sm-12 col-md-8 col-lg-2 col-xl-4 col--outline">3</div>
+
+                <br>
+
+                <pre>
+                    <code>
+&lt;div class="row"&gt;<br />
+  &lt;div class="col-sm-12 col-md-1 col-lg-2 col-xl-4"&gt;1&lt;/div&gt;<br />
+  &lt;div class="col-sm-12 col-md-3 col-lg-8 col-xl-4"&gt;2&lt;/div&gt;<br />
+  &lt;div class="col-sm-12 col-md-8 col-lg-2 col-xl-4"&gt;3&lt;/div&gt;<br />
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
