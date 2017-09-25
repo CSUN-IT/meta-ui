@@ -1,4 +1,5 @@
 {
     "/dist/js/meta-ui.js": "/dist/js/meta-ui.js",
-    "/dist/css/meta-ui.css": "/dist/css/meta-ui.css"
+    "/dist/css/meta-ui.css": "/dist/css/meta-ui.css",
+    "/dist/css/_grid.css": "/dist/css/_grid.css"
 }
