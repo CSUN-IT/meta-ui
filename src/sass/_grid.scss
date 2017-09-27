@@ -6,6 +6,9 @@ html {
   box-sizing: inherit;
 }
 
+div {
+  display: block;
+}
 /* Standard 12 column grid */
 
 /* Colors used for testing */
@@ -24,7 +27,12 @@ html {
   width: 100%;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  display: grid;
+}
+
+.container::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .container--inline {
@@ -40,6 +48,12 @@ html {
   margin-right: -0.9375rem;
 }
 
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 .col {
   float: left;
   width: 100%;
@@ -51,17 +65,49 @@ html {
 [class^="col-"], [class*=" col-"]{
   float: left;
   width: 100%;
+  position: relative;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+@media (min-width: 376px) {
+  .container {
+    max-width: 331px;
+  }
+}
+
+@media (min-width: 544px) {
+  .container {
+    max-width: 498px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 /* Extra Small */
 
-@media (min-width: 300px) {
-
   /*body { background-color: deepskyblue; }*/
+@media (min-width: 376px) {
 
-  .container {
-    width: 300px;
-  }
+  //.container {
+  //  width: 376px;
+  //}
 
   .col-xs-1 {
     width: 8.33%;
@@ -158,16 +204,16 @@ html {
   .col-xs-offset-12 {
     margin-left: 100%;
   }
-
 }
-
 /* Small */
 
-@media (min-width: 576px) {
+@media (min-width: 544px) {
 
   /*body { background-color: yellow; }*/
 
-  .container { width: 576px; }
+  //.container {
+  //  width: 544px;
+  //}
 
   .col-sm-1 {
     width: 8.33%;
@@ -225,7 +271,9 @@ html {
 
   /*body { background-color: green; }*/
 
-  .container { width: 768px; }
+  //.container {
+  //  width: 768px;
+  //}
 
   .col-md-1 {
     width: 8.33%;
@@ -282,7 +330,9 @@ html {
 
   /*body { background-color: deepskyblue; }*/
 
-  .container { width: 992px; }
+  //.container {
+  //  width: 992px;
+  //}
 
   .col-lg-1 {
     width: 8.33%;
@@ -339,7 +389,9 @@ html {
 
   /*body { background-color: cyan; }*/
 
-  .container { width: 1200px; }
+  //.container {
+  //  width: 1200px;
+  //}
 
   .col-xl-1 {
     width: 8.33%;
@@ -388,10 +440,6 @@ html {
   .col-xl-12 {
     width: 100%;
   }
-}
-
-.align-items-start {
-  align-items: start;
 }
 
 /* Items used for testing */
