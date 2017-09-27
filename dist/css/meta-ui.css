@@ -474,6 +474,10 @@ html {
           box-sizing: inherit;
 }
 
+div {
+  display: block;
+}
+
 /* Standard 12 column grid */
 
 /* Colors used for testing */
@@ -508,7 +512,12 @@ html {
   width: 100%;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  display: grid;
+}
+
+.container::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .container--inline {
@@ -524,6 +533,12 @@ html {
   margin-right: -0.9375rem;
 }
 
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 .col {
   float: left;
   width: 100%;
@@ -537,17 +552,46 @@ html {
 [class*=" col-"] {
   float: left;
   width: 100%;
+  position: relative;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+@media (min-width: 376px) {
+  .container {
+    max-width: 331px;
+  }
+}
+
+@media (min-width: 544px) {
+  .container {
+    max-width: 498px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 /* Extra Small */
 
-@media (min-width: 300px) {
-  /*body { background-color: deepskyblue; }*/
+/*body { background-color: deepskyblue; }*/
 
-  .container {
-    width: 300px;
-  }
-
+@media (min-width: 376px) {
   .col-xs-1 {
     width: 8.33%;
   }
@@ -647,12 +691,8 @@ html {
 
 /* Small */
 
-@media (min-width: 576px) {
+@media (min-width: 544px) {
   /*body { background-color: yellow; }*/
-
-  .container {
-    width: 576px;
-  }
 
   .col-sm-1 {
     width: 8.33%;
@@ -708,10 +748,6 @@ html {
 @media (min-width: 768px) {
   /*body { background-color: green; }*/
 
-  .container {
-    width: 768px;
-  }
-
   .col-md-1 {
     width: 8.33%;
   }
@@ -765,10 +801,6 @@ html {
 
 @media (min-width: 992px) {
   /*body { background-color: deepskyblue; }*/
-
-  .container {
-    width: 992px;
-  }
 
   .col-lg-1 {
     width: 8.33%;
@@ -824,10 +856,6 @@ html {
 @media (min-width: 1200px) {
   /*body { background-color: cyan; }*/
 
-  .container {
-    width: 1200px;
-  }
-
   .col-xl-1 {
     width: 8.33%;
   }
@@ -875,12 +903,6 @@ html {
   .col-xl-12 {
     width: 100%;
   }
-}
-
-.align-items-start {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
 }
 
 /* Items used for testing */
