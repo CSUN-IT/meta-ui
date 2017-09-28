@@ -5,13 +5,14 @@
 html {
   font-size: 16px;
 }
+//End Base
 
 //HEADERS
 h1 {
   color: #0E1821;
   font-size: 70px;
   font-weight: bold;
-  line-height: 5.688rem;
+  line-height: 91px;
   letter-spacing: 0rem;
 }
 
@@ -19,7 +20,7 @@ h2 {
   color: #0E1821;
   font-weight: bold;
   font-size: 60px;
-  line-height: 4.813rem;
+  line-height: 77px;
   letter-spacing: 0rem;
 }
 
@@ -27,7 +28,7 @@ h3 {
   color: #0E1821;
   font-weight: bold;
   font-size: 50px;
-  line-height: 4.063rem;
+  line-height: 65px;
   letter-spacing: 0rem;
 }
 
@@ -35,7 +36,7 @@ h4 {
   color: #0E1821;
   font-weight: bold;
   font-size: 40px;
-  line-height: 3.188rem;
+  line-height: 51px;
   letter-spacing: 0rem;
 }
 
@@ -43,7 +44,7 @@ h5 {
   color: #0E1821;
   font-weight: bold;
   font-size: 30px;
-  line-height: 2.375rem;
+  line-height: 38px;
   letter-spacing: 0rem;
 }
 
@@ -51,10 +52,12 @@ h6 {
   color: #0E1821;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.625rem;
+  line-height: 26px;
   letter-spacing: 0rem;
 }
+// End Headers
 
+// Various Text Sizes
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -64,9 +67,9 @@ p {
 
 .kilo {
   color: #D6D6D6;
-  font-size: modular-scale(1.5);
+  font-size: 700px;
   font-weight: bold;
-  line-height: 56.38rem;
+  line-height: 902px;
   letter-spacing: 0rem;
   opacity: 20%;
 
@@ -74,8 +77,11 @@ p {
 
 .mili {
   color: #0E1821;
-  font-weight: light;
+  font-weight: lighter;
   font-size: 170px;
   line-height: 13.69rem;
   letter-spacing: 0rem;
 }
+// End Text Sizes
+
+// END TYPOGRAPHY
