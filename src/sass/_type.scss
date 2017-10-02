@@ -9,7 +9,7 @@ html {
 
 //HEADERS
 
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6, {
   font-family: FFDINWebProBold;
   color: #0E1821;
   letter-spacing: 0em;
@@ -17,7 +17,6 @@ h1 h2 h3 h4 h5 h6 {
 
 h1 {
   font-size: 70px;
-  font-weight: bold;
   line-height: 91px;
 }
 
@@ -52,10 +51,44 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-size: 18px;
-  line-height: 2rem;
+  line-height: 32px;
 }
 
-.kilo {
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #D00D20;
+}
+
+
+p a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D00D20;
+}
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #3C3C3C;
+}
+
+ul a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D00D20;
+}
+
+.giga {
   font-family: FFDINWebProBold;
   color: #D6D6D6;
   font-size: 700px;
@@ -63,13 +96,36 @@ p {
   letter-spacing: 0rem;
 }
 
-.mili {
+.kilo {
   font-family: FFDINWebProLight;
   color: #0E1821;
   font-size: 170px;
-  line-height: 13.69rem;
+  line-height: 219px;
   letter-spacing: 0rem;
 }
 // End Text Sizes
+
+.nav-font {
+  font-family: FFDINWebProBold;
+  color: #3C3C3C;
+  font-size: 40px;
+  line-height: 51px;
+  letter-spacing: 0px;
+}
+
+.nav-font-active {
+  font-family: FFDINWebProBold;
+  color: #BF2027;
+  font-size: 40px;
+  line-height: 51px;
+  letter-spacing: 0px;
+}
+
+.event-date {
+  font-family: 'Open Sans', sans-serif;
+  color: #3C3C3C;
+  line-height: 24px;
+  font-style: bold;
+}
 
 // END TYPOGRAPHY
