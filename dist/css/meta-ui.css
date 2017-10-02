@@ -844,51 +844,51 @@ div {
     width: 100%;
   }
 
-  .col-lg-offset-1 {
+  .col-md-offset-1 {
     margin-left: 8.33%;
   }
 
-  .col-lg-offset-2 {
+  .col-md-offset-2 {
     margin-left: 16.66%;
   }
 
-  .col-lg-offset-3 {
+  .col-md-offset-3 {
     margin-left: 24.99%;
   }
 
-  .col-lg-offset-4 {
+  .col-md-offset-4 {
     margin-left: 33.33%;
   }
 
-  .col-lg-offset-5 {
+  .col-md-offset-5 {
     margin-left: 41.66;
   }
 
-  .col-lg-offset-6 {
+  .col-md-offset-6 {
     margin-left: 49.99%;
   }
 
-  .col-lg-offset-7 {
+  .col-md-offset-7 {
     margin-left: 58.33%;
   }
 
-  .col-lg-offset-8 {
+  .col-md-offset-8 {
     margin-left: 66.66%;
   }
 
-  .col-lg-offset-9 {
+  .col-md-offset-9 {
     margin-left: 74.99%;
   }
 
-  .col-lg-offset-10 {
+  .col-md-offset-10 {
     margin-left: 83.33%;
   }
 
-  .col-lg-offset-11 {
+  .col-md-offset-11 {
     margin-left: 91.66%;
   }
 
-  .col-lg-offset-12 {
+  .col-md-offset-12 {
     margin-left: 100%;
   }
 }
@@ -1148,6 +1148,116 @@ code {
 .white--box {
   background-color: white;
   height: 3px;
+}
+
+/* Carousel */
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Carousel container */
+
+.carousel-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.technology-container {
+  max-width: 200px;
+  position: relative;
+  margin: auto;
+}
+
+.carousel-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.caption-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+.full {
+  width: 100%;
+}
+
+.darken {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.dot-center {
+  text-align: center;
+}
+
+.active {
+  background-color: #060707;
+}
+
+.dot:hover {
+  background-color: #fef8ff;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 body {
