@@ -1,4 +1,4 @@
-/* ==========================================================================
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);/* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
 
@@ -458,6 +458,125 @@ table {
 td,
 th {
   padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: FFDINWebProBold;
+  color: #0E1821;
+  letter-spacing: 0em;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 91px;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 77px;
+}
+
+h3 {
+  font-size: 50px;
+  line-height: 65px;
+}
+
+h4 {
+  font-size: 40px;
+  line-height: 51px;
+}
+
+h5 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #D00D20;
+}
+
+p a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D00D20;
+}
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #3C3C3C;
+}
+
+ul a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D00D20;
+}
+
+.title__bar {
+  border: none;
+  height: 10px;
+  background-color: #BF2027;
+  width: 92px;
+}
+
+.title__bar--thin {
+  border: none;
+  height: 5px;
+  background-color: #BF2027;
+  width: 92px;
+}
+
+.giga {
+  font-family: FFDINWebProBold;
+  color: #D6D6D6;
+  font-size: 700px;
+  line-height: 902px;
+  letter-spacing: 0rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.kilo {
+  font-family: FFDINWebProLight;
+  color: #0E1821;
+  font-size: 170px;
+  line-height: 219px;
+  letter-spacing: 0rem;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Resets box sizing across all elements */
@@ -1150,7 +1269,8 @@ code {
   height: 3px;
 }
 
-body {
-  background-color: pink;
+.container {
+  margin: 0 auto;
+  width: 100%;
 }
 

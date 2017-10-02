@@ -1,6 +1,4 @@
 @import "bower_components/normalize-scss/_normalize.scss";
+@import "type";
 @import "grid";
-
-body {
-  background-color: pink;
-}
+@import "container";
