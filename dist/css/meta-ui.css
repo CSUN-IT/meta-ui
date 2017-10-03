@@ -579,6 +579,50 @@ ul a {
   padding: 0px;
 }
 
+.type--white {
+  color: #FFFFFF;
+}
+
+.type--red {
+  color: #D00D20;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.type--center {
+  text-align: center;
+}
+
+.margin--less {
+  margin: 0px;
+}
+
+.margin-left {
+  margin: 10px;
+}
+
+.img__footer--height {
+  margin: 10px;
+}
+
 /* Resets box sizing across all elements */
 
 html {
@@ -1269,8 +1313,17 @@ code {
   height: 3px;
 }
 
-.container {
-  margin: 0 auto;
+.metalab__footer {
+  position: relative;
+  z-index: 0;
+  min-height: 85px;
+  background-color: #0E1721;
   width: 100%;
+  color: #FFFFFF;
+  padding: 30px;
+}
+
+.metalab__footer--helper {
+  min-height: calc(100vh - 85px);
 }
 
