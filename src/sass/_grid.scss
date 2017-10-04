@@ -70,30 +70,36 @@ div {
   padding-left: 0.9375rem;
 }
 
+//xs
 @media (min-width: 376px) {
   .container {
     max-width: 331px;
   }
 }
 
+//small
 @media (min-width: 544px) {
   .container {
     max-width: 498px;
   }
 }
 
+
+//medium
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 
+//large
 @media (min-width: 992px) {
   .container {
     max-width: 940px;
   }
 }
 
+//xl
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;

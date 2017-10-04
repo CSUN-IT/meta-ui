@@ -1,5 +1,6 @@
 // TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import "meta-ui";
 
 // BASE
 html {
@@ -9,9 +10,9 @@ html {
 
 //HEADERS
 
-h1, h2, h3, h4, h5, h6, {
+h1, h2, h3, h4, h5, h6{
   font-family: FFDINWebProBold;
-  color: #0E1821;
+  color: $mt-black;
   letter-spacing: 0em;
 }
 
@@ -60,7 +61,7 @@ a {
   font-size: 18px;
   line-height: 32px;
   text-decoration: none;
-  color: #D00D20;
+  color: $mt-red;
 }
 
 p a {
@@ -68,7 +69,7 @@ p a {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #D00D20;
+  color: $mt-red;
 }
 
 ul {
@@ -84,7 +85,7 @@ ul a {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #D00D20;
+  color: $mt-red;
 }
 
 .title__bar {
@@ -113,7 +114,7 @@ ul a {
 
 .kilo {
   font-family: FFDINWebProLight;
-  color: #0E1821;
+  color: $mt-black;
   font-size: 170px;
   line-height: 219px;
   letter-spacing: 0rem;
