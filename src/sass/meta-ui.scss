@@ -1,4 +1,20 @@
-@import "bower_components/normalize-scss/_normalize.scss";
+// CONFIGURATIOINS
+// Example: variables
+
+// RESETS
+@import "normalize";
+
+
+// Dependencies
+// @import "vendor/font-awesome/font-awesome";
+
+
+// CORE
 @import "type";
+@import "helpers";
 @import "grid";
-@import "container";
+
+// COMPONENTS
+//Example: footer
+@import "footer";
+
