@@ -620,7 +620,7 @@ ul a {
 }
 
 .img__footer--height {
-  margin: 10px;
+  margin: 7px;
 }
 
 /* Resets box sizing across all elements */
@@ -1320,7 +1320,7 @@ code {
   background-color: #0E1721;
   width: 100%;
   color: #FFFFFF;
-  padding: 30px;
+  padding: 28px;
 }
 
 .metalab__footer--helper {
