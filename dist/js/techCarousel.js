@@ -1,14 +1,14 @@
 var slideIndex = 0;
-showSlides();
+displaySlides();
 
-function showSlides() {
+function displaySlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("autoSlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    setTimeout(displaySlides, 3000); // Change image every 3 seconds
 }

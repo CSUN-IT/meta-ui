@@ -1157,52 +1157,21 @@ code {
           box-sizing: border-box;
 }
 
-/* Carousel container */
-
-.carousel-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.technology-container {
-  max-width: 200px;
-  position: relative;
-  margin: auto;
-}
-
-.carousel-text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 50%;
-  width: 100%;
-  text-align: center;
-  line-height: 25px;
-}
-
-.caption-text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
 .mySlides {
   display: none;
 }
 
-.full {
-  width: 100%;
+.mySlides img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
 }
 
-.darken {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+.carousel--container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+  text-align: center;
 }
 
 /* The dots/bullets/indicators */
@@ -1260,7 +1229,75 @@ code {
   }
 }
 
-body {
-  background-color: pink;
+/* Automatic Carousel */
+
+.autoSlides {
+  display: none;
+}
+
+.autoSlides img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+.auto-carousel--container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Success Story Page */
+
+.success--text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.caption--text {
+  color: #060707;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.darken {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+/* Page specific */
+
+.carousel--text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.events__carousel--date {
+  text-align: center;
+  font-size: 2em;
+  color: #3C3C3C;
+}
+
+.events__carousel--year {
+  text-align: center;
+  font-size: 1em;
+  color: #3C3C3C;
+  margin-top: -30px;
 }
 
