@@ -506,14 +506,14 @@ h6 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 18px;
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -522,7 +522,7 @@ a {
 }
 
 p a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -530,7 +530,7 @@ p a {
 }
 
 ul {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -538,7 +538,7 @@ ul {
 }
 
 ul a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -564,7 +564,7 @@ ul a {
   color: #D6D6D6;
   font-size: 700px;
   line-height: 902px;
-  letter-spacing: 0rem;
+  letter-spacing: 0em;
   margin: 0px;
   padding: 0px;
 }
@@ -574,7 +574,7 @@ ul a {
   color: #0E1821;
   font-size: 170px;
   line-height: 219px;
-  letter-spacing: 0rem;
+  letter-spacing: 0em;
   margin: 0px;
   padding: 0px;
 }

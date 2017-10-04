@@ -4,112 +4,112 @@
 
 // BASE
 html {
-  font-size: 18px;
+  font-size: $mt-font-size;
 }
 //End Base
 
 //HEADERS
 
 h1, h2, h3, h4, h5, h6{
-  font-family: FFDINWebProBold;
+  font-family: $mt-font;
   color: $mt-black;
-  letter-spacing: 0em;
+  letter-spacing: $mt-lt-space;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: $mt-h1;
   line-height: 91px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size:$mt-h2;
   line-height: 77px;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: $mt-h3;
   line-height: 65px;
 }
 
 h4 {
-  font-size: 40px;
+  font-size: $mt-h4;
   line-height: 51px;
 }
 
 h5 {
-  font-size: 30px;
+  font-size: $mt-h5;
   line-height: 38px;
 }
 
 h6 {
-  font-size: 20px;
+  font-size: $mt-h6;
   line-height: 26px;
 }
 // End Headers
 
 // Various Text Sizes
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $mt-font-base;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $mt-font-size;
+  line-height: $mt-font-size;
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $mt-font-base;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $mt-font-size;
+  line-height: $mt-font-height;
   text-decoration: none;
   color: $mt-red;
 }
 
 p a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $mt-font-base;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $mt-font-size;
+  line-height: $mt-font-height;
   color: $mt-red;
 }
 
 ul {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $mt-font-base;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $mt-font-size;
+  line-height: $mt-font-height;
   color: #3C3C3C;
 }
 
 ul a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $mt-font-base;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: $mt-font-size;
+  line-height: $mt-font-height;
   color: $mt-red;
 }
 
 .title__bar {
   border: none;
   height: 10px;
-  background-color: #BF2027;
-  width: 92px;
+  background-color: $mt-tle-red;
+  width: $mt-width;
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
-  background-color: #BF2027;
-  width: 92px;
+  background-color: $mt-tle-red;
+  width: $mt-width;
 }
 
 .giga {
   font-family: FFDINWebProBold;
-  color: #D6D6D6;
+  color: $mt-giga-clr;
   font-size: 700px;
   line-height: 902px;
-  letter-spacing: 0rem;
-  margin: 0px;
-  padding: 0px;
+  letter-spacing: $mt-lt-space;
+  margin:$mt-z0-space;
+  padding:$mt-z0-space;
 }
 
 .kilo {
@@ -117,9 +117,9 @@ ul a {
   color: $mt-black;
   font-size: 170px;
   line-height: 219px;
-  letter-spacing: 0rem;
-  margin: 0px;
-  padding: 0px;
+  letter-spacing: $mt-lt-space;
+  margin: $mt-z0-space;
+  padding: $mt-z0-space;
 }
 
 
