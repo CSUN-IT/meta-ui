@@ -687,10 +687,6 @@ div {
   display: inline-grid;
 }
 
-.subcontainer {
-  display: subgrid;
-}
-
 .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -820,7 +816,7 @@ div {
   }
 
   .col-xs-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xs-offset-6 {
@@ -922,7 +918,7 @@ div {
   }
 
   .col-sm-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-sm-offset-6 {
@@ -1024,7 +1020,7 @@ div {
   }
 
   .col-lg-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-lg-offset-6 {
@@ -1126,7 +1122,7 @@ div {
   }
 
   .col-lg-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-lg-offset-6 {
@@ -1228,7 +1224,7 @@ div {
   }
 
   .col-xl-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xl-offset-6 {

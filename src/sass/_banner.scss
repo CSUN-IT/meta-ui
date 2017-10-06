@@ -1,0 +1,24 @@
+
+/* Demo Styles */
+.banner {
+  width: 767px;
+  height: 672px;
+  display: flex;
+  align-items: center;
+  background:no-repeat;
+  background-color:#0E1721;
+  background-size:cover;
+}
+
+.banner__img{
+  @extend .banner;
+  //background-image:url('https://goo.gl/id6eaN');
+}
+.banner__img--opacity{
+  @extend .banner;
+  opacity:.6;
+}
+
+
+
+
