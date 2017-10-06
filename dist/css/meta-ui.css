@@ -460,8 +460,26 @@ th {
   padding: 0;
 }
 
-p {
+.navBar {
+  background-color: #FAFAFA;
+  height: 29em;
+}
+
+.navbar-list {
+  margin: auto;
+  text-align: center;
+  color: #000000;
   font-family: FFDINWebProBold;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.nav-icon-style {
+  position: relative;
+  top: 250px;
+  left: 50px;
+  height: 35px;
 }
 
 html {
@@ -780,7 +798,7 @@ div {
   }
 
   .col-xs-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xs-offset-6 {

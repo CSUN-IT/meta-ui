@@ -1,3 +1,20 @@
-p{
+.navBar{
+  background-color: $white;
+  height: 29em;
+}
+.navbar-list{
+  margin: auto;
+  text-align: center;
+  color: #000000;
   font-family: $font;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.nav-icon-style{
+  position: relative;
+  top: 250px;
+  left: 50px;
+  height: 35px;
 }
