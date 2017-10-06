@@ -5,16 +5,23 @@
 .navbar-list{
   margin: auto;
   text-align: center;
-  color: #000000;
   font-family: $font;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 50px;
   line-height: 50px;
+  color: $black;
 }
 
-.nav-icon-style{
+.nav-icon-style {
   position: relative;
   top: 250px;
   left: 50px;
   height: 35px;
+}
+.fa-bars{
+  position: relative;
+  top: 240px;
+  left: 1000px;
+  height: 35px;
+
 }
