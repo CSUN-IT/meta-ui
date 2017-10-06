@@ -460,6 +460,10 @@ th {
   padding: 0;
 }
 
+p {
+  font-family: FFDINWebProBold;
+}
+
 html {
   font-size: 18px;
 }
