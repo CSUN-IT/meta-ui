@@ -4,122 +4,122 @@
 
 // BASE
 html {
-  font-size: $mt-font-size;
+  font-size: $font-size;
 }
 //End Base
 
 //HEADERS
 
 h1, h2, h3, h4, h5, h6{
-  font-family: $mt-font;
-  color: $mt-black;
-  letter-spacing: $mt-lt-space;
+  font-family: $font;
+  color: $black;
+  letter-spacing: $lt-space;
 }
 
 h1 {
-  font-size: $mt-h1;
+  font-size: $h1;
   line-height: 91px;
 }
 
 h2 {
-  font-size:$mt-h2;
+  font-size:$h2;
   line-height: 77px;
 }
 
 h3 {
-  font-size: $mt-h3;
+  font-size: $h3;
   line-height: 65px;
 }
 
 h4 {
-  font-size: $mt-h4;
+  font-size: $h4;
   line-height: 51px;
 }
 
 h5 {
-  font-size: $mt-h5;
+  font-size: $h5;
   line-height: 38px;
 }
 
 h6 {
-  font-size: $mt-h6;
+  font-size: $h6;
   line-height: 26px;
 }
 // End Headers
 
 // Various Text Sizes
 p {
-  font-family: $mt-font-base;
+  font-family: $font-base;
   font-weight: normal;
-  font-size: $mt-font-size;
-  line-height: $mt-font-size;
+  font-size: $font-size;
+  line-height: $font-size;
 }
 
 a {
-  font-family: $mt-font-base;
+  font-family: $font-base;
   font-weight: normal;
-  font-size: $mt-font-size;
-  line-height: $mt-font-height;
+  font-size: $font-size;
+  line-height: $font-height;
   text-decoration: none;
-  color: $mt-red;
+  color: $red;
 }
 
 p a {
-  font-family: $mt-font-base;
+  font-family: $font-base;
   font-weight: normal;
-  font-size: $mt-font-size;
-  line-height: $mt-font-height;
-  color: $mt-red;
+  font-size: $font-size;
+  line-height: $font-height;
+  color: $red;
 }
 
 ul {
-  font-family: $mt-font-base;
+  font-family: $font-base;
   font-weight: normal;
-  font-size: $mt-font-size;
-  line-height: $mt-font-height;
-  color: #3C3C3C;
+  font-size: $font-size;
+  line-height: $font-height;
+  color: $mw-ul;
 }
 
 ul a {
-  font-family: $mt-font-base;
+  font-family: $font-base;
   font-weight: normal;
-  font-size: $mt-font-size;
-  line-height: $mt-font-height;
-  color: $mt-red;
+  font-size: $font-size;
+  line-height: $font-height;
+  color: $red;
 }
 
 .title__bar {
   border: none;
   height: 10px;
-  background-color: $mt-tle-red;
-  width: $mt-width;
+  background-color:$tle-red;
+  width: $width;
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
-  background-color: $mt-tle-red;
-  width: $mt-width;
+  background-color: $tle-red;
+  width: $width;
 }
 
 .giga {
-  font-family: FFDINWebProBold;
-  color: $mt-giga-clr;
+  font-family: $font;
+  color: $giga-clr;
   font-size: 700px;
   line-height: 902px;
-  letter-spacing: $mt-lt-space;
-  margin:$mt-z0-space;
-  padding:$mt-z0-space;
+  letter-spacing: $lt-space;
+  margin:$z0-space;
+  padding:$z0-space;
 }
 
 .kilo {
-  font-family: FFDINWebProLight;
-  color: $mt-black;
+  font-family: $font;
+  color: $black;
   font-size: 170px;
   line-height: 219px;
-  letter-spacing: $mt-lt-space;
-  margin: $mt-z0-space;
-  padding: $mt-z0-space;
+  letter-spacing: $lt-space;
+  margin: $z0-space;
+  padding: $z0-space;
 }
 
 
