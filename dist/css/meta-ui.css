@@ -1269,8 +1269,20 @@ code {
   height: 3px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 100%;
+.panel {
+  background-color: #0E1821;
+  background-size: cover;
+  width: 767px;
+  height: 672px;
+}
+
+.panel__content {
+  width: 609px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 160px;
+  line-height: 32px;
 }
 
