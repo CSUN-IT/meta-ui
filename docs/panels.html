@@ -8,32 +8,121 @@
 </head>
 <body>
 <div class="container">
+    <h1>Panels</h1>
     <div class="panel">
         <div class="panel__content">
-            <h4>OPERATIONS</h4>
-
-            <!--<hr>-->
-
-            <p>The META+LAB Operations team handles all things related to META+LAB infrastructure both on-premise and on AWS. This includes the setup of demonstration and production environments. In addition, the Operations team provides hands-on IT support to the office of Research and Graduate Studies department on campus. Without the diligent work of our Operations team, we would be unable to function.</p>
+            <div class="content__title">
+                <h4>OPERATIONS</h4>
+                <div class="title__bar--thin"></div>
+            </div>
+            <div class="panel__comments">
+                <p>The META+LAB Operations team handles all things related to META+LAB
+                    infrastructure both on-premise and on AWS. This includes the setup
+                    of demonstration and production environments. In addition, the
+                    Operations team provides hands-on IT support to the office of
+                    Research and Graduate Studies department on campus. Without the
+                    diligent work of our Operations team, we would be unable to
+                    function.
+                </p>
+            </div>
         </div>
     </div>
 
-<pre>
+    <pre>
     <code>
         &lt;div class="panel"&gt;<br>
 
-            &lt;div class="content"&gt;<br>
+            &lt;div class="panel__content"&gt;<br>
 
                 &lt;h4&gt;OPERATIONS&lt;/h4&gt;<br>
 
-                &lt;hr&gt;<br>
+                &lt;div class="content__title"&gt;<br>
 
-                &lt;p&gt;Enter your content&lt;/p&gt;<br>
+                    &lt;div class="title__bar--thin"&gt; &lt;/div&gt;<br>
+
+                &lt;/div&gt;<br>
+
+                &lt;div class="panel__comments"&gt;<br>
+
+                    &lt;p&gt;Enter your content&lt;/p&gt;<br>
+
+                &lt;div&gt;<br>
 
             &lt;/div&gt;<br>
+
         &lt;/div&gt;<br>
     </code>
 </pre>
+
+    <h2>Panel with overlay</h2>
+    <div class="panel col-md-6 col-sm-12">
+        <div class="panel__img col-md-6">
+            <div class="panel__footer col-md-3">
+                <h3>Development</h3>
+            </div>
+            <div class="panel--overlay col-md-6">
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <pre>
+        <code>
+            &lt;div class="panel col-md-6 col-sm-12"&gt;<br>
+
+                &lt;div class="panel__img col-md-6"&gt;<br>
+
+                    &lt;h4&gt;OPERATIONS&lt;/h4&gt;<br>
+
+                    &lt;class="panel--overlay col-md-6"&gt;<br>
+
+                        &lt;class="panel__footer col-md-3"&gt;<br>
+
+                        &lt;/div&gt;<br>
+
+                    &lt;/div&gt;<br>
+
+                &lt;div&gt;<br>
+
+            &lt;div&gt;<br>
+
+        </code>
+    </pre>
+
+
+<div class="container">
+    <h2>Small Panel</h2>
+    <div class="panel__small">
+        <div class="panel__title">
+            <h3>GATHER</h3>
+        </div>
+        <div class="panel--overlay">
+
+        </div>
+    </div>
+
+    <pre>
+        <code>
+            &lt;container&gt;<br>
+
+                &lt;div class="panel__small"&gt; <br>
+
+                    &lt;div class="panel__title"&gt;<br>
+
+                        &lt;h3&gt;GATHER&lt;/h3&gt;<br>
+
+                    &lt;/div&gt;<br>
+
+                    &lt;div class="panel--overlay"&gt;<br>
+
+                    &lt;/div&gt;<br>
+
+                &lt;/div&gt;<br>
+
+            &lt;/div&gt;<br>
+        </code>
+    </pre>
 </div>
 </body>
 </html>
