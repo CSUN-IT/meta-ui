@@ -1,24 +1,45 @@
 
 /* Demo Styles */
 .banner {
-  width: 767px;
-  height: 672px;
+  width: 1578.48px;
+  height: 735.88px;
   display: flex;
-  align-items: center;
-  background:no-repeat;
+  //align-items: center;
+  //background:no-repeat;
   background-color:#0E1721;
   background-size:cover;
 }
 
 .banner__img{
   @extend .banner;
-  //background-image:url('https://goo.gl/id6eaN');
+  background-image:url('https://goo.gl/id6eaN');
 }
-.banner__img--opacity{
+.banner__overlay{
   @extend .banner;
-  opacity:.6;
+  background-color:rgba(30, 41, 22, 0.6);
 }
 
+.banner__title{
+  color:white;
+  position: absolute;
+  top:55%;
+  left:35%;
+}
 
+.panel__img{
+  width:768px;
+  height: 672px;
+  background-image:url('https://goo.gl/id6eaN');
+  background-size:cover;
+  position:absolute;
+  top:0;
+  right:20px;
+  // left:100px;
 
-
+}
+.banner__title h2{
+  color:white;
+  position: absolute;
+  top:55%;
+  text-align: left;
+}

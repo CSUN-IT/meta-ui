@@ -1323,3 +1323,49 @@ code {
   min-height: calc(100vh - 85px);
 }
 
+/* Demo Styles */
+
+.banner,
+.banner__img,
+.banner__overlay {
+  width: 1578.48px;
+  height: 735.88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0E1721;
+  background-size: cover;
+}
+
+.banner__img {
+  background-image: url("https://goo.gl/id6eaN");
+}
+
+.banner__overlay {
+  background-color: rgba(30, 41, 22, 0.6);
+}
+
+.banner__title {
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 35%;
+}
+
+.panel__img {
+  width: 768px;
+  height: 672px;
+  background-image: url("https://goo.gl/id6eaN");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.banner__title h2 {
+  color: white;
+  position: absolute;
+  top: 55%;
+  text-align: left;
+}
+
