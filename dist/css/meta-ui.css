@@ -460,7 +460,8 @@ th {
   padding: 0;
 }
 
-html {
+html,
+body {
   font-size: 18px;
 }
 
@@ -472,7 +473,29 @@ h5,
 h6 {
   font-family: FFDINWebProBold;
   color: #0E1821;
-  letter-spacing: 0em;
+  letter-spacing: 0px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: FFDINWebProBold;
+  color: #0E1821;
+  letter-spacing: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: FFDINWebProBold;
+  color: #0E1821;
+  letter-spacing: 0px;
 }
 
 h1 {
@@ -505,23 +528,30 @@ h6 {
   line-height: 26px;
 }
 
-p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 18px;
-}
-
+p,
+ol,
+ul,
 a {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
+}
+
+a {
   text-decoration: none;
   color: #D00D20;
 }
 
-p a {
+p a:hover {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D00D20;
+}
+
+.p .a {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -534,7 +564,7 @@ ul {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #3C3C3C;
+  color: #D00D20;
 }
 
 ul a {
@@ -548,14 +578,14 @@ ul a {
 .title__bar {
   border: none;
   height: 10px;
-  background-color: #BF2027;
+  background-color: #D00D20;
   width: 92px;
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
-  background-color: #BF2027;
+  background-color: #D00D20;
   width: 92px;
 }
 
