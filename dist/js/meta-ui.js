@@ -79,18 +79,31 @@ module.exports = __webpack_require__(2);
 // LET'S GET STARTED
 console.log('META+LAB UI Kit');
 
-//for nav bar
-window.onscroll = function () {
-    scrollFunction();
-};
+// integrating jQUery
+var includedDependencies = {};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementsByClassName("navbar-1").style.top = "0";
-    } else {
-        document.getElementsByClassName("navbar-1").style.top = "-50px";
+function includeOnce(file) {
+    var libraryName = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+
+    if (libraryName === '') {
+        libraryName = file;
+    }
+    //If library is not included yet, then include it
+    if (!(libraryName in includedDependencies)) {
+        var script = document.createElement('script');
+        script.src = file;
+        script.type = 'text/javascript';
+        // script.defer = true;
+
+        document.head.appendChild(script);
+        // Add it our global list of libraries.
+        includedDependencies[libraryName] = file;
     }
 }
+
+// /* include any js files here */
+includeOnce("https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js", 'jquery');
+includeOnce('..src/js/navbar.js');
 
 /***/ }),
 /* 2 */
