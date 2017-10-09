@@ -1,13 +1,15 @@
 
+
+@import "base";
 // CONFIGURATIOINS
 // variables
 @import "variable";
 
+
 // RESETS
 @import "normalize";
 
-//NAV BAR
-@import "navbar";
+
 
 // Dependencies
 // @import "vendor/font-awesome/font-awesome";
@@ -17,6 +19,10 @@
 @import "type";
 @import "grid";
 
+
+
 // COMPONENTS
 //Example: footer
 
+//NAV BAR
+@import "navbar";
