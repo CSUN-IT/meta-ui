@@ -2,7 +2,7 @@
 
 // BASE
 html, body{
-  font-size: $font-size;
+  font-size: 18px;
 }
 //End Base
 
@@ -60,8 +60,8 @@ h6 {
 p, ol, ul, a {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 a {
@@ -72,31 +72,31 @@ a {
 p a:hover {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
   color: $red;
 }
 .p .a {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
   color: $red;
 }
 
 ul {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
   color: $red;
 }
 
 ul a {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height:32px;
   color: $red;
 }
 
@@ -104,14 +104,14 @@ ul a {
   border: none;
   height: 10px;
   background-color:$red;
-  width: $width;
+  width: 92px;
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
   background-color: $red;
-  width: $width;
+  width: 92px;
 }
 
 .giga {
