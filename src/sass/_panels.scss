@@ -31,50 +31,47 @@
   color:white;
 }
 .panel__img {
-  @extend .panel;
-  background-image:url('https://goo.gl/J5RZ7t');
+  width:inherit;
+  height:inherit;
+  position:relative;
+  top:0;
+  left:0;
+  background: #0E1821 url('https://goo.gl/t85yuv');
+  background-size:cover;
 }
 
 .panel--overlay{
-  @extend .panel;
+  height:inherit;
+  width:inherit;
   display: none;
-  background-color:rgba(14, 24, 33, 0.4);
-  z-index: 2;
+  background-color:rgba(14, 24, 33, 0.60);
+  z-index: 1;
 
 }
-//
-//.panel__footer{
-//  height:auto;
-//  width:auto;
-//  position:absolute;
-//  bottom:30px;
-//  right:20px;
-//  color: white;
-//}
 
-.panel__footer, h3{
-  width:100%;
-  height:30px;
-  color: white;
-  text-align:right;
+.panel__footer{
   position:absolute;
-  bottom:30px;
-  right:20px;
+  bottom:0;
+  right:55px;
+  text-align: right;
 }
-
-.panel__small{
+.panel__footer h3{
+  color:#FFFFFF;
+}
+   /*---- small panel------*/
+.panel--small{
   width:375.13px;
   height:575.81px;
-  background-color:#0E1821;
+  background: #0E1821 url('https://goo.gl/J5RZ7t');
   background-size:cover;
-  background-image: url('https://goo.gl/J5RZ7t');
 }
 .panel__title{
   height:100px;
   width:inherit;
   position:relative;
   top:250px;
-  right:50px;
+  right:60px;
+  text-align: right;
 }
 .panel__title h3{
   color: #FFFFFF;
