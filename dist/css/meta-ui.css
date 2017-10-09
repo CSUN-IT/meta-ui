@@ -1338,9 +1338,9 @@ code {
 
 .navbar--filler {
   position: relative;
-  display: inline-block;
+  display: block;
   height: 29em;
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: auto;
 }
