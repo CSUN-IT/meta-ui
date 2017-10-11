@@ -29,7 +29,7 @@ function multiSlides(nShown) {
     // Displays all images if there's not enough images to carousel
     if (slides.length <= nShown) {
         for (let i = 0; i < slides.length; i++) {
-            // $(slides[i]).toggle();
+            $(slides[i]).toggle();
         }
     }
 
