@@ -3515,7 +3515,8 @@ th {
   clip: auto;
 }
 
-html {
+html,
+body {
   font-size: 18px;
 }
 
@@ -3527,7 +3528,29 @@ h5,
 h6 {
   font-family: FFDINWebProBold;
   color: #0E1821;
-  letter-spacing: 0em;
+  letter-spacing: 0px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: FFDINWebProBold;
+  color: #0E1821;
+  letter-spacing: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: FFDINWebProBold;
+  color: #0E1821;
+  letter-spacing: 0px;
 }
 
 h1 {
@@ -3560,24 +3583,31 @@ h6 {
   line-height: 26px;
 }
 
-p {
-  font-family: 'Open Sans', sans-serif;
+p,
+ol,
+ul,
+a {
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
   text-decoration: none;
   color: #D00D20;
 }
 
-p a {
-  font-family: 'Open Sans', sans-serif;
+p a:hover {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #D00D20;
+}
+
+.p .a {
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -3585,15 +3615,15 @@ p a {
 }
 
 ul {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #3C3C3C;
+  color: #D00D20;
 }
 
 ul a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -3603,14 +3633,14 @@ ul a {
 .title__bar {
   border: none;
   height: 10px;
-  background-color: #BF2027;
+  background-color: #D00D20;
   width: 92px;
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
-  background-color: #BF2027;
+  background-color: #D00D20;
   width: 92px;
 }
 
@@ -3619,17 +3649,17 @@ ul a {
   color: #D6D6D6;
   font-size: 700px;
   line-height: 902px;
-  letter-spacing: 0rem;
+  letter-spacing: 0em;
   margin: 0px;
   padding: 0px;
 }
 
 .kilo {
-  font-family: FFDINWebProLight;
+  font-family: FFDINWebProBold;
   color: #0E1821;
   font-size: 170px;
   line-height: 219px;
-  letter-spacing: 0rem;
+  letter-spacing: 0em;
   margin: 0px;
   padding: 0px;
 }

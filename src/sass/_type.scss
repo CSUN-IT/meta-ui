@@ -1,27 +1,36 @@
-// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 // BASE
-html {
+html, body{
   font-size: 18px;
 }
 //End Base
 
 //HEADERS
-
-h1, h2, h3, h4, h5, h6, {
-  font-family: FFDINWebProBold;
-  color: #0E1821;
-  letter-spacing: 0em;
+//duplicate line 12 and make them class ".h1"
+h1, h2, h3, h4, h5, h6{
+  font-family: $font;
+  color: $black;
+  letter-spacing: 0px;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: $font;
+  color: $black;
+  letter-spacing: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $font;
+  color: $black;
+  letter-spacing: 0px;
+}
 h1 {
   font-size: 70px;
   line-height: 91px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size:60px;
   line-height: 77px;
 }
 
@@ -47,76 +56,80 @@ h6 {
 // End Headers
 
 // Various Text Sizes
-p {
-  font-family: 'Open Sans', sans-serif;
+
+p, ol, ul, a {
+  font-family: $font-base;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
 }
 
 a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
   text-decoration: none;
-  color: #D00D20;
+  color: $red;
 }
 
-p a {
-  font-family: 'Open Sans', sans-serif;
+p a:hover {
+  font-family: $font-base;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #D00D20;
+  color: $red;
+}
+.p .a {
+  font-family: $font-base;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: $red;
 }
 
 ul {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-base;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #3C3C3C;
+  color: $red;
 }
 
 ul a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-base;
   font-weight: normal;
   font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
+  line-height:32px;
+  color: $red;
 }
 
 .title__bar {
   border: none;
   height: 10px;
-  background-color: #BF2027;
+  background-color:$red;
   width: 92px;
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
-  background-color: #BF2027;
+  background-color: $red;
   width: 92px;
 }
 
 .giga {
-  font-family: FFDINWebProBold;
-  color: #D6D6D6;
+  font-family: $font;
+  color: $grey-clear;
   font-size: 700px;
   line-height: 902px;
-  letter-spacing: 0rem;
-  margin: 0px;
+  letter-spacing: 0em;
+  margin:0px;
   padding: 0px;
 }
 
 .kilo {
-  font-family: FFDINWebProLight;
-  color: #0E1821;
+  font-family: $font;
+  color: $black;
   font-size: 170px;
   line-height: 219px;
-  letter-spacing: 0rem;
+  letter-spacing: 0em;
   margin: 0px;
   padding: 0px;
 }
