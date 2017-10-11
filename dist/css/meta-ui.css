@@ -473,6 +473,8 @@ h6 {
   font-family: FFDINWebProBold;
   color: #0E1821;
   letter-spacing: 0em;
+  margin-top: 0px;
+  margin-bottom: 0.83em;
 }
 
 h1 {
@@ -628,6 +630,8 @@ ul a {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 *,
@@ -635,6 +639,11 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 div {
@@ -1317,61 +1326,31 @@ code {
   background-color: #0E1821;
   background-size: cover;
   width: 767px;
-  height: 672px;
+  height: auto;
+  padding: 50px;
 }
 
 .panel__content {
-  width: 609px;
+  width: 100%;
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  top: 160px;
-  line-height: 32px;
-}
-
-.content__title h4 {
-  color: white;
-}
-
-.panel__comments {
-  text-align: left;
-  position: relative;
-  top: 30px;
-  margin: 0;
-}
-
-.panel__comments p {
-  color: white;
 }
 
 .panel__img {
-  width: inherit;
-  height: inherit;
-  position: relative;
-  top: 0;
-  left: 0;
-  background: #0E1821 url("https://goo.gl/t85yuv");
+  width: 767px;
+  height: 100%;
+  background-image: url("https://goo.gl/t85yuv");
   background-size: cover;
 }
 
 .panel--overlay {
   height: inherit;
   width: inherit;
-  display: none;
   background-color: rgba(14, 24, 33, 0.6);
   z-index: 1;
 }
 
 .panel__footer {
-  position: absolute;
-  bottom: 0;
-  right: 55px;
   text-align: right;
-}
-
-.panel__footer h3 {
-  color: #FFFFFF;
 }
 
 /*---- small panel------*/
@@ -1384,16 +1363,9 @@ code {
 }
 
 .panel__title {
-  height: 100px;
-  width: inherit;
-  position: relative;
-  top: 250px;
-  right: 60px;
+  padding-right: 90px;
+  padding-top: 250px;
   text-align: right;
-}
-
-.panel__title h3 {
-  color: #FFFFFF;
 }
 
 .metalab__footer {

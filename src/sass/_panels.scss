@@ -6,58 +6,39 @@
   background-size:cover;
   //display: block;
   width:767px;
-  height: 672px;
+  height: auto;
+  padding:50px;
 }
 
 .panel__content{
-  width:609px;
+  width:100%;
   height:auto;
-  margin-right: auto;
-  margin-left:auto;
-  position:relative;
-  top:160px;
-  line-height: 32px;
+  //position:relative;
 }
-.content__title h4{
-  color:white;
-}
-.panel__comments{
-  text-align:left;
-  position:relative;
-  top:30px;
-  margin:0;
-}
-.panel__comments p{
-  color:white;
-}
+
 .panel__img {
-  width:inherit;
-  height:inherit;
-  position:relative;
-  top:0;
-  left:0;
-  background: #0E1821 url('https://goo.gl/t85yuv');
+  width:767px;
+  height:100%;
+  //position:relative;
+  //top:0;
+  //left:0;
+  background-image:url('https://goo.gl/t85yuv');
   background-size:cover;
 }
 
 .panel--overlay{
   height:inherit;
   width:inherit;
-  display: none;
   background-color:rgba(14, 24, 33, 0.60);
   z-index: 1;
 
 }
 
 .panel__footer{
-  position:absolute;
-  bottom:0;
-  right:55px;
+  
   text-align: right;
 }
-.panel__footer h3{
-  color:#FFFFFF;
-}
+
    /*---- small panel------*/
 .panel--small{
   width:375.13px;
@@ -66,13 +47,8 @@
   background-size:cover;
 }
 .panel__title{
-  height:100px;
-  width:inherit;
-  position:relative;
-  top:250px;
-  right:60px;
+  padding-right: 90px;
+  padding-top: 250px;
   text-align: right;
 }
-.panel__title h3{
-  color: #FFFFFF;
-}
+
