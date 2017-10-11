@@ -1,15 +1,15 @@
 /*PANELS*/
 /***************/
 
+/*Default Panel*/
 .panel{
   position: relative;
   background-color:#0E1821;
   background-size:cover;
-  //display: block;
   width:767px;
   height: auto;
-  //padding:50px;
 }
+
 
 .panel__content{
   width:100%;
@@ -26,6 +26,7 @@
   background-repeat: no-repeat;
   z-index:5;
 }
+
 .panel__footer{
   width:100%;
   position: absolute;
