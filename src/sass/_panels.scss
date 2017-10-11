@@ -2,6 +2,7 @@
 /***************/
 
 .panel{
+  position: relative;
   background-color:#0E1821;
   background-size:cover;
   //display: block;
@@ -30,7 +31,10 @@
   z-index:5;
 }
 .panel__footer{
-
+  width:100%;
+  position: absolute;
+  bottom: 55px;
+  right: 55px;
   text-align: right;
   z-index:10;
 }
