@@ -1347,11 +1347,7 @@ code {
 .panel__content {
   width: 100%;
   height: auto;
-  padding: 185px 95px 55px;
-}
-
-.panel__text {
-  margin-top: 35px;
+  padding: 95px;
 }
 
 .panel__img {
