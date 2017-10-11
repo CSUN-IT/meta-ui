@@ -3551,36 +3551,31 @@ h6 {
   font-family: FFDINWebProBold;
   color: #0E1821;
   letter-spacing: 0px;
+  line-height: 1.2;
 }
 
 h1 {
   font-size: 70px;
-  line-height: 91px;
 }
 
 h2 {
   font-size: 60px;
-  line-height: 77px;
 }
 
 h3 {
   font-size: 50px;
-  line-height: 65px;
 }
 
 h4 {
   font-size: 40px;
-  line-height: 51px;
 }
 
 h5 {
   font-size: 30px;
-  line-height: 38px;
 }
 
 h6 {
   font-size: 20px;
-  line-height: 26px;
 }
 
 p,
