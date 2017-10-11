@@ -1328,28 +1328,32 @@ code {
 .banner,
 .banner__img,
 .banner__overlay {
-  width: 1578.48px;
+  position: relative;
+  width: 100%;
   height: 735.88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #0E1721;
   background-size: cover;
+  z-index: 1;
 }
 
 .banner__img {
   background-image: url("https://goo.gl/id6eaN");
+  z-index: 5;
 }
 
 .banner__overlay {
   background-color: rgba(30, 41, 22, 0.6);
+  z-index: 10;
 }
 
-.banner__title {
-  color: white;
-  position: absolute;
-  top: 55%;
-  left: 35%;
+.banner__header {
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .panel__img {
@@ -1358,14 +1362,17 @@ code {
   background-image: url("https://goo.gl/id6eaN");
   background-size: cover;
   position: absolute;
-  top: 0;
-  right: 20px;
+  bottom: -95px;
+  right: 160px;
 }
 
-.banner__title h2 {
-  color: white;
-  position: absolute;
-  top: 55%;
+.banner__title {
   text-align: left;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 5;
+  position: relative;
+  left: 0;
 }
 
