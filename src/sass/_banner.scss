@@ -2,14 +2,14 @@
 /* Demo Styles */
 .banner {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 735.88px;
   display: flex;
-  //align-items: center;
-  //background:no-repeat;
+  background-repeat:no-repeat;
   background-color:#0E1721;
   background-size:cover;
   z-index: 1;
+  align-content: center;
 }
 
 .banner__img{
@@ -39,15 +39,15 @@
   bottom:-95px;
   right:160px;
   // left:100px;
+  z-index: 2;
 }
 
 .banner__title{
-  text-align: left;
-  width:100%;
+  display: inline-block;
+  text-align: right;
+  margin-left: 55px;
   margin-top:auto;
-  margin-bottom:auto;
-  z-index: 5;
-  position: relative;
-  left:0;
+  margin-bottom: auto;
+  z-index:2;
 
 }

@@ -1329,14 +1329,17 @@ code {
 .banner__img,
 .banner__overlay {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 735.88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-repeat: no-repeat;
   background-color: #0E1721;
   background-size: cover;
   z-index: 1;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .banner__img {
@@ -1364,15 +1367,15 @@ code {
   position: absolute;
   bottom: -95px;
   right: 160px;
+  z-index: 2;
 }
 
 .banner__title {
-  text-align: left;
-  width: 100%;
+  display: inline-block;
+  text-align: right;
+  margin-left: 55px;
   margin-top: auto;
   margin-bottom: auto;
-  z-index: 5;
-  position: relative;
-  left: 0;
+  z-index: 2;
 }
 
