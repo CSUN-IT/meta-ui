@@ -524,10 +524,6 @@ div {
   display: inline-grid;
 }
 
-.subcontainer {
-  display: subgrid;
-}
-
 .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -657,7 +653,7 @@ div {
   }
 
   .col-xs-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xs-offset-6 {
@@ -963,7 +959,7 @@ div {
   }
 
   .col-lg-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-lg-offset-6 {
@@ -1065,7 +1061,7 @@ div {
   }
 
   .col-xl-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xl-offset-6 {
@@ -1157,11 +1153,11 @@ code {
           box-sizing: border-box;
 }
 
-.mySlides {
+.Slides {
   display: none;
 }
 
-.mySlides img {
+.Slides img {
   width: auto;
   height: 500px;
   max-height: 500px;
@@ -1205,9 +1201,9 @@ code {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
 }
 
 @-webkit-keyframes fade {
@@ -1238,11 +1234,31 @@ code {
 
 .autoSlides img {
   width: auto;
-  height: 500px;
-  max-height: 500px;
+  height: 250px;
+  max-height: 250px;
 }
 
-.auto-carousel--container {
+.carousel__auto--container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Multiple Slides Automatic Carousel */
+
+.multiSlides {
+  display: none;
+}
+
+.multiSlides img {
+  width: auto;
+  height: 250px;
+  max-height: 250px;
+  float: left;
+}
+
+.carousel__multi--container {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -1260,15 +1276,6 @@ code {
   width: 100%;
   text-align: center;
   line-height: 25px;
-}
-
-.caption--text {
-  color: #060707;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
 }
 
 .darken {
