@@ -23,6 +23,5 @@ function includeOnce(file, libraryName = '') {
     }
 }
 
-// /* include any js files here */
-includeOnce("https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js",'jquery');
-includeOnce('..src/js/navbar.js');
+
+includeOnce('../src/js/navbar.js');
