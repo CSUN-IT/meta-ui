@@ -1327,30 +1327,38 @@ code {
   background-size: cover;
   width: 767px;
   height: auto;
-  padding: 50px;
 }
 
 .panel__content {
   width: 100%;
   height: auto;
+  padding: 185px 95px 55px;
+}
+
+.panel__text {
+  margin-top: 35px;
 }
 
 .panel__img {
-  width: 767px;
-  height: 100%;
-  background-image: url("https://goo.gl/t85yuv");
+  width: 100%;
+  height: 767px;
+  background: url("https://goo.gl/J5RZ7t");
   background-size: cover;
-}
-
-.panel--overlay {
-  height: inherit;
-  width: inherit;
-  background-color: rgba(14, 24, 33, 0.6);
-  z-index: 1;
+  background-repeat: no-repeat;
+  z-index: 5;
 }
 
 .panel__footer {
   text-align: right;
+  z-index: 10;
+}
+
+.panel--overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(14, 24, 33, 0.6);
+  background-size: cover;
+  z-index: 10;
 }
 
 /*---- small panel------*/
@@ -1360,12 +1368,16 @@ code {
   height: 575.81px;
   background: #0E1821 url("https://goo.gl/J5RZ7t");
   background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
 }
 
 .panel__title {
+  width: 100%;
   padding-right: 90px;
   padding-top: 250px;
   text-align: right;
+  z-index: 10;
 }
 
 .metalab__footer {
