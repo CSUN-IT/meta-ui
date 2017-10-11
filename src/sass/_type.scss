@@ -1,105 +1,78 @@
+// Google Font Import
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 // BASE
 html, body{
   font-size: 18px;
+  color: $grey-dark;
 }
-//End Base
 
-//HEADERS
-//duplicate line 12 and make them class ".h1"
+// Headers
 h1, h2, h3, h4, h5, h6{
   font-family: $font;
-  color: $black;
-  letter-spacing: 0px;
+  color: $grey-dark;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.83em;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6{
-  font-family: $font;
-  color: $black;
-  letter-spacing: 0px;
-}
-h1, h2, h3, h4, h5, h6{
-  font-family: $font;
-  color: $black;
-  letter-spacing: 0px;
-}
-h1 {
-  font-size: 70px;
-  line-height: 91px;
-}
+h1 { font-size: 70px; }
+h2 { font-size: 60px; }
+h3 { font-size: 50px; }
+h4 { font-size: 40px; }
+h5 { font-size: 30px; }
+h6 { font-size: 20px; }
 
-h2 {
-  font-size:60px;
-  line-height: 77px;
-}
+// Header Tag Classes
+.h1 { font-size: 70px; }
+.h2 { font-size: 60px; }
+.h3 { font-size: 50px; }
+.h4 { font-size: 40px; }
+.h5 { font-size: 30px; }
+.h6 { font-size: 20px; }
 
-h3 {
-  font-size: 50px;
-  line-height: 65px;
-}
-
-h4 {
-  font-size: 40px;
-  line-height: 51px;
-}
-
-h5 {
-  font-size: 30px;
-  line-height: 38px;
-}
-
-h6 {
-  font-size: 20px;
-  line-height: 26px;
-}
-// End Headers
-
-// Various Text Sizes
-
+// Paragraph, Order List, Unorder List, and Anchor Tags
 p, ol, ul, a {
   font-family: $font-base;
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
+  color: inherit;
 }
 
+p a, ul a, ol a {
+  color: $red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+// Anchor Tag
 a {
   text-decoration: none;
-  color: $red;
+  color: inherit
 }
 
-p a:hover {
-  font-family: $font-base;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: $red;
-}
-.p .a {
-  font-family: $font-base;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: $red;
+// Lists
+ul { list-style-type: square; }
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
 }
 
-ul {
-  font-family: $font-base;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: $red;
+.list--inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
-ul a {
-  font-family: $font-base;
-  font-weight: normal;
-  font-size: 18px;
-  line-height:32px;
-  color: $red;
-}
-
+// Title Bar
 .title__bar {
   border: none;
   height: 10px;
@@ -114,6 +87,7 @@ ul a {
   width: 92px;
 }
 
+// Type Class Sizes
 .giga {
   font-family: $font;
   color: $grey-clear;
@@ -134,14 +108,17 @@ ul a {
   padding: 0px;
 }
 
-.type--white {
-  color: #FFFFFF;
-}
 
-.type--red {
-  color: #D00D20;
-}
-
-// End Text Sizes
-
-// END TYPOGRAPHY
+// Type Modifiers
+.type--center { text-align: center; }
+.type--emphasis { font-size: 18px; line-height: 1.6; }
+.type--strike { text-decoration: line-through; }
+.type--left { text-align: left; }
+.type--center { text-align: center; }
+.type--right { text-align: right; }
+.type--thin { font-weight: 100; }
+.type--bold { font-weight: bold; }
+.type--italic { font-style: italic; }
+.type--marginless { margin: 0; }
+.type--uppercase { text-transform: uppercase; letter-spacing: 2px; }
+.type--link { text-decoration: none; color: $red; }
