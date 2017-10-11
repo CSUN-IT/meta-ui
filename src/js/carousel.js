@@ -46,5 +46,5 @@ function showSlides(n) {
 }
 
 function dotTimer() {
-    setTimeout(showSlides, 2000); // Change image every 3 seconds
+    setTimeout(showSlides, 15000); // Change image every 3 seconds
 }
