@@ -1,9 +1,8 @@
-// TYPOGRAPHY
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 // BASE
 html, body{
-  font-size: $font-size;
+  font-size: 18px;
 }
 //End Base
 
@@ -26,32 +25,32 @@ h1, h2, h3, h4, h5, h6{
   letter-spacing: 0px;
 }
 h1 {
-  font-size: $h1;
+  font-size: 70px;
   line-height: 91px;
 }
 
 h2 {
-  font-size:$h2;
+  font-size:60px;
   line-height: 77px;
 }
 
 h3 {
-  font-size: $h3;
+  font-size: 50px;
   line-height: 65px;
 }
 
 h4 {
-  font-size: $h4;
+  font-size: 40px;
   line-height: 51px;
 }
 
 h5 {
-  font-size: $h5;
+  font-size: 30px;
   line-height: 38px;
 }
 
 h6 {
-  font-size: $h6;
+  font-size: 20px;
   line-height: 26px;
 }
 // End Headers
@@ -61,8 +60,8 @@ h6 {
 p, ol, ul, a {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 a {
@@ -73,31 +72,32 @@ a {
 p a:hover {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
   color: $red;
 }
 .p .a {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height: 32px;
   color: $red;
 }
 
 ul {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+
+  font-size: 18px;
+  line-height: 32px;
   color: $red;
 }
 
 ul a {
   font-family: $font-base;
   font-weight: normal;
-  font-size: $font-size;
-  line-height: $font-height;
+  font-size: 18px;
+  line-height:32px;
   color: $red;
 }
 
@@ -105,14 +105,16 @@ ul a {
   border: none;
   height: 10px;
   background-color:$red;
-  width: $width;
+  width: 92px;
+
 }
 
 .title__bar--thin {
   border: none;
   height: 5px;
   background-color: $red;
-  width: $width;
+  width: 92px;
+
 }
 
 .giga {
