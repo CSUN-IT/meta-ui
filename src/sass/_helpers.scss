@@ -9,13 +9,14 @@
 
 // Margins
 .margin--less{ margin: 0px; }
-.margin-left { margin: 10px; }
+.margin-left { margin-left: 10px; }
 
 // Type Colors
 .type--white { color: $white; }
 .type--red { color: $red; }
 .type--grey { color: $grey; }
 .type--grey-dark { color: $grey-dark; }
+.type--grey-darker { color: $grey-darker; }
 .type--blue { color: $blue; }
 .type--yellow { color: $yellow; }
 .type--teal { color: $teal; }
