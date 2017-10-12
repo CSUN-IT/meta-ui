@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -9,19 +10,8 @@ html {
 div {
   display: block;
 }
+
 /* Standard 12 column grid */
-
-/* Colors used for testing */
-.blue { background-color: blue;  height: 100px;  }
-
-.red { background-color: red;  height: 100px;  }
-
-.green { background-color: green;  height: 100px;  }
-
-.yellow { background-color: yellow;  height: 100px;  }
-
-.cyan {  background-color: cyan;  height: 100px;  }
-
 .section{
   padding: 20px 0px;
 }
@@ -690,7 +680,7 @@ code {
 }
 
 .white--box {
-  background-color: white;
+  background-color: $white;
   height: 3px;
 }
 

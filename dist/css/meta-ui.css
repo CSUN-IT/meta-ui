@@ -3518,6 +3518,7 @@ th {
 html,
 body {
   font-size: 18px;
+  color: #3F3F3F;
 }
 
 h1,
@@ -3528,30 +3529,9 @@ h5,
 h6 {
   font-family: FFDINWebProBold;
   color: #0E1821;
-  letter-spacing: 0px;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: FFDINWebProBold;
-  color: #0E1821;
-  letter-spacing: 0px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: FFDINWebProBold;
-  color: #0E1821;
-  letter-spacing: 0px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.83em;
 }
 
 h1 {
@@ -3578,12 +3558,34 @@ h6 {
   font-size: 20px;
 }
 
+.h1 {
+  font-size: 70px;
+}
+
+.h2 {
+  font-size: 60px;
+}
+
+.h3 {
+  font-size: 50px;
+}
+
+.h4 {
+  font-size: 40px;
+}
+
+.h5 {
+  font-size: 30px;
+}
+
+.h6 {
+  font-size: 20px;
+}
+
 p,
 ol,
 ul,
-a,
-pre,
-code {
+a {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -3601,23 +3603,7 @@ ul a {
 
 a {
   text-decoration: none;
-  color: #D00D20;
-}
-
-p a:hover {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
-}
-
-.p .a {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
+  color: inherit;
 }
 
 ul {
@@ -3680,20 +3666,59 @@ ol {
   padding: 0px;
 }
 
-.small {
-  font-size: 0.7rem;
+.type--center {
+  text-align: center;
 }
 
-.type--white {
-  color: #FFFFFF;
+.type--emphasis {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.type--red {
+.type--strike {
+  text-decoration: line-through;
+}
+
+.type--left {
+  text-align: left;
+}
+
+.type--center {
+  text-align: center;
+}
+
+.type--right {
+  text-align: right;
+}
+
+.type--thin {
+  font-weight: 100;
+}
+
+.type--bold {
+  font-weight: bold;
+}
+
+.type--italic {
+  font-style: italic;
+}
+
+.type--marginless {
+  margin: 0;
+}
+
+.type--uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.type--link {
+  text-decoration: none;
   color: #D00D20;
 }
 
-.type--grey-darker {
-  color: #55565a;
+.small {
+  font-size: 0.7rem;
 }
 
 .type--light {
@@ -3706,27 +3731,23 @@ ol {
 }
 
 .pull-left {
-  float: left;
+  float: left !important;
 }
 
 .pull-right {
-  float: right;
+  float: right !important;
 }
 
 .clear-left {
-  clear: left;
+  clear: left !important;
 }
 
 .clear-right {
-  clear: right;
+  clear: right !important;
 }
 
 .clear-both {
-  clear: both;
-}
-
-.type--center {
-  text-align: center;
+  clear: both !important;
 }
 
 .margin--less {
@@ -3737,8 +3758,77 @@ ol {
   margin-left: 10px;
 }
 
-.img__footer--height {
-  margin: 7px;
+.type--white {
+  color: #FFFFFF;
+}
+
+.type--red {
+  color: #D00D20;
+}
+
+.type--grey {
+  color: #B1B3B2;
+}
+
+.type--grey-dark {
+  color: #3F3F3F;
+}
+
+.type--grey-darker {
+  color: #55565a;
+}
+
+.type--blue {
+  color: #000063;
+}
+
+.type--yellow {
+  color: #F8BC35;
+}
+
+.type--teal {
+  color: #76C6B3;
+}
+
+.type--blue-dark {
+  color: #0E1821;
+}
+
+.bg--grey-clear {
+  background-color: #D6D6D6;
+}
+
+.bg--red {
+  background-color: #D00D20;
+}
+
+.bg--grey {
+  background-color: #B1B3B2;
+}
+
+.bg--grey-dark {
+  background-color: #3F3F3F;
+}
+
+.bg--blue {
+  background-color: #000063;
+}
+
+.bg--yellow {
+  background-color: #F8BC35;
+}
+
+.bg--teal {
+  background-color: #76C6B3;
+}
+
+.bg--blue-dark {
+  background-color: #0E1821;
+}
+
+.image--center {
+  margin: auto;
+  display: block;
 }
 
 /* Resets box sizing across all elements */
@@ -3760,33 +3850,6 @@ div {
 }
 
 /* Standard 12 column grid */
-
-/* Colors used for testing */
-
-.blue {
-  background-color: blue;
-  height: 100px;
-}
-
-.red {
-  background-color: red;
-  height: 100px;
-}
-
-.green {
-  background-color: green;
-  height: 100px;
-}
-
-.yellow {
-  background-color: yellow;
-  height: 100px;
-}
-
-.cyan {
-  background-color: cyan;
-  height: 100px;
-}
 
 .section {
   padding: 20px 0px;
@@ -4439,7 +4502,7 @@ code {
 }
 
 .white--box {
-  background-color: white;
+  background-color: #FFFFFF;
   height: 3px;
 }
 
@@ -4496,5 +4559,9 @@ code {
     text-align: center;
     margin: 0 23px 0 0;
   }
+}
+
+.img__footer--height {
+  margin: 7px;
 }
 
