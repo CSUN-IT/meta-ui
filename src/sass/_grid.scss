@@ -12,6 +12,10 @@ div {
 }
 
 /* Standard 12 column grid */
+.section{
+  padding: 20px 0px;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -653,17 +657,26 @@ pre {
   display: block;
   padding: 25px;
   overflow-x: scroll;
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
+  background-color: $grey-light;
+  border: 1px solid $grey;
   border-radius: 3px;
-  text-align: left;
-  width: 100%;
-  line-height: 10px;
+
+}
+
+pre code{
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 code {
-  color: red;
-  text-align: left;
+  color: $red;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 80%;
+  font-weight: 100;
+  padding: .2rem .4rem;
+  border-radius: 3px;
+  background-color: rgba(208, 13, 45, 0.1);
 }
 
 .white--box {
