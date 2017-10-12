@@ -3518,6 +3518,7 @@ th {
 html,
 body {
   font-size: 18px;
+  color: #3F3F3F;
 }
 
 h1,
@@ -3527,31 +3528,10 @@ h4,
 h5,
 h6 {
   font-family: FFDINWebProBold;
-  color: #0E1821;
-  letter-spacing: 0px;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: FFDINWebProBold;
-  color: #0E1821;
-  letter-spacing: 0px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: FFDINWebProBold;
-  color: #0E1821;
-  letter-spacing: 0px;
+  color: #3F3F3F;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.83em;
 }
 
 h1 {
@@ -3578,6 +3558,30 @@ h6 {
   font-size: 20px;
 }
 
+.h1 {
+  font-size: 70px;
+}
+
+.h2 {
+  font-size: 60px;
+}
+
+.h3 {
+  font-size: 50px;
+}
+
+.h4 {
+  font-size: 40px;
+}
+
+.h5 {
+  font-size: 30px;
+}
+
+.h6 {
+  font-size: 20px;
+}
+
 p,
 ol,
 ul,
@@ -3586,43 +3590,41 @@ a {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
+  color: inherit;
+}
+
+p a,
+ul a,
+ol a {
+  color: #D00D20;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 a {
   text-decoration: none;
-  color: #D00D20;
-}
-
-p a:hover {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
-}
-
-.p .a {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
+  color: inherit;
 }
 
 ul {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
+  list-style-type: square;
 }
 
-ul a {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 32px;
-  color: #D00D20;
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.list--inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .title__bar {
@@ -3659,6 +3661,85 @@ ul a {
   padding: 0px;
 }
 
+.type--center {
+  text-align: center;
+}
+
+.type--emphasis {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.type--strike {
+  text-decoration: line-through;
+}
+
+.type--left {
+  text-align: left;
+}
+
+.type--center {
+  text-align: center;
+}
+
+.type--right {
+  text-align: right;
+}
+
+.type--thin {
+  font-weight: 100;
+}
+
+.type--bold {
+  font-weight: bold;
+}
+
+.type--italic {
+  font-style: italic;
+}
+
+.type--marginless {
+  margin: 0;
+}
+
+.type--uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.type--link {
+  text-decoration: none;
+  color: #D00D20;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.clear-left {
+  clear: left !important;
+}
+
+.clear-right {
+  clear: right !important;
+}
+
+.clear-both {
+  clear: both !important;
+}
+
+.margin--less {
+  margin: 0px;
+}
+
+.margin-left {
+  margin: 10px;
+}
+
 .type--white {
   color: #FFFFFF;
 }
@@ -3667,40 +3748,65 @@ ul a {
   color: #D00D20;
 }
 
-.pull-left {
-  float: left;
+.type--grey {
+  color: #B1B3B2;
 }
 
-.pull-right {
-  float: right;
+.type--grey-dark {
+  color: #3F3F3F;
 }
 
-.clear-left {
-  clear: left;
+.type--blue {
+  color: #000063;
 }
 
-.clear-right {
-  clear: right;
+.type--yellow {
+  color: #F8BC35;
 }
 
-.clear-both {
-  clear: both;
+.type--teal {
+  color: #76C6B3;
 }
 
-.type--center {
-  text-align: center;
+.type--blue-dark {
+  color: #0E1821;
 }
 
-.margin--less {
-  margin: 0px;
+.bg--grey-clear {
+  background-color: #D6D6D6;
 }
 
-.margin-left {
-  margin-left: 10px;
+.bg--red {
+  background-color: #D00D20;
 }
 
-.img__footer--height {
-  margin: 7px;
+.bg--grey {
+  background-color: #B1B3B2;
+}
+
+.bg--grey-dark {
+  background-color: #3F3F3F;
+}
+
+.bg--blue {
+  background-color: #000063;
+}
+
+.bg--yellow {
+  background-color: #F8BC35;
+}
+
+.bg--teal {
+  background-color: #76C6B3;
+}
+
+.bg--blue-dark {
+  background-color: #0E1821;
+}
+
+.image--center {
+  margin: auto;
+  display: block;
 }
 
 /* Resets box sizing across all elements */
@@ -3722,33 +3828,6 @@ div {
 }
 
 /* Standard 12 column grid */
-
-/* Colors used for testing */
-
-.blue {
-  background-color: blue;
-  height: 100px;
-}
-
-.red {
-  background-color: red;
-  height: 100px;
-}
-
-.green {
-  background-color: green;
-  height: 100px;
-}
-
-.yellow {
-  background-color: yellow;
-  height: 100px;
-}
-
-.cyan {
-  background-color: cyan;
-  height: 100px;
-}
 
 .container {
   margin: 0 auto;
@@ -4389,7 +4468,7 @@ code {
 }
 
 .white--box {
-  background-color: white;
+  background-color: #FFFFFF;
   height: 3px;
 }
 
@@ -4405,5 +4484,9 @@ code {
 
 .metalab__footer--helper {
   min-height: calc(100vh - 85px);
+}
+
+.img__footer--height {
+  margin: 7px;
 }
 
