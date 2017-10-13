@@ -1355,13 +1355,12 @@ code {
 .panel__img {
   width: 100%;
   height: 767px;
-  background: url("https://goo.gl/J5RZ7t");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 5;
 }
 
-.panel__footer {
+.panel__title--box {
   width: 100%;
   position: absolute;
   bottom: 55px;
@@ -1373,7 +1372,7 @@ code {
 .panel--overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(14, 24, 33, 0.6);
+  background-color: rgba(14, 24, 33, 0.4);
   background-size: cover;
   z-index: 10;
 }
@@ -1383,7 +1382,6 @@ code {
 .panel--small {
   width: 375.13px;
   height: 575.81px;
-  background: #0E1821 url("https://goo.gl/J5RZ7t");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 5;
