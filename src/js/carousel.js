@@ -1,10 +1,10 @@
-var slideIndex = 1;
+var index = 1;
 var slides = document.getElementsByClassName("Slides");
 var dots = document.getElementsByClassName("dot");
-showSlides(slideIndex);
+showSlides(index);
 
 function currentSlide(n) {
-    slideIndex = n;
+    index = n;
 
     for (let i = 0; i < slides.length; i++) {
         $(slides[i]).css('display',"none");
@@ -14,8 +14,8 @@ function currentSlide(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    $(slides[slideIndex-1]).toggle();
-    dots[slideIndex-1].className += " active";
+    $(slides[index-1]).toggle();
+    dots[index-1].className += " active";
 }
 
 function showSlides(n) {
@@ -23,7 +23,7 @@ function showSlides(n) {
     // var dots = document.getElementsByClassName("dot");
 
     if (n < 1) {
-        slideIndex = slides.length;
+        index = slides.length;
     }
 
     for (let i = 0; i < slides.length; i++) {
@@ -34,17 +34,17 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
+    if (index > slides.length) {
+        index = 1;
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    slideIndex++;
-    console.log(slideIndex);
+    slides[index-1].style.display = "block";
+    dots[index-1].className += " active";
+    index++;
+    console.log(index);
     dotTimer();
 
 }
 
 function dotTimer() {
-    setTimeout(showSlides, 15000); // Change image every 3 seconds
+    setTimeout(showSlides, 1000); // Change image every 3 seconds
 }
