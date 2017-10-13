@@ -1,47 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="../dist/css/meta-ui.css">
-        <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-        <title>Document</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../dist/css/meta-ui.css">
+    <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
+    <title>Document</title>
+    <script src="../src/js/meta-ui.js"></script>
+</head>
 <body>
-<div class="navbar-1">
+    <div class="navbar-1">
         <div class="container">
             <div class="navbar--list1">
-                <a class="navbar--dif" href="#home">Home&emsp; </a>
-                <a class="navbar--dif" href="#about">About&emsp; </a>
-                <a class="navbar--dif" href="#programs">Programs&emsp; </a>
-                <a class="navbar--dif" href="#tracks">Tracks&emsp; </a>
-                <a class="navbar--dif" href="#process">Process&emsp; </a>
-                <a class="navbar--dif" href="#team">Team&emsp; </a>
-                <a class="navbar--dif" href="#events">Events&emsp; </a>
-                <a class="navbar--special" href="#projects">Projects&emsp; </a>
-                <a class="navbar--dif" href="#contacts">Contacts&emsp;</a>
+                <img class="nav-icon-style1" src="metalab-icon.png" alt="metalab-icon">
+                <a class="nav-top"><i class="fa fa-bars nav-top--bars" aria-hidden="true"></i></a>
+
             </div>
         </div>
     </div>
-<br>
-<div class="navbar-2">
+    <br>
+    <div class="navbar-3">
         <div class="container">
             <div class="navbar-icon">
                 <img class="nav-icon-style" src="metalab-icon.png" alt="metalab-icon">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-            <ul class="navbar--list2">
-                <img  class="navbar--filler" src="fillerpic.jpg" alt="filler pic">
-            </ul>
-        </div>
-    </div>
-<br>
-<div class="navbar-3">
-        <div class="container">
-            <div class="navbar-icon">
-                <img class="nav-icon-style" src="metalab-icon.png" alt="metalab-icon">
-                <i class="fa fa-times" aria-hidden="true"></i>
+                <a class="navbar-select closebtn" id="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
             <ul class="navbar--list3">
                 <li><a class="navbar--dif" href="#home">Home</a></li>
@@ -56,17 +41,32 @@
             </ul>
         </div>
     </div>
-<p>Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-    roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
-    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
-    Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-    Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-    treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
-    ipsum dolor sit amet..", comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the
-    1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-    Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-<script src="../dist/js/meta-ui.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <br>
+    <div class="navbar-2">
+        <div class="container">
+            <div class="navbar--icon">
+                <img class="nav-icon-style" src="metalab-icon.png" alt="metalab-icon">
+                <span class="navbar-select" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <ul class="navbar--list2">
+                <img class="navbar--filler" src="fillerpic.jpg" alt="filler pic">
+            </ul>
+        </div>
+    </div>
+    <div class="fade"></div>
+    <p>Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+        McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+        Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+        literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+        Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+        treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
+        ipsum dolor sit amet..", comes from a line in section 1.10.32 The standard chunk of Lorem Ipsum used since the
+        1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+        Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the
+        1914 translation by H. Rackham.</p>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
+
 </html>

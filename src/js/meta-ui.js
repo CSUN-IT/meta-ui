@@ -23,5 +23,4 @@ function includeOnce(file, libraryName = '') {
     }
 }
 
-
 includeOnce('../src/js/navbar.js');

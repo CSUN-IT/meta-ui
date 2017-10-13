@@ -4445,8 +4445,12 @@ code {
 }
 
 .navbar-3 {
-  background-color: #FAFAFA;
   height: 29em;
+  position: inherit;
+  z-index: 1;
+  background-color: #FAFAFA;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar--filler {
@@ -4490,5 +4494,21 @@ code {
   top: 240px;
   left: 1000px;
   height: 35px;
+}
+
+.navbar--icon1 {
+  position: inherit;
+}
+
+.nav-icon-style1 {
+  height: 35px;
+  width: 35px;
+}
+
+.nav-top--bars {
+  position: relative;
+  float: right;
+  right: 0;
+  top: 0;
 }
 
