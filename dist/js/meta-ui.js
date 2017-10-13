@@ -102,8 +102,8 @@ function includeOnce(file) {
 
 /* include any js files here */
 // includeOnce("https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js",'jquery');
-includeOnce('../src/js/techCarousel.js');
-includeOnce('../src/js/carousel.js');
+// includeOnce('../src/js/techCarousel.js');
+// includeOnce('../src/js/carousel.js');
 includeOnce('../src/js/multiCarousel.js');
 
 /***/ }),
