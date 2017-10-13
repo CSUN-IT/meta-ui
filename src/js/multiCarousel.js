@@ -1,3 +1,5 @@
+// The parameter in multiSlides() is the amount of images displayed at once
+// multiTimer() also has multiSlides() and its parameter must also be changed
 $(document).ready(function() {
     multiSlides(3);
 });
@@ -51,10 +53,12 @@ function multiSlides(nShown) {
         // Never go over number of slides
         multiSlides.slideIndex = (multiSlides.slideIndex + 1) % slides.length;
     }
-    timer();
+    multiTimer();
 }
 
-function timer() {
+function multiTimer() {
+    // Ensure that the multiSlides() parameter corresponds to the parameter
+    // in the document.ready function
     let carousel = function () {
         multiSlides(3);
     };
