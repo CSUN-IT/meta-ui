@@ -4445,9 +4445,8 @@ code {
 }
 
 .navbar-3 {
-  height: 29em;
+  height: 33em;
   position: inherit;
-  z-index: 1;
   background-color: #FAFAFA;
   -webkit-transition: 0.5s;
   transition: 0.5s;
