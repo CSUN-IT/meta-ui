@@ -1,21 +1,23 @@
+
 // CONFIGURATIOINS
-// Example: variables
+
+@import "variables";
 
 // RESETS
 @import "normalize";
 
-
 // Dependencies
-// @import "vendor/font-awesome/font-awesome";
-
+@import "node_modules/font-awesome/scss/font-awesome";
 
 // CORE
 @import "type";
 @import "helpers";
 @import "grid";
+@import "base";
 
 // COMPONENTS
 //Example: footer
 @import "footer";
 @import "banner";
+
 
