@@ -75,29 +75,23 @@
 }
 
 .fa-bars {
-  position: inherit;
+  position: static;
   display: inline-block;
-  top: 240px;
-  //left: 1000px;
+  left: 0px;
   height: 35px;
+  float: right;
+  margin: 0px;
+}
 
-}
-.navbar--icon1{
-  position: inherit;
-}
 .nav-icon-style1{
   height: 35px;
   width: 35px;
-  padding-left: 0px;
+  float: left;
+  margin: 0px;
 }
-.nav-top--bars{
-  position: inherit;
-  float: right;
-  margin-right: 30px;
-  top: 0;
-}
+
 .container--nav{
   display: inline-block;
-  //text-align:right;
+  text-align:right;
   margin-right: 1000px;
 }

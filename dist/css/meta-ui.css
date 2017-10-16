@@ -4490,31 +4490,24 @@ code {
 }
 
 .fa-bars {
-  position: inherit;
+  position: static;
   display: inline-block;
-  top: 240px;
+  left: 0px;
   height: 35px;
-}
-
-.navbar--icon1 {
-  position: inherit;
+  float: right;
+  margin: 0px;
 }
 
 .nav-icon-style1 {
   height: 35px;
   width: 35px;
-  padding-left: 0px;
-}
-
-.nav-top--bars {
-  position: inherit;
-  float: right;
-  margin-right: 30px;
-  top: 0;
+  float: left;
+  margin: 0px;
 }
 
 .container--nav {
   display: inline-block;
+  text-align: right;
   margin-right: 1000px;
 }
 
