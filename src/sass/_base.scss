@@ -1,4 +1,7 @@
-
+@import "variables";
 .main--fullpage {
   min-height: calc(100vh - 80px);
+}
+.fa{
+  color: $red;
 }
