@@ -4563,57 +4563,73 @@ code {
 
 /* Demo Styles */
 
-.banner,
-.banner__img,
-.banner__overlay {
+.banner {
   position: relative;
-  width: 100vw;
-  height: 735.88px;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-repeat: no-repeat;
-  background-color: #0E1721;
+  background: #0E1721 no-repeat;
   background-size: cover;
   z-index: 1;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .banner__img {
-  background-image: url("https://goo.gl/id6eaN");
+  width: 100%;
+  background: no-repeat;
+  background-size: cover;
   z-index: 5;
 }
 
 .banner__overlay {
-  background-color: rgba(30, 41, 22, 0.6);
+  height: 735px;
+  background-color: rgba(30, 41, 22, 0.4);
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 10;
 }
 
 .banner__header {
-  text-align: center;
-  width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+  height: 170px;
+  width: auto;
+  text-align: right;
+  padding-top: 22%;
+  padding-right: 12%;
+  z-index: 11;
 }
 
-.panel__img {
-  width: 768px;
-  height: 672px;
-  background-image: url("https://goo.gl/id6eaN");
+.banner__content--box {
+  width: 90%;
+  height: auto;
+  z-index: 12;
+  margin-left: 5%;
+  margin-right: 5%;
+  clear: both;
+}
+
+.banner__content {
   background-size: cover;
-  position: absolute;
-  bottom: -95px;
-  right: 95px;
-  z-index: 2;
+  height: 672px;
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 
 .banner__title {
-  display: inline-block;
   text-align: right;
-  margin-left: 55px;
-  margin-top: auto;
-  margin-bottom: auto;
-  z-index: 2;
+  padding-top: 50%;
+  padding-right: 10%;
+  z-index: 13;
+}
+
+.panel__img {
+  width: 736px;
+  height: 672px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+  z-index: 13;
+  margin-top: 95px;
 }
 
