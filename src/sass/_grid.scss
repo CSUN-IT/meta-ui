@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -9,18 +10,11 @@ html {
 div {
   display: block;
 }
+
 /* Standard 12 column grid */
-
-/* Colors used for testing */
-.blue { background-color: blue;  height: 100px;  }
-
-.red { background-color: red;  height: 100px;  }
-
-.green { background-color: green;  height: 100px;  }
-
-.yellow { background-color: yellow;  height: 100px;  }
-
-.cyan {  background-color: cyan;  height: 100px;  }
+.section{
+  padding: 20px 0px;
+}
 
 .container {
   margin: 0 auto;
@@ -66,12 +60,14 @@ div {
   padding-left: 0.9375rem;
 }
 
+//xs
 @media (min-width: 376px) {
   .container {
     max-width: 331px;
   }
 }
 
+//small
 @media (min-width: 544px) {
   .container {
     max-width: 498px;
@@ -84,12 +80,14 @@ div {
   }
 }
 
+//large
 @media (min-width: 992px) {
   .container {
     max-width: 940px;
   }
 }
 
+//xl
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -652,21 +650,30 @@ pre {
   display: block;
   padding: 25px;
   overflow-x: scroll;
-  background-color: #f7f7f7;
-  border: 1px solid #ccc;
+  background-color: $grey-light;
+  border: 1px solid $grey;
   border-radius: 3px;
-  text-align: left;
-  width: 100%;
-  line-height: 10px;
+
+}
+
+pre code{
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 code {
-  color: red;
-  text-align: left;
+  color: $red;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 80%;
+  font-weight: 100;
+  padding: .2rem .4rem;
+  border-radius: 3px;
+  background-color: rgba(208, 13, 45, 0.1);
 }
 
 .white--box {
-  background-color: white;
+  background-color: $white;
   height: 3px;
 }
 

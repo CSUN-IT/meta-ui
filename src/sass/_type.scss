@@ -1,0 +1,132 @@
+// Google Font Import
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// BASE
+html, body{
+  font-size: 18px;
+  color: $grey-dark;
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6{
+  font-family: $font;
+  color: $blue-dark;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.83em;
+}
+
+h1 { font-size: 70px; }
+h2 { font-size: 60px; }
+h3 { font-size: 50px; }
+h4 { font-size: 40px; }
+h5 { font-size: 30px; }
+h6 { font-size: 20px; }
+
+// Header Tag Classes
+.h1 { font-size: 70px; }
+.h2 { font-size: 60px; }
+.h3 { font-size: 50px; }
+.h4 { font-size: 40px; }
+.h5 { font-size: 30px; }
+.h6 { font-size: 20px; }
+
+// Paragraph, Order List, Unorder List, and Anchor Tags
+p, ol, ul, a {
+  font-family: $font-base;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: $grey-dark;
+}
+
+p a, ol a, ul a{
+  color: $red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+// Anchor Tag
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+// LISTS
+ul { list-style-type: square; }
+ul, ol { line-height: 1.6; }
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+// Title Bar
+.title__bar {
+  border: none;
+  height: 10px;
+  background-color:$red;
+  width: 92px;
+}
+
+.title__bar--thin {
+  border: none;
+  height: 5px;
+  background-color: $red;
+  width: 92px;
+}
+
+// Type Class Sizes
+.giga {
+  font-family: $font;
+  color: $grey-clear;
+  font-size: 700px;
+  line-height: 902px;
+  letter-spacing: 0em;
+  margin:0px;
+  padding: 0px;
+}
+
+.kilo {
+  font-family: $font;
+  color: $black;
+  font-size: 170px;
+  line-height: 219px;
+  letter-spacing: 0em;
+  margin: 0px;
+  padding: 0px;
+}
+
+// Type Modifiers
+.type--center { text-align: center; }
+.type--emphasis { font-size: 18px; line-height: 1.6; }
+.type--strike { text-decoration: line-through; }
+.type--left { text-align: left; }
+.type--center { text-align: center; }
+.type--right { text-align: right; }
+.type--thin { font-weight: 100; }
+.type--bold { font-weight: bold; }
+.type--italic { font-style: italic; }
+.type--marginless { margin: 0; }
+.type--uppercase { text-transform: uppercase; letter-spacing: 2px; }
+.type--link { text-decoration: none; color: $red; }
+
+// Type Size
+.small{ font-size: 0.7rem; }
+
+//Type Weight
+.type--light{ font-family: $font-banner; }
+.type--plus{ font-family: $font-base; font-weight: 400;}
+
