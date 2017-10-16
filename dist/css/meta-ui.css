@@ -4565,3 +4565,45 @@ code {
   margin: 7px;
 }
 
+.sidebar {
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid #B1B3B2;
+}
+
+.sidebar__item {
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+}
+
+.sidebar__item:hover {
+  border-left: 1px solid #D00D20;
+}
+
+.sidebar__item.active {
+  font-weight: bold;
+  color: #D00D20;
+  border-color: #D00D20;
+}
+
+.sidebar__item.active:hover {
+  border-left: 1px solid #B1B3B2;
+}
+
+.sidebar__item.\--fill .nav__link {
+  background-color: #0E1821;
+  border-radius: 3px;
+}
+
+.sidebar__link {
+  display: block;
+  padding: 3px 10px;
+  margin-left: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar__link:hover {
+  color: #D00D20;
+}
+
