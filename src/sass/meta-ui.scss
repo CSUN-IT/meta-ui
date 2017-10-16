@@ -7,7 +7,7 @@
 @import "normalize";
 
 // Dependencies
-@import "node_modules/font-awesome/scss/font-awesome";
+//@import "node_modules/font-awesome/scss/font-awesome";
 
 // CORE
 @import "type";
@@ -18,5 +18,6 @@
 // COMPONENTS
 //Example: footer
 @import "footer";
+@import "panels";
 
 

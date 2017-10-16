@@ -1,12 +1,17 @@
 /* Resets box sizing across all elements */
 html {
   box-sizing: border-box;
+  margin:0px;
+  padding:0px;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+body{
+  margin:0px;
+  padding:0px;
+}
 div {
   display: block;
 }
@@ -33,9 +38,6 @@ div {
   display: inline-grid;
 }
 
-.subcontainer {
-  display: subgrid;
-}
 
 .row {
   margin-left: -0.9375rem;
@@ -172,7 +174,7 @@ div {
   }
 
   .col-xs-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xs-offset-6 {
@@ -274,7 +276,7 @@ div {
   }
 
   .col-sm-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-sm-offset-6 {
@@ -378,7 +380,7 @@ div {
   }
 
   .col-lg-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-lg-offset-6 {
@@ -485,7 +487,7 @@ div {
   }
 
   .col-lg-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-lg-offset-6 {
@@ -592,7 +594,7 @@ div {
   }
 
   .col-xl-offset-5 {
-    margin-left: 41.66;
+    margin-left: 41.66%;
   }
 
   .col-xl-offset-6 {
