@@ -3872,10 +3872,6 @@ div {
   display: inline-grid;
 }
 
-.subcontainer {
-  display: subgrid;
-}
-
 .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -4667,6 +4663,8 @@ code {
   font-size: 1em;
   color: #3C3C3C;
   margin-top: -30px;
+}
+
 .main--fullpage {
   min-height: calc(100vh - 80px);
 }
