@@ -1,4 +1,6 @@
-// CONFIGURATIONS
+
+// CONFIGURATIOINS
+
 @import "variables";
 
 // RESETS
@@ -11,9 +13,11 @@
 @import "type";
 @import "helpers";
 @import "grid";
+@import "base";
 
 // COMPONENTS
 //Example: footer
 @import "footer";
 @import "panels";
+
 
