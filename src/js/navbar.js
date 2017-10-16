@@ -39,6 +39,6 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("#avbar-3rd").style.width = "0";
+    document.getElementById("navbar-3rd").style.width = "0";
     document.getElementById("navbar-2nd").style.marginRight = "0";
 }

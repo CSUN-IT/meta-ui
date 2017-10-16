@@ -4416,9 +4416,13 @@ code {
   min-height: calc(100vh - 85px);
 }
 
+.icon--padding {
+  padding: 6px;
+}
+
 .navbar-1 {
   background-color: #FAFAFA;
-  position: relative;
+  position: inherit;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
@@ -4430,8 +4434,8 @@ code {
 }
 
 .navbar--list1 {
-  line-height: 0em;
   display: inline-block;
+  line-height: 0em;
   padding: 12px;
 }
 
@@ -4442,14 +4446,6 @@ code {
 
 .navbar--special {
   font-size: x-large;
-}
-
-.navbar-3 {
-  height: 33em;
-  position: inherit;
-  background-color: #FAFAFA;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .navbar--filler {
@@ -4463,11 +4459,16 @@ code {
 
 .navbar--list3 {
   margin: auto;
+  position: inherit;
   text-align: center;
   font-family: FFDINWebProBold;
   font-weight: bold;
   font-size: 50px;
   line-height: 50px;
+  height: 10em;
+  background-color: #FAFAFA;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar--dif a {
@@ -4489,9 +4490,9 @@ code {
 }
 
 .fa-bars {
-  position: relative;
+  position: inherit;
+  display: inline-block;
   top: 240px;
-  left: 1000px;
   height: 35px;
 }
 
@@ -4502,12 +4503,18 @@ code {
 .nav-icon-style1 {
   height: 35px;
   width: 35px;
+  padding-left: 0px;
 }
 
 .nav-top--bars {
-  position: relative;
+  position: inherit;
   float: right;
-  right: 0;
+  margin-right: 30px;
   top: 0;
+}
+
+.container--nav {
+  display: inline-block;
+  margin-right: 1000px;
 }
 

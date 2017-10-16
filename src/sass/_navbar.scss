@@ -2,10 +2,11 @@
 
 .navbar-1 {
   background-color: $grey-light;
-  position: relative;
+  position: inherit;
   //top: -50px;
   width: 100%;
   transition: top 0.3s;
+
 }
 .navbar-1 a:hover {
   background-color: #ddd;
@@ -13,8 +14,9 @@
 }
 
 .navbar--list1 {
-  line-height: 0em;
   display: inline-block;
+  line-height: 0em;
+  //display: inherit;
   padding: 12px;
 
 
@@ -27,12 +29,6 @@
 
 .navbar--special{
   font-size: x-large;
-}
-.navbar-3 {
-  height: 33em;
-  position: inherit;
-  background-color: $grey-light;
-  transition: 0.5s;
 }
 
 .navbar--filler{
@@ -47,11 +43,15 @@
 
 .navbar--list3 {
   margin: auto;
+  position: inherit;
   text-align: center;
   font-family: $font;
   font-weight: bold;
   font-size: 50px;
   line-height: 50px;
+  height: 10em;
+  background-color: $grey-light;
+  transition: 0.5s;
 
 }
 
@@ -75,9 +75,10 @@
 }
 
 .fa-bars {
-  position: relative;
+  position: inherit;
+  display: inline-block;
   top: 240px;
-  left: 1000px;
+  //left: 1000px;
   height: 35px;
 
 }
@@ -87,10 +88,16 @@
 .nav-icon-style1{
   height: 35px;
   width: 35px;
+  padding-left: 0px;
 }
 .nav-top--bars{
-  position: relative;
+  position: inherit;
   float: right;
-  right: 0;
+  margin-right: 30px;
   top: 0;
+}
+.container--nav{
+  display: inline-block;
+  //text-align:right;
+  margin-right: 1000px;
 }
