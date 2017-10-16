@@ -4584,6 +4584,7 @@ code {
 .navbar-1 a:hover {
   background-color: #ddd;
   color: black;
+  decoration: none;
 }
 
 .navbar--list1 {
@@ -4662,5 +4663,13 @@ code {
   display: inline-block;
   text-align: right;
   margin-right: 1000px;
+}
+
+.navbar--list3 a {
+  text-decoration: none;
+}
+
+.navbar--list3 li {
+  list-style: none;
 }
 

@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(2);
+(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\wamp64\\www\\meta-ui\\src\\sass\\meta-ui.scss\""); }());
 
 
 /***/ }),
@@ -102,12 +102,6 @@ function includeOnce(file) {
 }
 
 includeOnce('../src/js/navbar.js');
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
