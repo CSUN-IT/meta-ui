@@ -3758,6 +3758,10 @@ ol {
   margin-left: 10px;
 }
 
+.margin-top {
+  margin-top: 10px;
+}
+
 .type--white {
   color: #FFFFFF;
 }
@@ -3913,7 +3917,7 @@ div {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 741px) {
   .container {
     max-width: 720px;
   }
@@ -4137,7 +4141,7 @@ div {
 
 /* Medium */
 
-@media (min-width: 768px) {
+@media (min-width: 741px) {
   /*body { background-color: green; }*/
 
   .col-md-1 {
@@ -4188,51 +4192,51 @@ div {
     width: 100%;
   }
 
-  .col-lg-offset-1 {
+  .col-md-offset-1 {
     margin-left: 8.33%;
   }
 
-  .col-lg-offset-2 {
+  .col-md-offset-2 {
     margin-left: 16.66%;
   }
 
-  .col-lg-offset-3 {
+  .col-md-offset-3 {
     margin-left: 24.99%;
   }
 
-  .col-lg-offset-4 {
+  .col-md-offset-4 {
     margin-left: 33.33%;
   }
 
-  .col-lg-offset-5 {
+  .col-md-offset-5 {
     margin-left: 41.66%;
   }
 
-  .col-lg-offset-6 {
+  .col-md-offset-6 {
     margin-left: 49.99%;
   }
 
-  .col-lg-offset-7 {
+  .col-md-offset-7 {
     margin-left: 58.33%;
   }
 
-  .col-lg-offset-8 {
+  .col-md-offset-8 {
     margin-left: 66.66%;
   }
 
-  .col-lg-offset-9 {
+  .col-md-offset-9 {
     margin-left: 74.99%;
   }
 
-  .col-lg-offset-10 {
+  .col-md-offset-10 {
     margin-left: 83.33%;
   }
 
-  .col-lg-offset-11 {
+  .col-md-offset-11 {
     margin-left: 91.66%;
   }
 
-  .col-lg-offset-12 {
+  .col-md-offset-12 {
     margin-left: 100%;
   }
 }
@@ -4525,7 +4529,7 @@ code {
   background-color: #0E1821;
 }
 
-@media (min-width: 350px) and (max-width: 740px) {
+@media (min-width: 350px) and (max-width: 741px) {
   .metalab-footer {
     min-height: 150px;
   }
@@ -4539,7 +4543,7 @@ code {
   text-align: left;
 }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 741px) {
   .metalab-branding {
     text-align: center;
     margin: 15px 0 20px 5px;
@@ -4561,75 +4565,94 @@ code {
   margin: 7px;
 }
 
-/* Demo Styles */
-
-.banner {
+.banner__img {
   position: relative;
-  width: 100%;
-  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__flex--cover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #0E1721 no-repeat;
-  background-size: cover;
-  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 500px;
 }
 
-.banner__img {
-  width: 100%;
-  background: no-repeat;
-  background-size: cover;
-  z-index: 5;
+.banner__flex--title {
+  text-align: center;
+  color: white;
+  font-family: FFDINWebProLight;
+  margin: 0px;
 }
 
-.banner__overlay {
-  height: 735px;
-  background-color: rgba(30, 41, 22, 0.4);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 10;
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__flex--title {
+    font-size: 50px;
+  }
 }
 
-.banner__header {
-  height: 170px;
-  width: auto;
-  text-align: right;
-  padding-top: 22%;
-  padding-right: 12%;
-  z-index: 11;
-}
-
-.banner__content--box {
+.banner__img--box {
   width: 90%;
-  height: auto;
-  z-index: 12;
-  margin-left: 5%;
-  margin-right: 5%;
-  clear: both;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__img--box {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+.banner__color {
+  background-color: #0E1821;
+  min-height: 500px;
+  padding-top: 5%;
 }
 
 .banner__content {
-  background-size: cover;
-  height: 672px;
-  width: 50%;
-  display: inline-block;
-  float: left;
+  padding: 140px 0;
 }
 
-.banner__title {
-  text-align: right;
-  padding-top: 50%;
-  padding-right: 10%;
-  z-index: 13;
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__content {
+    padding: 140px 0 0 0;
+  }
 }
 
-.panel__img {
-  width: 736px;
-  height: 672px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: gray;
-  z-index: 13;
-  margin-top: 95px;
+.banner__color--title {
+  color: white;
+}
+
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__color--title {
+    text-align: center;
+  }
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 24, 33, 0.4);
+  display: block;
+  /*z-index: 0;*/
+}
+
+.pre-overlay {
+  position: relative;
+  z-index: 1;
 }
 

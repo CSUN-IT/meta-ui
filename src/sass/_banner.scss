@@ -1,72 +1,78 @@
-
-/* Demo Styles */
-.banner {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  background: #0E1721 no-repeat;
-  background-size:cover;
-  z-index: 1;
-}
-
 .banner__img{
-  width:100%;
-  background: no-repeat;
-  background-size: cover;
-  z-index:5;
-}
-.banner__overlay{
-  height:735px;
-  background-color:rgba(30, 41, 22, 0.40);
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index:10;
 }
 
-.banner__header{
-  height:170px;
-  width:auto;
-  text-align: right;
-  padding-top: 22%;
-  padding-right: 12%;
-  z-index: 11;
+.banner__flex--cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
 }
-.banner__content--box{
-  width:90%;
-  height:auto;
-  //background-color: lightgray;
-  z-index: 12;
-  margin-left:5%;
-  margin-right:5%;
-  clear: both;
+
+.banner__flex--title{
+  text-align: center;
+  color: white;
+  font-family: $font-banner;
+  margin: 0px;
+
+  @media (min-width: 350px) and (max-width: 741px ) {
+    font-size: 50px;
+  }
+}
+
+.banner__img--box{
+  width: 90%;
+  min-height: 500px;
+  // position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 350px) and (max-width: 741px ) {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+.banner__color{
+  background-color: $blue-dark;
+  min-height: 500px;
+  padding-top: 5%;
 }
 
 .banner__content{
-  //background-color: lightcyan;
-  background-size: cover;
+  padding: 140px 0;
 
-  height: 672px;
-  width:50%;
-  display: inline-block;
-  float: left;
+  @media (min-width: 350px) and (max-width: 741px ) {
+    padding: 140px 0 0 0;
 
+  }
 }
 
-.banner__title{
-  text-align: right;
-  padding-top: 50%;
-  padding-right: 10%;;
-  //clear: both;
-  z-index: 13;
-}
-.panel__img{
-  width:736px;
-  height: 672px;
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-color: gray;
-  z-index:13;
-  margin-top: 95px;
+.banner__color--title{
+  color: white;
+
+  @media (min-width: 350px) and (max-width: 741px ) {
+    text-align: center;
+
+  }
 }
 
+.black-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 24, 33, 0.4);
+  display: block;
+  /*z-index: 0;*/
+}
+
+.pre-overlay{
+  position: relative;
+  z-index: 1;
+}
