@@ -15,9 +15,10 @@
   }
 
   &.active {
-    font-weight: bold;
     color: $red;
     border-color: $red;
+
+
 
     &:hover {
       border-left: 1px solid $grey;

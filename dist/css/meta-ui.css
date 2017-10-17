@@ -3531,7 +3531,7 @@ h6 {
   color: #0E1821;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.83em;
+  margin-bottom: 0.53em;
 }
 
 h1 {
@@ -3644,6 +3644,7 @@ ol {
   height: 5px;
   background-color: #D00D20;
   width: 92px;
+  margin: 0px 0px 20px 0px;
 }
 
 .giga {
@@ -4581,7 +4582,6 @@ code {
 }
 
 .sidebar__item.active {
-  font-weight: bold;
   color: #D00D20;
   border-color: #D00D20;
 }
