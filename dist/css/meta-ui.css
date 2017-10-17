@@ -3531,7 +3531,7 @@ h6 {
   color: #0E1821;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.83em;
+  margin-bottom: 0.53em;
 }
 
 h1 {
@@ -3644,6 +3644,7 @@ ol {
   height: 5px;
   background-color: #D00D20;
   width: 92px;
+  margin: 0px 0px 20px 0px;
 }
 
 .giga {
@@ -4563,6 +4564,47 @@ code {
 
 .img__footer--height {
   margin: 7px;
+}
+
+.sidebar {
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid #B1B3B2;
+}
+
+.sidebar__item {
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+}
+
+.sidebar__item:hover {
+  border-left: 1px solid #D00D20;
+}
+
+.sidebar__item.active {
+  color: #D00D20;
+  border-color: #D00D20;
+}
+
+.sidebar__item.active:hover {
+  border-left: 1px solid #B1B3B2;
+}
+
+.sidebar__item.\--fill .nav__link {
+  background-color: #0E1821;
+  border-radius: 3px;
+}
+
+.sidebar__link {
+  display: block;
+  padding: 3px 10px;
+  margin-left: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar__link:hover {
+  color: #D00D20;
 }
 
 .banner__img {
