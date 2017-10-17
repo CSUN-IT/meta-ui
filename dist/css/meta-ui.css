@@ -4566,7 +4566,6 @@ code {
   margin: 7px;
 }
 
-<<<<<<< HEAD
 .sidebar {
   padding: 0;
   list-style: none;
@@ -4606,7 +4605,8 @@ code {
 
 .sidebar__link:hover {
   color: #D00D20;
-=======
+}
+
 .banner__img {
   position: relative;
   background-size: cover;
@@ -4696,6 +4696,5 @@ code {
 .pre-overlay {
   position: relative;
   z-index: 1;
->>>>>>> dev
 }
 
