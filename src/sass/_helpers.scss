@@ -37,3 +37,22 @@
   margin: auto;
   display: block;
 }
+
+// Box
+.box {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+.box__no-float {
+  height: 50px;
+  width: 50px;
+}
+
+.background {
+  height: 200px;
+  width: 35%;
+  float: left;
+  margin-bottom: 20px;
+}
