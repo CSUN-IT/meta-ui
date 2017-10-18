@@ -4601,6 +4601,11 @@ code {
   padding: 12px;
 }
 
+.navbar-1--documentation {
+  display: inherit;
+  padding-top: 65px;
+}
+
 .navbar--dif {
   color: black;
   font-size: x-large;
@@ -4640,31 +4645,28 @@ code {
 .nav-icon-style {
   position: relative;
   top: 250px;
-  left: 50px;
   height: 35px;
+  padding-left: 27.39px;
 }
 
-.fa-times {
+.navbar-select {
+  margin-right: 0px;
   position: relative;
   top: 240px;
-  left: 1000px;
+  left: 1030px;
   height: 35px;
 }
 
 .fa-bars {
-  position: static;
-  display: inline-block;
-  left: 0px;
+  position: relative;
   height: 35px;
   float: right;
-  margin: 0px;
 }
 
 .nav-icon-style1 {
+  position: relative;
   height: 35px;
   width: 35px;
-  float: left;
-  margin: 0px;
 }
 
 .container--nav {
@@ -4679,5 +4681,31 @@ code {
 
 .navbar--list3 li {
   list-style: none;
+}
+
+.nav-icon-style2 {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-bottom: -300px;
+}
+
+.navbar-icon {
+  position: relative;
+}
+
+.navbar-2 {
+  position: relative;
+}
+
+.navbar-select2 {
+  position: inherit;
+  margin: auto;
+  margin-bottom: -300px;
+}
+
+.navbar--icon {
+  position: relative;
+  display: inline-block;
 }
 
