@@ -4684,10 +4684,12 @@ code {
 }
 
 .nav-icon-style2 {
-  position: relative;
+  position: absolute;
   top: 250px;
   height: 35px;
-  padding-left: 27.39px;
+  padding-left: 43px;
+  margin-left: 0px;
+  margin: auto;
 }
 
 .navbar-icon {
@@ -4699,10 +4701,10 @@ code {
 }
 
 .navbar-select2 {
-  margin-right: 0px;
-  position: relative;
+  margin-left: 0px;
+  position: absolute;
   top: 240px;
-  left: 1030px;
+  left: 1113px;
   height: 35px;
 }
 
