@@ -2,7 +2,6 @@
 
 @import "base";
 // CONFIGURATIOINS
-
 @import "variables";
 
 // RESETS
@@ -20,8 +19,9 @@
 
 
 // COMPONENTS
-//Example: footer
 @import "footer";
+@import "sidebar";
+@import "banner";
 
 @import "icon";
 
