@@ -3849,6 +3849,14 @@ ol {
   margin-bottom: 20px;
 }
 
+.highlight {
+  background-color: black;
+}
+
+.highlight-off {
+  background-color: white;
+}
+
 /* Resets box sizing across all elements */
 
 html {
