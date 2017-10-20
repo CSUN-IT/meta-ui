@@ -4583,7 +4583,7 @@ code {
 
 .navbar-1 {
   background-color: #FAFAFA;
-  position: inherit;
+  position: absolute;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
@@ -4710,5 +4710,9 @@ code {
 
 .navbar--icon {
   position: relative;
+}
+
+pre {
+  color: red;
 }
 

@@ -2,7 +2,7 @@
 
 .navbar-1 {
   background-color: $grey-light;
-  position: inherit;
+  position: absolute;
   //top: -50px;
   width: 100%;
   transition: top 0.3s;
@@ -131,6 +131,6 @@
 .navbar--icon {
   position: relative;
 }
-//pre{
-//  color: red;
-//}
+pre{
+  color: red;
+}
