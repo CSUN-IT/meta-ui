@@ -1,0 +1,44 @@
+// Sidebar
+
+.sidebar {
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid $grey;
+}
+
+.sidebar__item {
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+
+  &:hover {
+    border-left: 1px solid $red;
+  }
+
+  &.active {
+    color: $red;
+    border-color: $red;
+
+
+
+    &:hover {
+      border-left: 1px solid $grey;
+    }
+  }
+
+  &.--fill .nav__link {
+    background-color: $black;
+    border-radius: 3px;
+  }
+}
+
+.sidebar__link {
+  display: block;
+  padding: 3px 10px;
+  margin-left: 10px;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $red;
+  }
+}
