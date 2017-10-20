@@ -4616,7 +4616,7 @@ code {
 }
 
 .navbar--filler {
-  position: relative;
+  position: inherit;
   display: block;
   height: 29em;
   width: 70%;
@@ -4685,9 +4685,9 @@ code {
 
 .nav-icon-style2 {
   position: relative;
+  top: 250px;
   height: 35px;
-  width: 35px;
-  margin-bottom: -300px;
+  padding-left: 27.39px;
 }
 
 .navbar-icon {
@@ -4699,13 +4699,14 @@ code {
 }
 
 .navbar-select2 {
-  position: inherit;
-  margin: auto;
-  margin-bottom: -300px;
+  margin-right: 0px;
+  position: relative;
+  top: 240px;
+  left: 1030px;
+  height: 35px;
 }
 
 .navbar--icon {
   position: relative;
-  display: inline-block;
 }
 
