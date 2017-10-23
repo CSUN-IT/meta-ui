@@ -3751,7 +3751,7 @@ ol {
   clear: both !important;
 }
 
-.margin--less {
+.margin__less {
   margin: 0px;
 }
 
@@ -3783,10 +3783,6 @@ ol {
   color: #FFFFFF;
 }
 
-.type--red {
-  color: #D00D20;
-}
-
 .type--grey {
   color: #B1B3B2;
 }
@@ -3799,16 +3795,20 @@ ol {
   color: #55565a;
 }
 
-.type--blue {
-  color: #000063;
-}
-
 .type--yellow {
   color: #F8BC35;
 }
 
+.type--red {
+  color: #D00D20;
+}
+
 .type--teal {
   color: #76C6B3;
+}
+
+.type--blue {
+  color: #000063;
 }
 
 .type--blue-dark {
@@ -3819,10 +3819,6 @@ ol {
   background-color: #D6D6D6;
 }
 
-.bg--red {
-  background-color: #D00D20;
-}
-
 .bg--grey {
   background-color: #B1B3B2;
 }
@@ -3831,8 +3827,8 @@ ol {
   background-color: #3F3F3F;
 }
 
-.bg--blue {
-  background-color: #000063;
+.bg--red {
+  background-color: #D00D20;
 }
 
 .bg--yellow {
@@ -3841,6 +3837,10 @@ ol {
 
 .bg--teal {
   background-color: #76C6B3;
+}
+
+.bg--blue {
+  background-color: #000063;
 }
 
 .bg--blue-dark {
@@ -3857,24 +3857,8 @@ ol {
   width: 50px;
 }
 
-.box__no-float {
-  height: 50px;
-  width: 50px;
-}
-
-.background {
-  height: 200px;
-  width: 35%;
-  float: left;
-  margin-bottom: 20px;
-}
-
 .highlight {
   background-color: black;
-}
-
-.highlight-off {
-  background-color: white;
 }
 
 /* Resets box sizing across all elements */

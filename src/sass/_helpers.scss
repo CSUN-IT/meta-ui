@@ -8,7 +8,7 @@
 .clear-both{ clear: both !important; }
 
 // Margins
-.margin--less { margin: 0px; }
+.margin__less { margin: 0px; }
 .margin__less-top {margin-top: 0px; }
 .margin__less-right {margin-rigth: 0px; }
 .margin__less-bottom {margin-bottom: 0px; }
@@ -18,23 +18,23 @@
 
 // Type Colors
 .type--white { color: $white; }
-.type--red { color: $red; }
 .type--grey { color: $grey; }
 .type--grey-dark { color: $grey-dark; }
 .type--grey-darker { color: $grey-darker; }
-.type--blue { color: $blue; }
 .type--yellow { color: $yellow; }
+.type--red { color: $red; }
 .type--teal { color: $teal; }
+.type--blue { color: $blue; }
 .type--blue-dark { color: $blue-dark; }
 
 // Background Colors
 .bg--grey-clear { background-color: $grey-clear; }
-.bg--red { background-color: $red; }
 .bg--grey { background-color: $grey; }
 .bg--grey-dark { background-color: $grey-dark; }
-.bg--blue { background-color: $blue; }
+.bg--red { background-color: $red; }
 .bg--yellow { background-color: $yellow; }
 .bg--teal { background-color: $teal; }
+.bg--blue { background-color: $blue; }
 .bg--blue-dark { background-color: $blue-dark}
 
 // Image
@@ -49,23 +49,7 @@
   width: 50px;
 }
 
-.box__no-float {
-  height: 50px;
-  width: 50px;
-}
-
-.background {
-  height: 200px;
-  width: 35%;
-  float: left;
-  margin-bottom: 20px;
-}
-
 // Helps Documentation display white typography
 .highlight {
   background-color: black;
-}
-
-.highlight-off {
-  background-color: white;
 }
