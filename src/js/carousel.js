@@ -1,5 +1,5 @@
 var index = 1;
-var slides = document.getElementsByClassName("Slides");
+var slides = document.getElementsByClassName("carousel__slide");
 var dots = document.getElementsByClassName("dot");
 showSlides(index);
 
@@ -19,9 +19,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    // var slides = document.getElementsByClassName("Slides");
-    // var dots = document.getElementsByClassName("dot");
-
     if (n < 1) {
         index = slides.length;
     }
@@ -46,5 +43,5 @@ function showSlides(n) {
 }
 
 function dotTimer() {
-    setTimeout(showSlides, 1000); // Change image every 3 seconds
+    setTimeout(showSlides, 15000); // Change image every 15 seconds
 }

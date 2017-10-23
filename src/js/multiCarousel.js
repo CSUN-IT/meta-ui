@@ -11,12 +11,12 @@ function multiSlides(nShown) {
         multiSlides.slideIndex = 0;
     }
 
-    let slides = $('.carousel__multi--container>.multiSlides');
+    let slides = $('.carousel--multi>.carousel--multi__slide');
     var slideIndex = multiSlides.slideIndex + 1;
 
     // Do not display the other images
     for (let i = 0; i < slides.length; i++) {
-    $(slides[i]).css('display',"none");
+        $(slides[i]).css('display',"none");
     }
 
     // Clamps value to stay within number of slides

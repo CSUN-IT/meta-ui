@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Examples | META+LAB UI Kit</title>
+  <title>Buttons | META+LAB UI Kit</title>
   <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
@@ -14,7 +14,7 @@
       <div class="col-md-3">
         <p class="margin__less-top"><b>Introduction:</b></p>
         <ul class="sidebar">
-          <li class="sidebar__item active">
+          <li class="sidebar__item">
             <a href="../docs/examples.html" class="sidebar__link">Examples</a>
           </li>
         </ul>
@@ -23,7 +23,7 @@
           <li class="sidebar__item">
             <a href="../docs/banners.html" class="sidebar__link">Banners</a>
           </li>
-          <li class="sidebar__item">
+          <li class="sidebar__item active">
             <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
           </li>
           <li class="sidebar__item">
@@ -41,10 +41,29 @@
         </ul>
       </div>
       <div class="col-md-9">
-        <h1 class="h5">Examples</h1>
-        <ul class="list--unstyled">
-          <li><a href="full-page.html" target="_blank">Full Page View</a></li>
-        </ul>
+        <h1 class="h5">Buttons</h1>
+        <div class="col-md-4">
+          <p class="type--red" role="button"><a href="#" class="fa fa-long-arrow-left button__right type--link"></a>Button</p>
+        </div>
+        <div class="col-md-4">
+          <div role="button">
+            <a href="#" class="fa fa-long-arrow-up type--red button__top"></a>
+            <p class="type--red margin--less">Back To Top</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="type--red" role="button">Button<a href="#" class="fa fa-long-arrow-right type--red button__left type--link"></a></p>
+        </div>
+<pre>
+  <code>
+    &lt;p class="type--red" role="button"&gt;&lt;a href="#" class="fa fa-long-arrow-left button__right type--link"&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;div role="button"&gt;
+      &lt;a href="#" class="fa fa-long-arrow-up type--red button__top"&gt;&lt;/a&gt;
+      &lt;p class="type--red margin--less" role="button"&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class="type--red" role="button"&gt;&lt;a href="#" class="fa fa-long-arrow-right button__left type--link"&gt;&lt;/a&gt;&lt;/p&gt;
+  </code>
+</pre>
       </div>
     </div>
   </div>

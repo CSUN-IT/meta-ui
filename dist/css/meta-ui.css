@@ -3531,7 +3531,7 @@ h6 {
   color: #0E1821;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.83em;
+  margin-bottom: 0.53em;
 }
 
 h1 {
@@ -3644,6 +3644,7 @@ ol {
   height: 5px;
   background-color: #D00D20;
   width: 92px;
+  margin: 0px 0px 20px 0px;
 }
 
 .giga {
@@ -3754,8 +3755,28 @@ ol {
   margin: 0px;
 }
 
+.margin__less-top {
+  margin-top: 0px;
+}
+
+.margin__less-right {
+  margin-rigth: 0px;
+}
+
+.margin__less-bottom {
+  margin-bottom: 0px;
+}
+
+.margin__less-left {
+  margin-left: 0px;
+}
+
 .margin-left {
   margin-left: 10px;
+}
+
+.margin-top {
+  margin-top: 10px;
 }
 
 .type--white {
@@ -3838,18 +3859,18 @@ ol {
           box-sizing: border-box;
 }
 
-.Slides {
+.carousel__slide {
   display: none;
 }
 
-.Slides img {
+.carousel__slide img {
   width: auto;
   height: 500px;
   max-height: 500px;
   text-align: center;
 }
 
-.carousel--container {
+.carousel {
   max-width: 50%;
   position: relative;
   margin: auto;
@@ -3870,7 +3891,7 @@ ol {
   transition: background-color 0.6s ease;
 }
 
-.dot-center {
+.carousel__controls {
   text-align: center;
 }
 
@@ -3913,17 +3934,17 @@ ol {
 
 /* Automatic Carousel */
 
-.autoSlides {
+.carousel--auto__slide {
   display: none;
 }
 
-.autoSlides img {
+.carousel--auto__slide img {
   width: auto;
   height: 250px;
   max-height: 250px;
 }
 
-.carousel__auto--container {
+.carousel--auto {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -3932,18 +3953,18 @@ ol {
 
 /* Multiple Slides Automatic Carousel */
 
-.multiSlides {
+.carousel--multi__slide {
   display: none;
 }
 
-.multiSlides img {
+.carousel--multi__slide img {
   width: auto;
   height: 250px;
   max-height: 250px;
   float: left;
 }
 
-.carousel__multi--container {
+.carousel--multi {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -4688,7 +4709,7 @@ code {
   background-color: #0E1821;
 }
 
-@media (min-width: 350px) and (max-width: 740px) {
+@media (min-width: 350px) and (max-width: 741px) {
   .metalab-footer {
     min-height: 150px;
   }
@@ -4702,7 +4723,7 @@ code {
   text-align: left;
 }
 
-@media (min-width: 320px) and (max-width: 740px) {
+@media (min-width: 320px) and (max-width: 741px) {
   .metalab-branding {
     text-align: center;
     margin: 15px 0 20px 5px;
@@ -4722,5 +4743,155 @@ code {
 
 .img__footer--height {
   margin: 7px;
+}
+
+.sidebar {
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid #B1B3B2;
+}
+
+.sidebar__item {
+  margin-left: -1px;
+  border-left: 1px solid transparent;
+}
+
+.sidebar__item:hover {
+  border-left: 1px solid #D00D20;
+}
+
+.sidebar__item.active {
+  color: #D00D20;
+  border-color: #D00D20;
+}
+
+.sidebar__item.active:hover {
+  border-left: 1px solid #B1B3B2;
+}
+
+.sidebar__item.\--fill .nav__link {
+  background-color: #0E1821;
+  border-radius: 3px;
+}
+
+.sidebar__link {
+  display: block;
+  padding: 3px 10px;
+  margin-left: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar__link:hover {
+  color: #D00D20;
+}
+
+.banner__img {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__flex--cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 500px;
+}
+
+.banner__flex--title {
+  text-align: center;
+  color: white;
+  font-family: FFDINWebProLight;
+  margin: 0px;
+}
+
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__flex--title {
+    font-size: 50px;
+  }
+}
+
+.banner__img--box {
+  width: 90%;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__img--box {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+.banner__color {
+  background-color: #0E1821;
+  min-height: 500px;
+  padding-top: 5%;
+}
+
+.banner__content {
+  padding: 140px 0;
+}
+
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__content {
+    padding: 140px 0 0 0;
+  }
+}
+
+.banner__color--title {
+  color: white;
+}
+
+@media (min-width: 350px) and (max-width: 741px) {
+  .banner__color--title {
+    text-align: center;
+  }
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 24, 33, 0.4);
+  display: block;
+  /*z-index: 0;*/
+}
+
+.pre-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.button__right {
+  margin-right: 5px;
+}
+
+.button__left {
+  margin-left: 5px;
+}
+
+.button__top {
+  margin-right: 47px;
+  margin-left: 47px;
+}
+
+.back-to-top {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 

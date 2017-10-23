@@ -14,26 +14,21 @@
                 <h1 class="h5"><strong>Dot Carousel</strong></h1>
                 <p>The dots below the picture can be clicked to change the photo.</p>
 
-                <div class="carousel--container">
-
-                    <div class="Slides fade">
+                <div class="carousel">
+                    <div class="carousel__slide fade">
                         <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
                     </div>
-
-                    <div class="Slides fade">
+                    <div class="carousel__slide fade">
                         <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
-
                     </div>
-
-                    <div class="Slides fade">
+                    <div class="carousel__slide fade">
                         <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
                     </div>
-
                 </div>
                 <br>
 
                 <!-- Dots -->
-                <div class="dot-center">
+                <div class="carousel__controls">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
@@ -45,33 +40,30 @@
     <!-- Carousel HTML Code -->
     <div class="container">
         <div class="row">
-            <h1 class="h5">Dot Carousel HTML Code</h1>
-            <pre>
-&lt;div class="carousel--container"&gt;
-
-    &lt;div class="Slides fade"&gt;
-        &lt;img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png"&gt;
+<pre>
+<code>
+&lt;div class="carousel"&gt;
+    &lt;div class="carousel__slide fade"&gt;
+        &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div class="Slides fade"&gt;
-        &lt;img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"&gt;
-
+    &lt;div class="carousel__slide fade"&gt;
+        &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div class="Slides fade"&gt;
-        &lt;img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png"&gt;
+    &lt;div class="carousel__slide fade"&gt;
+        &lt;img src="#"&gt;
     &lt;/div&gt;
-
 &lt;/div&gt;
 &lt;br&gt;
 
 &lt;!-- Dots --&gt;
-&lt;div class="dot-center"&gt;
+&lt;div class="carousel__controls"&gt;
     &lt;span class="dot" onclick="currentSlide(1)"&gt;&lt;/span&gt;
     &lt;span class="dot" onclick="currentSlide(2)"&gt;&lt;/span&gt;
     &lt;span class="dot" onclick="currentSlide(3)"&gt;&lt;/span&gt;
 &lt;/div&gt;
-            </pre>
+</code>
+</pre>
+
         </div>
     </div>
 
@@ -82,16 +74,16 @@
                 <h1 class="h5">Automatic Carousel</h1>
                 <p>This Carousel will automatically display the slides one at a time.
                 </p>
-                <div class="carousel__auto--container">
-                    <div class="autoSlides fade">
+                <div class="carousel--auto">
+                    <div class="carousel--auto__slide fade">
                         <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
                     </div>
 
-                    <div class="autoSlides fade">
+                    <div class="carousel--auto__slide fade">
                         <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
                     </div>
 
-                    <div class="autoSlides fade">
+                    <div class="carousel--auto__slide fade">
                         <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
                     </div>
                 </div>
@@ -103,22 +95,22 @@
     <!-- Automatic Carousel HTML Code -->
     <div class="container">
         <div class="row">
-            <h1 class="h5">Automatic Carousel HTML Code</h1>
-            <pre>
-&lt;div class="carousel__auto--container"&gt;
-    &lt;div class="autoSlides fade"&gt;
-        &lt;img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png"&gt;
+<pre>
+<code>
+&lt;div class="carousel--auto"&gt;
+    &lt;div class="carousel--auto__slide fade"&gt;
+        &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div class="autoSlides fade"&gt;
-        &lt;img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"&gt;
+    &lt;div class="carousel--auto__slide fade"&gt;
+        &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div class="autoSlides fade"&gt;
-        &lt;img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png"&gt;
+    &lt;div class="carousel--auto__slide fade"&gt;
+        &lt;img src="#"&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
+</code>
+</pre>
+
         </div>
     </div>
 
@@ -129,27 +121,23 @@
                 <h1 class="h5">Multi-image Carousel</h1>
                 <p>This Carousel will automatically display multiple slides at a time, dependent on
                     the value you place in the multiSlides() parameter, located in the JavaScript code.
-                    (Example: multiSlides(3) to show three images).
+                    (Example: multiSlides(3) shows three images).
                 </p>
 
-                <div class="carousel__multi--container">
-                    <div id="0" class="multiSlides">
+                <div class="carousel--multi">
+                    <div id="0" class="carousel--multi__slide">
                         <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
                     </div>
-
-                    <div id="1" class="multiSlides">
+                    <div id="1" class="carousel--multi__slide">
                         <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
                     </div>
-
-                    <div id="2" class="multiSlides">
+                    <div id="2" class="carousel--multi__slide">
                         <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
                     </div>
-
-                    <div id="3" class="multiSlides">
+                    <div id="3" class="carousel--multi__slide">
                         <img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png">
                     </div>
                 </div>
-
                 <br>
             </div>
         </div>
@@ -158,38 +146,32 @@
     <!-- Multi Image HTML Code -->
     <div class="container">
         <div class="row">
-            <h1 class="h5">Multi Image HTML Code</h1>
-            <p>Keeping the <code>id</code> in the correct order is necessary for the carousel
+            <p>* Keeping the <code>id</code> in the correct order is necessary for the carousel
                 to function properly.</p>
-            <pre>
-&lt;div class="carousel__multi--container"&gt;
-    &lt;div id="0" class="multiSlides"&gt;
+<pre>
+<code>
+&lt;div class="carousel--multi"&gt;
+    &lt;div id="0" class="carousel--multi__slide"&gt;
         &lt;img src="#"&gt;
     &lt;/div&gt;
 
-    &lt;div id="1" class="multiSlides"&gt;
+    &lt;div id="1" class="carousel--multi__slide"&gt;
         &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div id="2" class="multiSlides"&gt;
+    &lt;div id="2" class="carousel--multi__slide"&gt;
         &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div id="3" class="multiSlides"&gt;
+    &lt;div id="3" class="carousel--multi__slide"&gt;
         &lt;img src="#"&gt;
     &lt;/div&gt;
-
-    &lt;div id="4" class="multiSlides"&gt;
+    &lt;div id="4" class="carousel--multi__slide"&gt;
         &lt;img src="#"&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-            </pre>
+</code>
+</pre>
         </div>
     </div>
-
-
-
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="../src/js/carousel.js"></script>
 <script type="text/javascript" src="../src/js/techCarousel.js"></script>

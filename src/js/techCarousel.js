@@ -3,7 +3,7 @@ displaySlides();
 
 function displaySlides() {
     var i;
-    var slides = document.getElementsByClassName("autoSlides");
+    var slides = document.getElementsByClassName("carousel--auto__slide");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -18,6 +18,3 @@ function displaySlides() {
 function timer() {
     setTimeout(displaySlides, 3000); // Change image every 3 seconds
 }
-
-// Add callback function
-// Make more functions

@@ -3,19 +3,19 @@
 // Sets defaults
 * {box-sizing:border-box}
 
-.Slides {
+.carousel__slide {
   display: none;
 }
 
 // Fixes images to a 500x500 size
-.Slides img {
+.carousel__slide img {
   width: auto;
   height: 500px;
   max-height: 500px;
   text-align: center;
 }
 
-.carousel--container {
+.carousel {
   max-width: 50%;
   position: relative;
   margin: auto;
@@ -35,7 +35,7 @@
 }
 
 // Keeps dots centered
-.dot-center {
+.carousel__controls {
   text-align: center;
 }
 
@@ -62,18 +62,18 @@
 }
 
 /* Automatic Carousel */
-.autoSlides {
+.carousel--auto__slide {
   display: none;
 }
 
 // Fixes images to a specific size
-.autoSlides img {
+.carousel--auto__slide img {
   width: auto;
   height: 250px;
   max-height: 250px;
 }
 
-.carousel__auto--container {
+.carousel--auto {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -82,19 +82,19 @@
 
 /* Multiple Slides Automatic Carousel */
 
-.multiSlides {
+.carousel--multi__slide {
   display: none;
 }
 
 // Fixes images to a specific size
-.multiSlides img {
+.carousel--multi__slide img {
   width: auto;
   height: 250px;
   max-height: 250px;
   float: left;
 }
 
-.carousel__multi--container {
+.carousel--multi {
   max-width: 1000px;
   position: relative;
   margin: auto;
