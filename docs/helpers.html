@@ -12,26 +12,58 @@
 <div class="main--fullpage section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="h5">Helpers</h1>
-                    <p>These classes can be used to alter general elements on the webpage,
-                        but are not required.
-                    </p>
-                <h2 class="h5">Backgrounds Colors</h2>
-                <p>Here is the Meta-UI background color pallete.</p>
+            <div class="col-md-3">
+                <!-- SIDEBAR -->
+                <p><b>Introduction:</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+                    </li>
+                </ul>
+                <p><b>Components:</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+                    </li>
+                    <li class="sidebar__item active">
+                        <a href="../docs/helpers.html" class="sidebar__link">Helpers</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/type.html" class="sidebar__link">Typography</a>
+                    </li>
+                </ul>
+                <!-- SIDEBAR  -->
+            </div>
+            <div class="col-md-9">
                 <div class="col-md-12">
-                    <div class="bg--grey-clear box"></div>
-                    <div class="bg--grey-dark box"></div>
-                    <div class="bg--red box"></div>
-                    <div class="bg--blue box"></div>
-                    <div class="bg--yellow box"></div>
-                    <div class="bg--teal box"></div>
-                    <div class="bg--blue-dark box"></div>
-                </div>
-                <br>
-                <br>
-                <pre>
-                    <code>
+                    <h1 class="h5">Helpers</h1>
+                        <p>These classes can be used to alter general elements on the webpage,
+                            but are not required.
+                        </p>
+                    <h2 class="h5">Backgrounds Colors</h2>
+                    <p>Here is the Meta-UI background color pallete.</p>
+                    <div class="col-md-12">
+                        <div class="bg--grey-clear box"></div>
+                        <div class="bg--grey-dark box"></div>
+                        <div class="bg--red box"></div>
+                        <div class="bg--blue box"></div>
+                        <div class="bg--yellow box"></div>
+                        <div class="bg--teal box"></div>
+                        <div class="bg--blue-dark box"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <pre>
+                        <code>
 &lt;div class="bg--grey-clear box"&gt;&lt;/div&gt;
 &lt;div class="bg--grey-dark box"&gt;&lt;/div&gt;
 &lt;div class="bg--red box"&gt;&lt;/div&gt;
@@ -39,52 +71,53 @@
 &lt;div class="bg--yellow box"&gt;&lt;/div&gt;
 &lt;div class="bg--teal box"&gt;&lt;/div&gt;
 &lt;div class="bg--blue-dark box"&gt;&lt;/div&gt;
-                    </code>
-                </pre>
+                        </code>
+                    </pre>
 
-                <!-- Type Colors -->
-                <h2 class="h5">Type Colors</h2>
-                <p>Here is the Meta-UI type color pallete. These can be used to change
-                    the color of the typography.
-                </p>
-                <pre>
-                    <code>
-<div class="type--grey">&lt;div class="type--grey"&gt;&lt;/div&gt;</div>
-<div class="type--grey-dark">&lt;div class="type--grey-dark"&gt;&lt;/div&gt;</div>
-<div class="type--grey-darker">&lt;div class="type--grey-darker"&gt;&lt;/div&gt;</div>
-<div class="type--red">&lt;div class="type--red"&gt;&lt;/div&gt;</div>
-<div class="type--blue">&lt;div class="type--blue"&gt;&lt;/div&gt;</div>
-<div class="type--yellow">&lt;div class="type--yellow"&gt;&lt;/div&gt;</div>
-<div class="type--teal">&lt;div class="type--teal"&gt;&lt;/div&gt;</div>
-<div class="type--blue-dark">&lt;div class="type--blue-dark"&gt;&lt;/div&gt;</div>
-<div class="type--white highlight">&lt;div class="type--white"&gt;&lt;/div&gt;</div>
-                    </code>
-                </pre>
+                    <!-- Type Colors -->
+                    <h2 class="h5">Type Colors</h2>
+                    <p>Here is the Meta-UI type color pallete. These can be used to change
+                        the color of the typography.
+                    </p>
+                    <pre>
+                        <code>
+    <div class="type--grey">&lt;div class="type--grey"&gt;&lt;/div&gt;</div>
+    <div class="type--grey-dark">&lt;div class="type--grey-dark"&gt;&lt;/div&gt;</div>
+    <div class="type--grey-darker">&lt;div class="type--grey-darker"&gt;&lt;/div&gt;</div>
+    <div class="type--red">&lt;div class="type--red"&gt;&lt;/div&gt;</div>
+    <div class="type--blue">&lt;div class="type--blue"&gt;&lt;/div&gt;</div>
+    <div class="type--yellow">&lt;div class="type--yellow"&gt;&lt;/div&gt;</div>
+    <div class="type--teal">&lt;div class="type--teal"&gt;&lt;/div&gt;</div>
+    <div class="type--blue-dark">&lt;div class="type--blue-dark"&gt;&lt;/div&gt;</div>
+    <div class="type--white highlight">&lt;div class="type--white"&gt;&lt;/div&gt;</div>
+                        </code>
+                    </pre>
 
-                <!-- Floats & Clears -->
-                <h2 class="h5">Floats & Positioning</h2>
-                <p>
-                    <code>pull-left</code> positions the element to the very left.
-                    <code>pull-right</code> positions the element to the right.
-                </p>
-                <div class="container">
-                    <div class="row">
-                        <div class="bg--grey-clear box__no-float pull-left"></div>
-                        <div class="bg--red box__no-float pull-right"></div>
-                        <div class="bg--blue box__no-float pull-left"></div>
-                        <div class="bg--yellow box__no-float pull-right"></div>
-                        <br>
+                    <!-- Floats & Clears -->
+                    <h2 class="h5">Floats & Positioning</h2>
+                    <p>
+                        <code>pull-left</code> positions the element to the very left.
+                        <code>pull-right</code> positions the element to the right.
+                    </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="bg--grey-clear box__no-float pull-left"></div>
+                            <div class="bg--red box__no-float pull-right"></div>
+                            <div class="bg--blue box__no-float pull-left"></div>
+                            <div class="bg--yellow box__no-float pull-right"></div>
+                            <br>
+                        </div>
                     </div>
-                </div>
 
-                <pre>
-                    <code>
+                    <pre>
+                        <code>
 &lt;div class="bg--grey-clear pull-left"&gt;&lt;/div&gt;
 &lt;div class="bg--red pull-right"&gt;&lt;/div&gt;
 &lt;div class="bg--blue pull-left"&gt;&lt;/div&gt;
 &lt;div class="bg--yellow pull-right"&gt;&lt;/div&gt;
-                    </code>
-                </pre>
+                        </code>
+                    </pre>
+                </div>
             </div>
         </div>
     </div>
