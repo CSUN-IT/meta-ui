@@ -4,10 +4,6 @@
   min-height: calc(100vh - 80px);
 }
 
-.fa {
-  color: #D00D20;
-}
-
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -4535,10 +4531,6 @@ code {
   min-height: calc(100vh - 80px);
 }
 
-.fa {
-  color: #D00D20;
-}
-
 .metalab-wrapper {
   position: absolute;
   right: 0;
@@ -4963,13 +4955,13 @@ pre {
   background-color: #f1f1f1;
 }
 
-a:nth-child(odd) {
+.form__link:nth-child(odd) {
   font-family: FFDINWebProBold;
   color: black;
   background-color: white;
 }
 
-a:nth-child(even) {
+.form__link:nth-child(even) {
   font-family: FFDINWebProBold;
   color: white;
   background-color: black;
@@ -4986,6 +4978,5 @@ a:nth-child(even) {
 
 .fa-long-arrow-right {
   padding-left: 5px;
-  color: #D00D20;
 }
 

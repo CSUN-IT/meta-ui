@@ -69,12 +69,12 @@
 }
 
 .dropdown a:hover {background-color: #f1f1f1}
-a:nth-child(odd){
+.form__link:nth-child(odd){
   font-family:$font;
   color:black;
   background-color:white;
 }
-a:nth-child(even) {
+.form__link:nth-child(even) {
   font-family: $font;
   color: white;
   background-color: black;
@@ -87,5 +87,5 @@ a:nth-child(even) {
 }
 .fa-long-arrow-right{
   padding-left: 5px;
-  color: $red;
+  //color: $red;
 }
