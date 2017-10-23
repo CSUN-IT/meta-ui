@@ -16,7 +16,7 @@
 }
 
 .carousel {
-  max-width: 50%;
+  //max-width: 50%;
   position: relative;
   margin: auto;
   text-align: center;
@@ -39,13 +39,13 @@
   text-align: center;
 }
 
-.active {
+.dot__active {
   background-color: #060707;
 }
 
 // Changes color when cursor is over the dot
 .dot:hover {
-  background-color: #fef8ff;
+  background-color: #060707;
 }
 
 /* Fading animation */

@@ -11,11 +11,11 @@ function currentSlide(n) {
     }
 
     for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" dot__active", "");
     }
 
     $(slides[index-1]).toggle();
-    dots[index-1].className += " active";
+    dots[index-1].className += " dot__active";
 }
 
 function showSlides(n) {
@@ -28,14 +28,14 @@ function showSlides(n) {
     }
 
     for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" dot__active", "");
     }
 
     if (index > slides.length) {
         index = 1;
     }
     slides[index-1].style.display = "block";
-    dots[index-1].className += " active";
+    dots[index-1].className += " dot__active";
     index++;
     console.log(index);
     dotTimer();

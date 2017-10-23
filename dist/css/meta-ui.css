@@ -3871,7 +3871,6 @@ ol {
 }
 
 .carousel {
-  max-width: 50%;
   position: relative;
   margin: auto;
   text-align: center;
@@ -3895,12 +3894,12 @@ ol {
   text-align: center;
 }
 
-.active {
+.dot__active {
   background-color: #060707;
 }
 
 .dot:hover {
-  background-color: #fef8ff;
+  background-color: #060707;
 }
 
 /* Fading animation */
