@@ -3755,6 +3755,22 @@ ol {
   margin: 0px;
 }
 
+.margin__less-top {
+  margin-top: 0px;
+}
+
+.margin__less-right {
+  margin-rigth: 0px;
+}
+
+.margin__less-bottom {
+  margin-bottom: 0px;
+}
+
+.margin__less-left {
+  margin-left: 0px;
+}
+
 .margin-left {
   margin-left: 10px;
 }
@@ -4696,5 +4712,23 @@ code {
 .pre-overlay {
   position: relative;
   z-index: 1;
+}
+
+.button__right {
+  margin-right: 5px;
+}
+
+.button__left {
+  margin-left: 5px;
+}
+
+.button__top {
+  margin-right: 47px;
+  margin-left: 47px;
+}
+
+.back-to-top {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
