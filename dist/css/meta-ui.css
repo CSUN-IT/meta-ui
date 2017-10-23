@@ -4963,6 +4963,12 @@ pre {
   background-color: #f1f1f1;
 }
 
+a:nth-child(odd) {
+  font-family: FFDINWebProBold;
+  color: black;
+  background-color: white;
+}
+
 a:nth-child(even) {
   font-family: FFDINWebProBold;
   color: white;
@@ -4976,7 +4982,6 @@ a:nth-child(even) {
 .form--submit {
   color: #D00D20;
   line-height: 70px;
-  margin-left: -30px;
 }
 
 .fa-long-arrow-right {
