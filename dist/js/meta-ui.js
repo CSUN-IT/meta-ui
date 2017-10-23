@@ -79,7 +79,7 @@ module.exports = __webpack_require__(2);
 // LET'S GET STARTED
 console.log('META+LAB UI Kit');
 
-// integrating jQUery
+// Maps names of included libraries to their filepaths.
 var includedDependencies = {};
 
 function includeOnce(file) {
@@ -103,6 +103,7 @@ function includeOnce(file) {
 
 includeOnce('../src/js/navbar.js');
 includeOnce('../src/js/dropdown.js');
+includeOnce('../src/js/multiCarousel.js');
 
 /***/ }),
 /* 2 */

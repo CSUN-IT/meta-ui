@@ -2,8 +2,7 @@
 // LET'S GET STARTED
 console.log('META+LAB UI Kit');
 
-
-// integrating jQUery
+// Maps names of included libraries to their filepaths.
 var includedDependencies = {};
 
 function includeOnce(file, libraryName = '') {
@@ -25,3 +24,4 @@ function includeOnce(file, libraryName = '') {
 
 includeOnce('../src/js/navbar.js');
 includeOnce('../src/js/dropdown.js');
+includeOnce('../src/js/multiCarousel.js');
