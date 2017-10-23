@@ -24,3 +24,4 @@ function includeOnce(file, libraryName = '') {
 }
 
 includeOnce('../src/js/navbar.js');
+includeOnce('../src/js/dropdown.js');

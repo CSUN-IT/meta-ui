@@ -1,0 +1,88 @@
+.form--line{
+  width: 600px;
+  margin-left: 0px;
+}
+.form {
+  color: $grey-dark;
+}
+.form--header{
+  font-family: $font;
+  font-size: 30px;
+  color: $grey-darker;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.fa-angle-down{
+  padding-left: 335px;
+  color: $grey;
+}
+.form--input{
+  font-family: $font;
+  text-decoration: none;
+  border: 0px solid;
+  height: 40px;
+  width: 220px;
+  color: $black;
+}
+.form--text{
+  font-family: $font;
+  color: $grey-darker;
+}
+
+//dropdown stuff
+.dropbtn {
+  background-color: transparent;
+  color: $grey-darker;
+  font-family: $font-base;
+  font-weight: bold;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: -15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 600px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+a:nth-child(even) {
+  font-family: $font;
+  color: white;
+  background-color: black;
+}
+.show {display:block;}
+
+.form--submit{
+  color: $red;
+  line-height: 70px;
+  margin-left: -30px;
+}
+.fa-long-arrow-right{
+  padding-left: 5px;
+  color: $red;
+}

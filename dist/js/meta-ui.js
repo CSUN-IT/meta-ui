@@ -102,6 +102,7 @@ function includeOnce(file) {
 }
 
 includeOnce('../src/js/navbar.js');
+includeOnce('../src/js/dropdown.js');
 
 /***/ }),
 /* 2 */
