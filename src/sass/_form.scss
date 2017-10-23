@@ -1,11 +1,11 @@
-.form--line{
+.form__line{
   width: 600px;
   margin-left: 0px;
 }
 .form {
   color: $grey-dark;
 }
-.form--header{
+.form__header{
   font-family: $font;
   font-size: 30px;
   color: $grey-darker;
@@ -16,7 +16,7 @@
   padding-left: 335px;
   color: $grey;
 }
-.form--input{
+.form__input{
   font-family: $font;
   text-decoration: none;
   border: 0px solid;
@@ -45,13 +45,13 @@
   background-color: transparent;
 }
 
-.dropdown {
+.form___content {
   position: relative;
   display: inline-block;
   margin-left: -15px;
 }
 
-.dropdown-content {
+.form__content--dropdown {
   display: none;
   position: absolute;
   background-color: transparent;
@@ -61,14 +61,14 @@
   z-index: 1;
 }
 
-.dropdown-content a {
+.form__content--dropdown a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown a:hover {background-color: #f1f1f1}
+.form___content a:hover {background-color: #f1f1f1}
 .form__link:nth-child(odd){
   font-family:$font;
   color:black;
@@ -81,7 +81,7 @@
 }
 .show {display:block;}
 
-.form--submit{
+.form__submit{
   color: $red;
   line-height: 70px;
 }

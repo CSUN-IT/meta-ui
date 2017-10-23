@@ -14,99 +14,99 @@
 <body>
 <div class="section form">
     <div class="container">
-        <div class="col-md-3">
-            <p class="margin__less-top"><b>Introduction:</b></p>
-            <ul class="sidebar">
-                <li class="sidebar__item">
-                    <a href="../docs/examples.html" class="sidebar__link">Examples</a>
-                </li>
-            </ul>
-            <p><b>Components:</b></p>
-            <ul class="sidebar">
-                <li class="sidebar__item">
-                    <a href="../docs/banners.html" class="sidebar__link">Banners</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="../docs/footer.html" class="sidebar__link">Footer</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
-                </li>
-                <li class="sidebar__item">
-                    <a href="../docs/type.html" class="sidebar__link">Typography</a>
-                </li>
-                <li class="sidebar__item active">
-                    <a href="../docs/form.html" class="sidebar__link">Form</a>
-                </li>
-            </ul>
-        </div>
-        <div class="row col-md-9">
-            <p class="form--header">Adventurer Program</p>
-            <input type="text" placeholder="Your First Name" class="form--input">
-            <hr class="form--line">
-            <br>
-            <input type="text" placeholder="Your Phone Number" class="form--input">
-            <hr class="form--line">
-            <br>
-            <input type="text" placeholder="Your Email Address" class="form--input">
-            <hr class="form--line">
-            <br>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">How did your Hear about us?<i class="fa fa-angle-down"
-                                                                                             aria-hidden="true"></i>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a class="form__link" href="#home">Home</a>
-                    <a class="form__link" href="#about">About</a>
-                    <a class="form__link" href="#contact">Contact</a>
-                </div>
+        <div class="row">
+            <div class="col-md-3">
+                <p class="margin__less-top"><b>Introduction:</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+                    </li>
+                </ul>
+                <p><b>Components:</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/type.html" class="sidebar__link">Typography</a>
+                    </li>
+                    <li class="sidebar__item active">
+                        <a href="../docs/form.html" class="sidebar__link">Form</a>
+                    </li>
+                </ul>
             </div>
-            <hr class="form--line">
-            <p class="form--submit">Submit<i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
-            <div class="container">
-                <div class="row">
-                    <div class="form__documentation">
+            <div class="col-md-9">
+                <p class="form__header">Adventurer Program</p>
+                <input type="text" placeholder="Your First Name" class="form__input">
+                <hr class="form__line">
+                <br>
+                <input type="text" placeholder="Your Phone Number" class="form__input">
+                <hr class="form__line">
+                <br>
+                <input type="text" placeholder="Your Email Address" class="form__input">
+                <hr class="form__line">
+                <br>
+                <div class="form___content">
+                    <button onclick="myFunction()" class="dropbtn">How did your Hear about us?<i
+                            class="fa fa-angle-down"
+                            aria-hidden="true"></i>
+                    </button>
+                    <div id="myDropdown" class="form__content--dropdown">
+                        <a class="form__link" href="#home">Home</a>
+                        <a class="form__link" href="#about">About</a>
+                        <a class="form__link" href="#contact">Contact</a>
+                    </div>
+                </div>
+                <hr class="form__line">
+                <p class="form__submit">Submit<i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+                <div class="form__documentation">
         <pre>
 &lt;div class="section form"&gt;<br/>
     &lt;div class="container"&gt;<br/>
         &lt;div class="row"&gt;<br/>
-            &lt;p class="form--header"&gt;Adventurer Program&lt;/p&gt;<br/>
-            &lt;input type="text" placeholder="Your First Name" class="form--input"&gt;<br/>
-            &lt;hr class="form--line"&gt;<br/>
+            &lt;p class="form__header"&gt;Adventurer Program&lt;/p&gt;<br/>
+            &lt;input type="text" placeholder="Your First Name" class="form__input"&gt;<br/>
+            &lt;hr class="form__line"&gt;<br/>
             &lt;br&gt;<br/>
-            &lt;input type="text" placeholder="Your Phone Number" class="form--input"&gt;<br/>
-            &lt;hr class="form--line"&gt;<br/>
+            &lt;input type="text" placeholder="Your Phone Number" class="form__input"&gt;<br/>
+            &lt;hr class="form__line"&gt;<br/>
             &lt;br&gt;<br/>
-            &lt;input type="text" placeholder="Your Email Address" class="form--input"&gt;<br/>
-            &lt;hr class="form--line"&gt;<br/>
+            &lt;input type="text" placeholder="Your Email Address" class="form__input"&gt;<br/>
+            &lt;hr class="form__line"&gt;<br/>
             &lt;br&gt;<br/>
-            &lt;div class="dropdown"&gt;<br/>
-                &lt;button onclick="myFunction()" class="dropbtn"&gt;How did your Hear about us?
-                &lt;i class="fa fa-angle-down" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;<br/>
-                &lt;div id="myDropdown" class="dropdown-content"&gt;<br/>
-                    &lt;a href="#home"&gt;Home&lt;/a&gt;<br/>
-                    &lt;a href="#about"&gt;About&lt;/a&gt;<br/>
-                    &lt;a href="#contact"&gt;Contact&lt;/a&gt;<br/>
+            &lt;div class="form___content"&gt;<br/>
+                &lt;button onclick="myFunction()" class="dropbtn"&gt;How did your Hear about us?&lt;i class="fa fa-angle-down"<br/>
+            aria-hidden="true"&gt;&lt;/i&gt;<br/>
+                &lt;/button&gt;<br/>
+                &lt;div id="myDropdown" class="form__content--dropdown"&gt;<br/>
+                    &lt;a class="form__link" href="#home"&gt;Home&lt;/a&gt;<br/>
+                    &lt;a class="form__link" href="#about"&gt;About&lt;/a&gt;<br/>
+                    &lt;a class="form__link" href="#contact"&gt;Contact&lt;/a&gt;<br/>
                 &lt;/div&gt;<br/>
             &lt;/div&gt;<br/>
-            &lt;hr class="form--line"&gt;<br/>
+            &lt;hr class="form__line"&gt;<br/>
+            &lt;p class="form__submit"&gt;Submit&lt;i class="fa fa-long-arrow-right" aria-hidden="true"&gt;&lt;/i&gt;&lt;/p&gt;
         &lt;/div&gt;<br/>
     &lt;/div&gt;<br/>
 &lt;/div&gt;
         </pre>
-                    </div>
                 </div>
             </div>
         </div>
-
-
     </div>
+</div>
 </div>
 <footer>
     <div class="metalab-footer">
@@ -122,20 +122,23 @@
                     </div>
                     <div class="col-md-6">
                         <div class="metalab-social">
-                            <a href="#" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white"
-                                                           aria-hidden="true"></i>
+                            <a href="#" target="_blank"><i
+                                    class="margin-left fa fa-linkedin-square fa-lg type--white"
+                                    aria-hidden="true"></i>
                                 <a href="#" target="_blank"><i class="margin-left fa fa-facebook fa-lg type--white"
                                                                aria-hidden="true"></i>
-                                    <a href="#" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white"
-                                                                   aria-hidden="true"></i>
+                                    <a href="#" target="_blank"><i
+                                            class="margin-left fa fa-instagram fa-lg type--white"
+                                            aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 </footer>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
