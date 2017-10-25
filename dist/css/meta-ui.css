@@ -4833,7 +4833,7 @@ code {
   float: right;
 }
 
-.nav-icon-style1 {
+.navbar__icon-style1 {
   position: relative;
   height: 35px;
   width: 35px;
@@ -4884,5 +4884,11 @@ code {
 
 pre {
   color: red;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
