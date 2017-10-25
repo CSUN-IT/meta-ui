@@ -4748,15 +4748,18 @@ code {
   padding: 6px;
 }
 
-.navbar-1 {
-  background-color: #FAFAFA;
+.navbar {
   position: absolute;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
 }
 
-.navbar-1 a:hover {
+.navbar--top {
+  background-color: #FAFAFA;
+}
+
+.navbar a:hover {
   background-color: #ddd;
   color: black;
   decoration: none;
@@ -4768,7 +4771,7 @@ code {
   padding: 12px;
 }
 
-.navbar-1--documentation {
+.navbar__1--documentation {
   display: inherit;
   padding-top: 65px;
 }
