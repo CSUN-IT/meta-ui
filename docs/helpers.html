@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Helpers | META+LAB UI Kit</title>
     <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
+    <link rel="stylesheet" href="../dist/css/meta-docs.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
 <body>
@@ -121,57 +122,85 @@
 &lt;div class="bg--yellow pull-right"&gt;&lt;/div&gt;
 </code>
 </pre>
-                <!-- Clears -->
-                <h2 class="h5">Clears</h2>
+                <!-- Clearfix -->
+                <h2 class="h5">Clearfix</h2>
                 <p>
-                    <code>clear-left</code> positions the element below the element on the left.
-                    <code>clear-right</code> positions the element below the element on the right.
+                    The clearfix class clears floats when it is added to the parent
+                    element. This can also be used as a mixin by adding <code>@include clearfix</code>
+                    to the CSS class.
                 </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="bg--grey-clear box pull-left"></div>
-                        <div class="bg--blue box pull-left"></div>
-                        <div class="bg--red box clear-left"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bg--grey-clear box pull-right"></div>
-                        <div class="bg--blue box pull-right"></div>
-                        <div class="bg--red box clear-right"></div>
-                    </div>
+                <p>
+                    In this example, the clearfix class allows the teal border
+                    to span around the boxes.
+                </p>
+                <div class="clearfix--border clearfix">
+                    <div class="bg--grey-clear box pull-left"></div>
+                    <div class="bg--red box pull-right"></div>
                 </div>
 <pre>
 <code>
-&lt;div class="bg--grey-clear pull-left"&gt;&lt;/div&gt;
-&lt;div class="bg--blue pull-left"&gt;&lt;/div&gt;
-&lt;div class="bg--red clear-left"&gt;&lt;/div&gt;<br/>
-&lt;div class="bg--grey-clear pull-right"&gt;&lt;/div&gt;
-&lt;div class="bg--blue pull-right"&gt;&lt;/div&gt;
-&lt;div class="bg--red clear-right"&gt;&lt;/div&gt;
-</code>
-</pre>
-                <br>
-                <p>
-                    <code>clear-both</code> positions the element below the element on either the left
-                    or right side.
-                </p>
-                <div class="container">
-                    <div class="row">
-                        <div class="bg--grey-clear box pull-left"></div>
-                        <div class="bg--blue box pull-right"></div>
-                        <div class="bg--red box clear-both"></div>
-                    </div>
-                </div>
-<pre>
-<code>
-&lt;div class="bg--grey-clear pull-left"&gt;&lt;/div&gt;
-&lt;div class="bg--blue pull-right"&gt;&lt;/div&gt;
-&lt;div class="bg--red clear-both"&gt;&lt;/div&gt;
+&lt;div class="clearfix--border clearfix"&gt;
+    &lt;div class="bg--grey-clear pull-left"&gt;&lt;/div&gt;
+    &lt;div class="bg--red pull-right"&gt;&lt;/div&gt;
+&lt;/div&gt;
 </code>
 </pre>
             </div>
         </div>
     </div>
 </div>
+
+                 <!--Clears -->
+                <!--<h2 class="h5">Clears</h2>-->
+                <!--<p>-->
+                    <!--<code>clear-left</code> positions the element below the element on the left.-->
+                    <!--<code>clear-right</code> positions the element below the element on the right.-->
+                <!--</p>-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="bg&#45;&#45;grey-clear box pull-left"></div>-->
+                        <!--<div class="bg&#45;&#45;blue box pull-left"></div>-->
+                        <!--<div class="bg&#45;&#45;red box clear-left"></div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="bg&#45;&#45;grey-clear box pull-right"></div>-->
+                        <!--<div class="bg&#45;&#45;blue box pull-right"></div>-->
+                        <!--<div class="bg&#45;&#45;red box clear-right"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+<!--<pre>-->
+<!--<code>-->
+<!--&lt;div class="bg&#45;&#45;grey-clear pull-left"&gt;&lt;/div&gt;-->
+<!--&lt;div class="bg&#45;&#45;blue pull-left"&gt;&lt;/div&gt;-->
+<!--&lt;div class="bg&#45;&#45;red clear-left"&gt;&lt;/div&gt;<br/>-->
+<!--&lt;div class="bg&#45;&#45;grey-clear pull-right"&gt;&lt;/div&gt;-->
+<!--&lt;div class="bg&#45;&#45;blue pull-right"&gt;&lt;/div&gt;-->
+<!--&lt;div class="bg&#45;&#45;red clear-right"&gt;&lt;/div&gt;-->
+<!--</code>-->
+<!--</pre>-->
+                <!--<br>-->
+                <!--<p>-->
+                    <!--<code>clear-both</code> positions the element below the element on either the left-->
+                    <!--or right side.-->
+                <!--</p>-->
+                <!--<div class="container">-->
+                    <!--<div class="row">-->
+                        <!--<div class="bg&#45;&#45;grey-clear box pull-left"></div>-->
+                        <!--<div class="bg&#45;&#45;blue box pull-right"></div>-->
+                        <!--<div class="bg&#45;&#45;red box clear-both"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+<!--<pre>-->
+<!--<code>-->
+<!--&lt;div class="bg&#45;&#45;grey-clear pull-left"&gt;&lt;/div&gt;-->
+<!--&lt;div class="bg&#45;&#45;blue pull-right"&gt;&lt;/div&gt;-->
+<!--&lt;div class="bg&#45;&#45;red clear-both"&gt;&lt;/div&gt;-->
+<!--</code>-->
+<!--</pre>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <footer>
     <div class="metalab-footer">
         <div class="metalab-wrapper">

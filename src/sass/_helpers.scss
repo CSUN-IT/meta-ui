@@ -2,10 +2,19 @@
 .pull-left{ float: left !important; }
 .pull-right{ float: right !important; }
 
-// Clear
-.clear-left{ clear: left !important; }
-.clear-right{ clear: right !important; }
-.clear-both{ clear: both !important; }
+// Clearfix mixin
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Clearfix
+.clearfix {
+  @include clearfix;
+}
 
 // Margins
 .margin__less { margin: 0px; }
