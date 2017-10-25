@@ -3,3 +3,12 @@
   background-color: #5bc0de !important;
 }
 
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+.highlight {
+  background-color: black;
+}
+

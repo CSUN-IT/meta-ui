@@ -3846,15 +3846,6 @@ ol {
   display: block;
 }
 
-.box {
-  height: 50px;
-  width: 50px;
-}
-
-.highlight {
-  background-color: black;
-}
-
 /* Resets box sizing across all elements */
 
 html {
