@@ -4527,6 +4527,18 @@ code {
   min-height: calc(100vh - 80px);
 }
 
+.img {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img__events-list {
+  height: 362px;
+  width: 468px;
+  border: none;
+}
+
 .metalab-wrapper {
   position: absolute;
   right: 0;
