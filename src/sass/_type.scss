@@ -90,6 +90,18 @@ ul, ol { line-height: 1.6; }
   margin: 0px 0px 20px 0px;
 }
 
+hr{
+  color: $grey;
+  background-color: $grey;
+}
+
+.line{
+  background-color: $grey-clear;
+  width: auto;
+  height: 1px;
+  margin: 20px 0;
+}
+
 // Type Class Sizes
 .giga {
   font-family: $font;
@@ -111,6 +123,10 @@ ul, ol { line-height: 1.6; }
   padding: 0px;
 }
 
+//TYPE COLORS
+.type--white {
+  color: #FFFFFF;
+}
 // Type Modifiers
 .type--center { text-align: center; }
 .type--emphasis { font-size: 18px; line-height: 1.6; }
@@ -124,6 +140,7 @@ ul, ol { line-height: 1.6; }
 .type--marginless { margin: 0; }
 .type--uppercase { text-transform: uppercase; letter-spacing: 2px; }
 .type--link { text-decoration: none; color: $red; }
+
 
 // Type Size
 .small{ font-size: 0.7rem; }
