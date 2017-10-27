@@ -89,6 +89,18 @@ ul, ol { line-height: 1.6; }
   margin: 0px 0px 20px 0px;
 }
 
+hr{
+  color: $grey;
+  background-color: $grey;
+}
+
+.line{
+  background-color: $grey-clear;
+  width: auto;
+  height: 1px;
+  margin: 20px 0;
+}
+
 // Type Class Sizes
 .giga {
   font-family: $font;
