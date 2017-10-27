@@ -1,4 +1,28 @@
-// MARGIN STYLING
+@import "mixins/mixins";
+
+.clearfix {
+  @include clearfix;
+}
+
+// Margin styling
 .margin-left { margin-left: 10px; }
 .margin-right { margin-right: 10px; }
 .margin-top { margin-top: 10px;}
+
+// Demonstrates clearfix
+.clearfix--border {
+  padding: .5rem;
+  background-color: #5bc0de !important;
+}
+
+// Box
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+// Helps Documentation display white typography
+.highlight {
+  background-color: black;
+}
+

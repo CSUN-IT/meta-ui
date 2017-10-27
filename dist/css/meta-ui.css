@@ -3755,12 +3755,6 @@ hr {
   float: right !important;
 }
 
-.clearfix::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-
 .margin__less {
   margin: 0px;
 }
@@ -4875,6 +4869,12 @@ code {
   background-color: #76C6B3;
 }
 
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .margin-left {
   margin-left: 10px;
 }
@@ -4885,5 +4885,19 @@ code {
 
 .margin-top {
   margin-top: 10px;
+}
+
+.clearfix--border {
+  padding: .5rem;
+  background-color: #5bc0de !important;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+.highlight {
+  background-color: black;
 }
 
