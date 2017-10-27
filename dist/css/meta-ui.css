@@ -5036,19 +5036,45 @@ pre {
   color: red;
 }
 
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #0E1821;
+}
+
 .form__line {
   width: 600px;
   margin-left: 0px;
+  color: #0E1821;
 }
 
 .form {
-  color: #3F3F3F;
+  color: #0E1821;
+}
+
+.form::-webkit-input-placeholder {
+  color: #0E1821;
+}
+
+.form:-moz-placeholder {
+  color: #0E1821;
+}
+
+.form::-moz-placeholder {
+  color: #0E1821;
+}
+
+.form:-ms-input-placeholder {
+  color: #0E1821;
+}
+
+input form[type=text] {
+  color: #0E1821;
 }
 
 .form__header {
   font-family: FFDINWebProBold;
   font-size: 30px;
-  color: #55565a;
+  color: #0E1821;
   padding-bottom: 15px;
 }
 
@@ -5068,12 +5094,12 @@ pre {
 
 .form--text {
   font-family: FFDINWebProBold;
-  color: #55565a;
+  color: #0E1821;
 }
 
 .dropbtn {
   background-color: transparent;
-  color: #55565a;
+  color: #0E1821;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   padding: 16px;
