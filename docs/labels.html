@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sidebar | META+LAB UI Kit</title>
+  <title>Labels | META+LAB UI Kit</title>
   <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
@@ -12,7 +12,6 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-      <!-- SIDEBAR -->
       <p class="margin__less-top"><b>Introduction:</b></p>
       <ul class="sidebar">
         <li class="sidebar__item">
@@ -33,52 +32,46 @@
         <li class="sidebar__item">
           <a href="../docs/footer.html" class="sidebar__link">Footer</a>
         </li>
-        <li class="sidebar__item">
+        <li class="sidebar__item active">
           <a href="../docs/labels.html" class="sidebar__link">Labels</a>
         </li>
-        <li class="sidebar__item active">
+        <li class="sidebar__item">
           <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
         </li>
         <li class="sidebar__item">
           <a href="../docs/type.html" class="sidebar__link">Typography</a>
         </li>
       </ul>
-      <!-- SIDEBAR  -->
       </div>
       <div class="col-md-9">
-        <h1 class="h5">Sidebar</h1>
-        <ul class="sidebar">
-          <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Link #1</a>
-          </li>
-          <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Link #2</a>
-          </li>
-          <li class="sidebar__item active">
-            <a href="#" class="sidebar__link">Link #3</a>
-          </li>
-          <li class="sidebar__item">
-            <a href="#" class="sidebar__link">Link #4</a>
-          </li>
-        </ul>
+        <h1 class="h5">Labels</h1>
+        <div class="container">
+          <div class="row">
+            <p class="pull-left margin--less margin-right">Status:</p>
+            <div class="label label--default pull-left margin-right">DEFAULT</div>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+            <div class="label label--changed pull-left margin-right">CHANGED</div>
+            <div class="label label--fixed pull-left">FIXED</div>
+          </div>
+        </div>
+
 <pre>
   <code>
-    &lt;ul class="sidebar"&gt;
-      &lt;li class="sidebar__item"&gt;
-        &lt;a href="#" class="sidebar__link"&gt;Link #1&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="sidebar__item"&gt;
-        &lt;a href="#" class="sidebar__link"&gt;Link #2&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="sidebar__item active"&gt;
-        &lt;a href="#" class="sidebar__link"&gt;Link #3&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class="sidebar__item"&gt;
-        &lt;a href="#" class="sidebar__link"&gt;Link #4&lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;div class="label label--default"&gt;DEFAULT&lt;/div&gt;
+    &lt;div class="label label--added"&gt;ADDED&lt;/div&gt;
+    &lt;div class="label label--changed"&gt;CHANGED&lt;/div&gt;
+    &lt;div class="label label--fixed"&gt;FIXED&lt;/div&gt;
+
+  <span class="type--grey-darker">
+    <b>// Label Modifiers</b>
+    .label--default
+    .label--fixed
+    .label--changed
+    .label--added
+  </span>
   </code>
 </pre>
+
       </div>
     </div>
   </div>
@@ -109,5 +102,3 @@
 </footer>
 </body>
 </html>
-
-

@@ -5,7 +5,7 @@
 // RESETS
 @import "normalize";
 
-// Dependencies
+// DEPENDENCIES
 @import "node_modules/font-awesome/scss/font-awesome";
 
 // CORE
@@ -20,5 +20,9 @@
 @import "sidebar";
 @import "banner";
 @import "buttons";
+@import "labels";
+
+// DOCUMENTION STYLING
+@import "meta-ui-docs";
 
 

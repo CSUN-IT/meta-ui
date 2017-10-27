@@ -3775,14 +3775,6 @@ ol {
   margin-left: 0px;
 }
 
-.margin-left {
-  margin-left: 10px;
-}
-
-.margin-top {
-  margin-top: 10px;
-}
-
 .type--white {
   color: #FFFFFF;
 }
@@ -3884,7 +3876,7 @@ div {
 /* Standard 12 column grid */
 
 .section {
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 
 .container {
@@ -4849,5 +4841,43 @@ code {
 .back-to-top {
   margin-top: 18px;
   margin-bottom: 18px;
+}
+
+.label {
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.label--default {
+  background-color: #B1B3B2;
+  color: #FFFFFF;
+}
+
+.label--fixed {
+  background-color: #D00D20;
+}
+
+.label--changed {
+  background-color: #000063;
+}
+
+.label--added {
+  background-color: #76C6B3;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-top {
+  margin-top: 10px;
 }
 
