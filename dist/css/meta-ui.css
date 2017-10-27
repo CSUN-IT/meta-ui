@@ -5015,6 +5015,10 @@ input form[type=text] {
   padding-left: 5px;
 }
 
+pre {
+  color: #D00D20;
+}
+
 .margin-left {
   margin-left: 10px;
 }
