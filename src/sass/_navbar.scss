@@ -30,20 +30,20 @@
   padding-top: 65px;
 }
 
-.navbar--dif {
+.navbar__link--dif {
   color: black;
   font-size: x-large;
 }
 
-.navbar--special {
+.navbar__link--special {
   font-size: x-large;
 }
 
-.navbar--filler {
+.navbar__icon--filler {
   position: inherit;
   display: block;
-  height: 29em;
-  width: 70%;
+  height: 50%;
+  width: 50%;
   text-align: center;
   margin: auto;
 }
@@ -74,11 +74,11 @@
 }
 
 .navbar-select {
-  margin-right: 0px;
   position: relative;
-  top: 240px;
-  left: 1030px;
+  top: 243px;
   height: 35px;
+  color: #D00D20;
+  right: 25px;
 }
 
 .fa-bars {
@@ -108,28 +108,29 @@
   list-style: none;
 }
 
-.nav-icon-style2 {
-  position: absolute;
-  top: 250px;
+.navbar__icon-style2 {
+  position: relative;
+  top: 130px;
   height: 35px;
-  padding-left: 43px;
-  margin-left: 0px;
-  margin: auto;
+  padding-left: 30px;
 
 }
-.navbar-icon{
+.navbar__icon{
   position: relative;
 }
-.navbar-2{
+.nav-top--bars{
+  color: #D00D20;
+}
+.navbar__slide{
   position: relative;
 }
 
 .navbar-select2 {
-  margin-left: 0px;
-  position: absolute;
-  top: 240px;
-  left: 1113px;
+  position: relative;
   height: 35px;
+  top: 138px;
+  padding-right: 30px;
+  color: #D00D20;
 }
 .navbar--icon {
   position: relative;

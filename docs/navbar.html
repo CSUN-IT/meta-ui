@@ -49,6 +49,7 @@
                 </ul>
 
             </div>
+
             <div class="col-md-9">
                 <div class="navbar--top  clearfix">
                     <img class="margin-left navbar__icon-style1 pull-left" src="../img/logo/metalab-icon.png"
@@ -70,26 +71,29 @@
     &lt;/div&gt;<br/>
     </pre>
                 </div>
-                <div class="row">
-                    <div class="col-md-9 navbar__2">
+
+                <div class="container">
+                    <div class="navbar__2">
                         <h3>POP-OUT NAV BAR</h3>
                         <div class="row">
-                            <div class="navbar-icon">
+
+                            <div class="navbar-icon clearfix">
                                 <img class="nav-icon-style" src="../img/logo/metalab-icon.png" alt="metalab-icon">
-                                <a class="navbar-select closebtn" id="javascript:void(0)" onclick="closeNav()"><i
+                                <a class="navbar-select closebtn pull-right" id="javascript:void(0)"
+                                   onclick="closeNav()"><i
                                         class="fa fa-times"
                                         aria-hidden="true"></i></a>
                             </div>
                             <ul class="navbar--list3">
-                                <li><a class="navbar--dif" href="#home">Home</a></li>
-                                <li><a class="navbar--dif" href="#about">About</a></li>
-                                <li><a class="navbar--dif" href="#programs">Programs</a></li>
-                                <li><a class="navbar--dif" href="#tracks">Tracks</a></li>
-                                <li><a class="navbar--dif" href="#process">Process</a></li>
-                                <li><a class="navbar--dif" href="#team">Team</a></li>
-                                <li><a class="navbar--dif" href="#events">Events</a></li>
-                                <li><a class="navbar--special" href="#projects">Projects</a></li>
-                                <li><a class="navbar--dif" href="#contacts">Contacts</a></li>
+                                <li><a class="navbar__link--dif" href="#home">Home</a></li>
+                                <li><a class="navbar__link--dif" href="#about">About</a></li>
+                                <li><a class="navbar__link--dif" href="#programs">Programs</a></li>
+                                <li><a class="navbar__link--dif" href="#tracks">Tracks</a></li>
+                                <li><a class="navbar__link--dif" href="#process">Process</a></li>
+                                <li><a class="navbar__link--dif" href="#team">Team</a></li>
+                                <li><a class="navbar__link--dif" href="#events">Events</a></li>
+                                <li><a class="navbar__link--special" href="#projects">Projects</a></li>
+                                <li><a class="navbar__link--dif" href="#contacts">Contacts</a></li>
                             </ul>
                         </div>
                     </div>
@@ -120,20 +124,26 @@
 &lt;/div&gt;
     </pre>
                 </div>
-                <div class="navbar-2 section">
-                    <div class="container">
+                <div class="container">
+                    <div class="navbar__slide">
+                        <h3>SLIDE-IN NAV BAR</h3>
                         <div class="row">
-                            <h3>SLIDE-IN NAV BAR</h3>
-                            <div class="row">
-                                <div class="navbar--icon">
-                                    <img class="nav-icon-style2" src="../img/logo/metalab-icon.png" alt="metalab-icon">
-                                    <a class="navbar-select2 closebtn" onclick="openNav()">
-                                        <i class="fa fa-lg fa-bars" aria-hidden="true"></i></a>
-                                </div>
-                                <img class="navbar--filler" src="../img/panel--pictures/fillerpic.jpg" alt="filler pic">
+                            <div class="navbar__icon clearfix">
+                                <img class="navbar__icon-style2 pull-left" src="../img/logo/metalab-icon.png"
+                                     alt="metalab-icon">
+                                <a class="navbar-select2 closebtn pull-right" onclick="openNav()">
+                                    <i class="fa fa-lg fa-bars" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="navbar__icon--picture">
+                                <img class="navbar__icon--filler" src="../img/panel--pictures/fillerpic.jpg"
+                                     alt="filler pic">
                             </div>
                         </div>
-                        <pre>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>DOCUMENTATION FOR NAVBAR</h3>
+                    <pre>
 &lt;div class="navbar-2 section"&gt;<br/>
     &lt;div class="container"&gt;<br/>
         &lt;div class="row"&gt;<br/>
@@ -147,45 +157,44 @@
     &lt;/div&gt;<br/>
 &lt;/div&gt;
         </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="metalab-footer">
+        <div class="metalab-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="metalab-branding">
+                            <svg width="150" height="15" viewbox="0 0 300 35"
+                                 preserveAspectRatio="xMinYMin meet">
+                                <image href="../img/logo/metalab-horizontal.svg"></image>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="metalab-social">
+                            <a href="#" target="_blank"><i
+                                    class="margin-left fa fa-linkedin-square fa-lg type--white"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="margin-left fa fa-facebook fa-lg type--white"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <div class="metalab-footer">
-            <div class="metalab-wrapper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="metalab-branding">
-                                <svg width="150" height="15" viewbox="0 0 300 35"
-                                     preserveAspectRatio="xMinYMin meet">
-                                    <image href="../img/logo/metalab-horizontal.svg"></image>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="metalab-social">
-                                <a href="#" target="_blank"><i
-                                        class="margin-left fa fa-linkedin-square fa-lg type--white"
-                                        aria-hidden="true"></i>
-                                    <a href="#" target="_blank"><i
-                                            class="margin-left fa fa-facebook fa-lg type--white"
-                                            aria-hidden="true"></i>
-                                        <a href="#" target="_blank"><i
-                                                class="margin-left fa fa-instagram fa-lg type--white"
-                                                aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer>
 
-            <script type="text/javascript"
-                    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 
