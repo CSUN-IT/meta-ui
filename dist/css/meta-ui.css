@@ -4539,6 +4539,24 @@ code {
   border: none;
 }
 
+.img__events-grid {
+  height: 192px;
+  width: 192px;
+  border: none;
+}
+
+.img__team-profile {
+  height: 448px;
+  width: 443px;
+  border: none;
+}
+
+.img__side--image {
+  height: 336px;
+  width: 465px;
+  border: none;
+}
+
 .metalab-wrapper {
   position: absolute;
   right: 0;
