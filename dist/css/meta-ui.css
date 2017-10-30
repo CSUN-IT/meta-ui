@@ -4923,7 +4923,7 @@ code {
 }
 
 .navbar__link--dif {
-  color: black;
+  color: #0E1821;
   font-size: x-large;
 }
 
@@ -4940,7 +4940,7 @@ code {
   margin: auto;
 }
 
-.navbar__2--list {
+.navbar__list--display {
   margin: auto;
   position: inherit;
   text-align: center;
@@ -4969,7 +4969,7 @@ code {
   position: relative;
   top: 243px;
   height: 35px;
-  color: #D00D20;
+  color: #0E1821;
   right: 25px;
 }
 
@@ -4991,11 +4991,11 @@ code {
   margin-right: 1000px;
 }
 
-.navbar__2--list a {
+.navbar__list a {
   text-decoration: none;
 }
 
-.navbar__2--list li {
+.navbar__list li {
   list-style: none;
   text-align: center;
   padding-right: 10px;
@@ -5013,7 +5013,7 @@ code {
 }
 
 .nav-top--bars {
-  color: #D00D20;
+  color: #0E1821;
 }
 
 .navbar__slide {
@@ -5025,7 +5025,7 @@ code {
   height: 35px;
   top: 138px;
   padding-right: 30px;
-  color: #D00D20;
+  color: #0E1821;
 }
 
 .navbar--icon {
@@ -5033,7 +5033,7 @@ code {
 }
 
 pre {
-  color: red;
+  color: #D00D20;
 }
 
 .margin-left {

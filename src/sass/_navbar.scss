@@ -1,9 +1,7 @@
 @import "variables";
 
 .navbar {
-  //background-color: $grey-light;
   position: absolute;
-  //top: -50px;
   width: 100%;
   transition: top 0.3s;
 
@@ -36,7 +34,7 @@
 }
 
 .navbar__link--dif {
-  color: black;
+  color: $black;
   font-size: x-large;
 }
 
@@ -53,7 +51,7 @@
   margin: auto;
 }
 
-.navbar__2--list {
+.navbar__list--display {
   margin: auto;
   position: inherit;
   text-align: center;
@@ -82,7 +80,7 @@
   position: relative;
   top: 243px;
   height: 35px;
-  color: #D00D20;
+  color: $black;
   right: 25px;
 }
 
@@ -104,12 +102,12 @@
   margin-right: 1000px;
 }
 
-.navbar__2--list a {
+.navbar__list a {
   text-decoration: none;
 
 }
 
-.navbar__2--list li {
+.navbar__list li {
   list-style: none;
   text-align: center;
   padding-right: 10px;
@@ -126,7 +124,7 @@
   position: relative;
 }
 .nav-top--bars{
-  color: #D00D20;
+  color: $black;
 }
 .navbar__slide{
   position: relative;
@@ -137,11 +135,11 @@
   height: 35px;
   top: 138px;
   padding-right: 30px;
-  color: #D00D20;
+  color: $black;
 }
 .navbar--icon {
   position: relative;
 }
 pre{
-  color: red;
+  color: $red;
 }
