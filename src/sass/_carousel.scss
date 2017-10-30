@@ -8,7 +8,7 @@
 }
 
 // Fixes images to a 500x500 size
-.carousel__slide img {
+.carousel img {
   width: auto;
   height: 500px;
   max-height: 500px;
@@ -62,12 +62,9 @@
 }
 
 /* Automatic Carousel */
-.carousel--auto__slide {
-  display: none;
-}
 
 // Fixes images to a specific size
-.carousel--auto .carousel__slide img {
+.carousel--auto img {
   width: auto;
   height: 250px;
   max-height: 250px;
@@ -82,12 +79,12 @@
 
 /* Multiple Slides Automatic Carousel */
 
-.carousel--multi__slide {
-  display: none;
-}
+//.carousel--multi__slide {
+//  display: none;
+//}
 
 // Fixes images to a specific size
-.carousel--multi__slide img {
+.carousel--multi img {
   width: auto;
   height: 250px;
   max-height: 250px;

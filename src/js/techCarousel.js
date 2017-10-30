@@ -1,17 +1,17 @@
 var autoIndex = 0;
 var i;
-var slides = document.getElementsByClassName("carousel__slide");
+var autoSlides = $(".carousel--auto>.carousel__slide");
 displaySlides();
 
 function displaySlides() {
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for (i = 0; i < autoSlides.length; i++) {
+        autoSlides[i].style.display = "none";
     }
     autoIndex++;
-    if (autoIndex > slides.length) {
+    if (autoIndex > autoSlides.length) {
         autoIndex = 1;
     }
-    slides[autoIndex-1].style.display = "block";
+    autoSlides[autoIndex-1].style.display = "block";
     timer();
 }
 

@@ -3863,7 +3863,7 @@ ol {
   display: none;
 }
 
-.carousel__slide img {
+.carousel img {
   width: auto;
   height: 500px;
   max-height: 500px;
@@ -3933,11 +3933,7 @@ ol {
 
 /* Automatic Carousel */
 
-.carousel--auto__slide {
-  display: none;
-}
-
-.carousel--auto .carousel__slide img {
+.carousel--auto img {
   width: auto;
   height: 250px;
   max-height: 250px;
@@ -3952,11 +3948,7 @@ ol {
 
 /* Multiple Slides Automatic Carousel */
 
-.carousel--multi__slide {
-  display: none;
-}
-
-.carousel--multi__slide img {
+.carousel--multi img {
   width: auto;
   height: 250px;
   max-height: 250px;

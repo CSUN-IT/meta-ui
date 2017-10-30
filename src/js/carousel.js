@@ -1,5 +1,5 @@
 var index = 1;
-var slides = document.getElementsByClassName("carousel__slide");
+var slides = $(".carousel>.carousel__slide");
 var dots = document.getElementsByClassName("dot");
 showSlides(index);
 
