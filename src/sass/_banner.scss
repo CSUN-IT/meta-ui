@@ -17,7 +17,7 @@
   font-family: $font-banner;
   margin: 0px;
 
-  @media (min-width: 350px) and (max-width: 741px ) {
+  @media (min-width: 320px) and (max-width: 741px ) {
     font-size: 50px;
   }
 }
@@ -29,7 +29,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: 350px) and (max-width: 741px ) {
+  @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
     min-height: 300px;
   }
@@ -44,7 +44,7 @@
 .banner__content{
   padding: 140px 0;
 
-  @media (min-width: 350px) and (max-width: 741px ) {
+  @media (min-width: 320px) and (max-width: 741px ) {
     padding: 140px 0 0 0;
 
   }
@@ -53,7 +53,7 @@
 .banner__color--title{
   color: white;
 
-  @media (min-width: 350px) and (max-width: 741px ) {
+  @media (min-width: 320px) and (max-width: 741px ) {
     text-align: center;
 
   }
