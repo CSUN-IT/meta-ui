@@ -67,7 +67,7 @@
 }
 
 // Fixes images to a specific size
-.carousel--auto__slide img {
+.carousel--auto .carousel__slide img {
   width: auto;
   height: 250px;
   max-height: 250px;

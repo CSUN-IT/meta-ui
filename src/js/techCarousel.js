@@ -1,9 +1,9 @@
 var autoIndex = 0;
+var i;
+var slides = document.getElementsByClassName("carousel__slide");
 displaySlides();
 
 function displaySlides() {
-    var i;
-    var slides = document.getElementsByClassName("carousel--auto__slide");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
