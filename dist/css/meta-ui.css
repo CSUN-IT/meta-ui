@@ -4922,12 +4922,12 @@ code {
   padding-top: 65px;
 }
 
-.navbar__link--dif {
+.navbar__link {
   color: #0E1821;
   font-size: x-large;
 }
 
-.navbar__link--special {
+.navbar__link--active {
   font-size: x-large;
 }
 
