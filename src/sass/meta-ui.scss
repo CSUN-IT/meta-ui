@@ -2,8 +2,8 @@
 
 @import "base";
 // CONFIGURATIOINS
+@import "mixins/mixins";
 @import "variables";
-
 // RESETS
 @import "normalize";
 
@@ -25,14 +25,13 @@
 @import "banner";
 @import "buttons";
 @import "labels";
+@import "icon";
+@import "navbar";
 
 // DOCUMENTION STYLING
 @import "meta-ui-docs";
 
-@import "icon";
 
-//NAV BAR
-@import "navbar";
 
 //clearfix
 @import "clearfix";

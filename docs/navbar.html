@@ -51,6 +51,7 @@
             </div>
 
             <div class="col-md-9">
+                <h5>TOP BAR</h5>
                 <div class="navbar--top  clearfix">
                     <img class="margin-left navbar__icon-style1 pull-left" src="../img/logo/metalab-icon.png"
                          alt="metalab-icon">
@@ -58,23 +59,55 @@
                                                      aria-hidden="true"></i></a>
                 </div>
                 <div class="navbar__1--documentation">
-                    <h3>DOCUMENTATION FOR TOP BAR</h3>
+                    <h5>DOCUMENTATION FOR TOP BAR</h5>
                     <pre>
-    <br/>
-    &lt;div class="navbar-1"&gt;<br/>
-        &lt;div class="container"&gt;<br/>
-            &lt;div class="navbar--list1"&gt;<br/>
-                &lt;img class="nav-icon-style1" src="metalab-icon.png" alt="metalab-icon"&gt;<br/>
-                &lt;a class="nav-top"&gt;&lt;i class="fa fa-bars nav-top--bars" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
-            &lt;/div&gt;<br/>
-        &lt;/div&gt;<br/>
-    &lt;/div&gt;<br/>
-    </pre>
+            &lt;div class="navbar--top clearfix"&gt;
+                &lt;img class="navbar__icon-style1" src="../img/logo/metalab-icon.png" alt="metalab-icon"&gt;
+                &lt;a class="nav-top pull-right"&gt;&lt;i class="fa fa-bars nav-top--bars icon--padding" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+                    </pre>
                 </div>
+                <br>
+                <div class="container">
+                    <div class="navbar__slide">
+                        <div class="row">
+                        <h5>SLIDE-IN NAV BAR</h5>
 
+                            <div class="navbar__icon clearfix">
+                                <img class="navbar__icon-style2 pull-left" src="../img/logo/metalab-icon.png"
+                                     alt="metalab-icon">
+                                <a class="navbar-select2 closebtn pull-right" onclick="openNav()">
+                                    <i class="fa fa-lg fa-bars" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="navbar__icon--picture">
+                                <img class="navbar__icon--filler" src="../img/panel--pictures/fillerpic.jpg"
+                                     alt="filler pic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="container">
+                    <h5>DOCUMENTATION FOR NAVBAR</h5>
+                    <pre>
+&lt;div class="navbar-2 section"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="navbar--icon>
+                &lt;img class="nav-icon-style2" src="metalab-icon.png" alt="metalab-icon"&gt;
+                &lt;a class="navbar-select2 closebtn" onclick="openNav()"&gt;
+                &lt;i class="fa fa-lg fa-bars" aria-hidden= "true"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+                &lt;img class="navbar--filler" src="fillerpic.jpg" alt="filler pic"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+                </div>
+                </br>
                 <div class="container">
                     <div class="navbar__2">
-                        <h3>POP-OUT NAV BAR</h3>
+                        <h5>POP-OUT NAV BAR</h5>
                         <div class="row">
 
                             <div class="navbar-icon clearfix">
@@ -84,7 +117,7 @@
                                         class="fa fa-times"
                                         aria-hidden="true"></i></a>
                             </div>
-                            <ul class="navbar--list3">
+                            <ul class="navbar__2--list">
                                 <li><a class="navbar__link--dif" href="#home">Home</a></li>
                                 <li><a class="navbar__link--dif" href="#about">About</a></li>
                                 <li><a class="navbar__link--dif" href="#programs">Programs</a></li>
@@ -100,64 +133,31 @@
                 </div>
                 <br>
                 <div class="container">
-                    <h3>HTML DOCUMENTATION FOR SLIDE-IN NAV BAR</h3>
+                    <h5>HTML DOCUMENTATION FOR SLIDE-IN NAV BAR</h5>
                     <pre>
-&lt;div class="navbar-3"&gt;<br/>
-    &lt;div class="container"&gt;<br/>
-          &lt;div class="navbar-icon"&gt;<br/>
-            &lt;img class="nav-icon-style" src="metalab-icon.png" alt="metalab-icon"&gt;<br/>
-            &lt;a class="navbar-select closebtn" id="javascript:void(0)" onclick="closeNav()"&gt;<br/>
-            &lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
-        &lt;/div&gt;<br/>
-        &lt;ul class="navbar--list3"&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#programs"&gt;Programs&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#tracks"&gt;Tracks&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#process"&gt;Process&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#events"&gt;Events&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--special" href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;<br/>
-            &lt;li&gt;&lt;a class="navbar--dif" href="#contacts"&gt;Contacts&lt;/a&gt;&lt;/li&gt;<br/>
-        &lt;/ul&gt;<br/>
-    &lt;/div&gt;<br/>
+&lt;div class="navbar__2"&gt;
+    &lt;div class="container"&gt;
+          &lt;div class="navbar-icon"&gt;
+            &lt;img class="nav-icon-style" src="metalab-icon.png" alt="metalab-icon"&gt;
+            &lt;a class="navbar-select closebtn" id="javascript:void(0)" onclick="closeNav()"&gt;
+            &lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;ul class="navbar__2--list"&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#programs"&gt;Programs&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#tracks"&gt;Tracks&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#process"&gt;Process&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#events"&gt;Events&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--special" href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="navbar--dif" href="#contacts"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
     </pre>
                 </div>
-                <div class="container">
-                    <div class="navbar__slide">
-                        <h3>SLIDE-IN NAV BAR</h3>
-                        <div class="row">
-                            <div class="navbar__icon clearfix">
-                                <img class="navbar__icon-style2 pull-left" src="../img/logo/metalab-icon.png"
-                                     alt="metalab-icon">
-                                <a class="navbar-select2 closebtn pull-right" onclick="openNav()">
-                                    <i class="fa fa-lg fa-bars" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="navbar__icon--picture">
-                                <img class="navbar__icon--filler" src="../img/panel--pictures/fillerpic.jpg"
-                                     alt="filler pic">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <h3>DOCUMENTATION FOR NAVBAR</h3>
-                    <pre>
-&lt;div class="navbar-2 section"&gt;<br/>
-    &lt;div class="container"&gt;<br/>
-        &lt;div class="row"&gt;<br/>
-            &lt;div class="navbar--icon"&gt;<br/>
-                &lt;img class="nav-icon-style2" src="metalab-icon.png" alt="metalab-icon"&gt;<br/>
-                &lt;a class="navbar-select2 closebtn" onclick="openNav()"&gt;<br/>
-                &lt;i class="fa fa-lg fa-bars" aria-hidden= "true"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
-            &lt;/div&gt;<br/>
-                &lt;img class="navbar--filler" src="fillerpic.jpg" alt="filler pic"&gt;<br/>
-        &lt;/div&gt;<br/>
-    &lt;/div&gt;<br/>
-&lt;/div&gt;
-        </pre>
-                </div>
+
             </div>
         </div>
     </div>

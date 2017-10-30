@@ -4885,18 +4885,6 @@ code {
   background-color: #76C6B3;
 }
 
-.margin-left {
-  margin-left: 10px;
-}
-
-.margin-right {
-  margin-right: 10px;
-}
-
-.margin-top {
-  margin-top: 10px;
-}
-
 .icon--padding {
   padding: 6px;
 }
@@ -4909,6 +4897,11 @@ code {
 }
 
 .navbar--top {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
   background-color: #FAFAFA;
 }
 
@@ -4947,7 +4940,7 @@ code {
   margin: auto;
 }
 
-.navbar--list3 {
+.navbar__2--list {
   margin: auto;
   position: inherit;
   text-align: center;
@@ -4998,12 +4991,14 @@ code {
   margin-right: 1000px;
 }
 
-.navbar--list3 a {
+.navbar__2--list a {
   text-decoration: none;
 }
 
-.navbar--list3 li {
+.navbar__2--list li {
   list-style: none;
+  text-align: center;
+  padding-right: 10px;
 }
 
 .navbar__icon-style2 {
@@ -5039,6 +5034,18 @@ code {
 
 pre {
   color: red;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.margin-top {
+  margin-top: 10px;
 }
 
 .clearfix::after {
