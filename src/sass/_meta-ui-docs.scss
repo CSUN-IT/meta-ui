@@ -12,7 +12,9 @@
 // Demonstrates clearfix
 .clearfix--border {
   padding: .5rem;
-  background-color: #000063 !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $grey-clear;
 }
 
 // Box
