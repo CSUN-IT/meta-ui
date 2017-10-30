@@ -101,9 +101,7 @@ function includeOnce(file) {
     }
 }
 
-includeOnce('../src/js/navbar.js');
-includeOnce('../src/js/dropdown.js');
-includeOnce('../src/js/multiCarousel.js');
+includeOnce('../src/js/form.js');
 
 /***/ }),
 /* 2 */
