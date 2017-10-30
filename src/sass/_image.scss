@@ -21,17 +21,47 @@
 
 // Team Page //
 
-.img__team-profile {
+.img__team-large {
   height: 448px;
   width: 443px;
+  border: none;
+}
+
+.img__team-med {
+  height: 255px;
+  width: 255px;
+  border: none;
+}
+
+.img__team-small {
+  height: 172px;
+  width: 172px;
+  border: none;
+}
+
+
+// Long Image //
+
+.img__large-one {
+  height: 366px;
+  width: 800px;
   border: none;
 }
 
 
 // Side Image //
 
-.img__side--image {
+.img__side-image {
   height: 336px;
-  width: 465px;
+  width: 488px;
   border: none;
+}
+
+
+// Black Panel //
+
+.img__black-bar {
+  height: 432px;
+  width: 288px;
+  background-color: black;
 }
