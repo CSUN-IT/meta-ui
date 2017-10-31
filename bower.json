@@ -1,0 +1,20 @@
+{
+  "name": "meta-ui",
+  "description": "Offical META+LAB UI KIT",
+  "main": "[meta-ui.scss, meta-ui.js]",
+  "authors": [
+    "Rahil Hashim <Rahil323@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "METALAB"
+  ],
+  "homepage": "https://github.com/csun-metalab/meta-ui",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
