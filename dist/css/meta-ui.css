@@ -4890,6 +4890,10 @@ code {
   color: #0E1821;
 }
 
+.form__group {
+  line-height: 50px;
+}
+
 .form__line {
   width: 600px;
   margin-left: 0px;
@@ -4951,7 +4955,7 @@ input form[type=text] {
   color: #0E1821;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  padding: 16px;
+  padding-left: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -4964,11 +4968,10 @@ input form[type=text] {
 
 .form___content {
   position: relative;
-  display: inline-block;
   margin-left: -15px;
 }
 
-.form__content--dropdown {
+.form__select {
   display: none;
   position: absolute;
   background-color: transparent;
@@ -4979,7 +4982,7 @@ input form[type=text] {
   z-index: 1;
 }
 
-.form__content--dropdown a {
+.form__select a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -5008,7 +5011,7 @@ input form[type=text] {
 
 .form__submit {
   color: #D00D20;
-  line-height: 70px;
+  line-height: 70 px;
 }
 
 .fa-long-arrow-right {
