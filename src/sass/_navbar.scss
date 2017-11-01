@@ -1,47 +1,70 @@
-@import "variables";
-
-.navbar {
-  position: absolute;
+.nav {
+  position: relative;
+  padding-top: 20px;
   width: 100%;
   transition: top 0.3s;
+  padding-bottom: 30px;
 
 }
-.navbar--top{
+
+.nav--top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+.nav__brand{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.nav__menu{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+.nav__list{
+  position: fixed;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 3px;
-  padding-right: 3px;
-  background-color: $grey-light;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $white;
+  text-align: center;
+  list-style: none;
+  font-family: $font;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  height: 10em;
+  transition: 0.5s;
 }
 
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-  decoration: none;
+.nav__link--active a{
+  color: $red;
 }
+.nav__list a{
 
-.navbar--list1 {
-  display: inline-block;
-  line-height: 0em;
-  //display: inherit;
-  padding: 12px;
+  text-decoration: none;
+  color: black
 }
+.nav--show .nav__brand, .nav--show .nav__menu{
+  position: fixed;
 
-.navbar__1--documentation {
-  display: inherit;
-  padding-top: 65px;
 }
-
-.navbar__link {
-  color: $black;
-  font-size: x-large;
+.nav__logo{
+  height: 30px;
+  width: 30px;
 }
-
-.navbar__link--active {
-  font-size: x-large;
-}
-
 .navbar__icon--filler {
   position: inherit;
   display: block;
@@ -50,95 +73,10 @@
   text-align: center;
   margin: auto;
 }
-
-.navbar__list--display {
-  margin: auto;
-  position: inherit;
-  text-align: center;
-  font-family: $font;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 50px;
-  height: 10em;
-  background-color: $grey-light;
-  transition: 0.5s;
-
-}
-
-.navbar--dif a {
-  color: $black;
-}
-
-.nav-icon-style {
-  position: relative;
-  top: 250px;
-  height: 35px;
-  padding-left: 27.39px;
-}
-
-.navbar-select {
-  position: relative;
-  top: 243px;
-  height: 35px;
-  color: $black;
-  right: 25px;
-}
-
-.fa-bars {
-  position: relative;
-  height: 35px;
-  float: right;
-}
-
-.navbar__icon-style1 {
+.nav__icon{
   position: relative;
   height: 35px;
   width: 35px;
-}
-
-.container--nav {
-  display: inline-block;
-  text-align: right;
-  margin-right: 1000px;
-}
-
-.navbar__list a {
-  text-decoration: none;
-
-}
-
-.navbar__list li {
-  list-style: none;
-  text-align: center;
-  padding-right: 10px;
-}
-
-.navbar__icon-style2 {
-  position: relative;
-  top: 130px;
-  height: 35px;
-  padding-left: 30px;
-
-}
-.navbar__icon{
-  position: relative;
-}
-.nav-top--bars{
-  color: $black;
-}
-.navbar__slide{
-  position: relative;
-}
-
-.navbar-select2 {
-  position: relative;
-  height: 35px;
-  top: 138px;
-  padding-right: 30px;
-  color: $black;
-}
-.navbar--icon {
-  position: relative;
 }
 pre{
   color: $red;

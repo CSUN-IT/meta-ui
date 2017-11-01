@@ -65,127 +65,28 @@
             </div>
 
             <div class="col-md-9">
-                <h5>NAVIGATION BARS</h5>
-                <div class="navbar--top  clearfix">
-                    <img class="margin-left navbar__icon-style1 pull-left" src="../img/logo/metalab-icon.png"
+                <h5>NAVIGATION BAR</h5>
+                <div class="nav clearfix">
+                    <img class="margin-left nav__icon pull-left" src="../img/logo/metalab-icon.png"
                          alt="metalab-icon">
-                    <a class="nav-top pull-right"><i class="fa fa-bars fa-lg nav-top--bars icon--padding"
-                                                     aria-hidden="true"></i></a>
+                    <a class="nav-top pull-right">
+                        <i class="fa fa-bars fa-lg nav-top--bars icon--padding" aria-hidden="true"></i></a>
                 </div>
-                <br>
-                <h5>FOLLOW BAR</h5>
-                <div class="navbar--follow  clearfix">
-                    <img class="margin-left navbar__icon-style1 pull-left" src="../img/logo/metalab-icon.png"
-                         alt="metalab-icon">
-                    <a class="nav-top pull-right"><i class="fa fa-bars fa-lg nav-top--bars icon--padding"
-                                                     aria-hidden="true"></i></a>
-                </div>
-                <div class="navbar__1--documentation">
-                    <h5>DOCUMENTATION FOR TOP BAR</h5>
+                <div class="nav__docs">
+                    <h5>DOCUMENTATION FOR NAVIGATION BAR</h5>
                     <pre>
-&lt;!--NAV BAR--&gt;
-&lt;div class="navbar--top clearfix"&gt;
-    &lt;img class="navbar__icon-style1" src="../img/logo/metalab-icon.png" alt="metalab-icon"&gt;
-    &lt;a class="nav-top pull-right"&gt;&lt;i class="fa fa-bars nav-top--bars icon--padding" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;!--FOLLOW NAV BAR--&gt;
-&lt;div class="navbar--follow clearfix"&gt;
-    &lt;img class="navbar__icon-style1" src="../img/logo/metalab-icon.png" alt="metalab-icon"&gt;
-    &lt;a class="nav-top pull-right"&gt;&lt;i class="fa fa-bars nav-top--bars icon--padding" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/div&gt;
+ &lt;div class="nav clearfix"&gt;
+    &lt;img class="margin-left nav__icon pull-left" src="../img/logo/metalab-icon.png"
+    alt="metalab-icon"&gt;
+    &lt;a class="nav-top pull-right"&gt;&lt;i class="fa fa-bars fa-lg nav-top--bars icon--padding"
+    aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+ &lt;/div&gt;
+    <span class="type--grey-dark">
+    <b>//NAV BAR MODIFIERS</b>
+    .nav--show
+    .nav--top
+    </span>
                     </pre>
-                </div>
-                <br>
-                <div class="container">
-                    <div class="navbar__slide">
-                        <div class="row">
-                        <h5>SLIDE-IN NAV BAR</h5>
-
-                            <div class="navbar__icon clearfix">
-                                <img class="navbar__icon-style2 pull-left" src="../img/logo/metalab-icon.png"
-                                     alt="metalab-icon">
-                                <a class="navbar-select2 closebtn pull-right" onclick="openNav()">
-                                    <i class="fa fa-lg fa-bars" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="navbar__icon--picture">
-                                <img class="navbar__icon--filler" src="../img/panel--pictures/filler_content.jpg"
-                                     alt="filler pic">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </br>
-                <div class="container">
-                    <h5>DOCUMENTATION FOR NAVBAR</h5>
-                    <pre>
-&lt;div class="main--fulpage section"&gt;
-    &lt;div class="container"&gt;
-        &lt;div class="row"&gt;
-            &lt;div class="navbar--icon>
-                &lt;img class="nav-icon-style2" src="metalab-icon.png" alt="metalab-icon"&gt;
-                &lt;a class="navbar-select2 closebtn" onclick="openNav()"&gt;
-                &lt;i class="fa fa-lg fa-bars" aria-hidden= "true"&gt;&lt;/i&gt;&lt;/a&gt;
-            &lt;/div&gt;
-                &lt;img class="navbar--filler" src="../img/panel--pictures//filler_content.jpg" alt="filler pic"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-        </pre>
-                </div>
-                </br>
-                <div class="container">
-                    <div class="navbar__list">
-                        <h5>POP-OUT NAV BAR</h5>
-                        <div class="row">
-
-                            <div class="navbar-icon clearfix">
-                                <img class="nav-icon-style" src="../img/logo/metalab-icon.png" alt="metalab-icon">
-                                <a class="navbar-select closebtn pull-right" id="javascript:void(0)"
-                                   onclick="closeNav()"><i
-                                        class="fa fa-times"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <ul class="navbar__list--display">
-                                <li><a class="navbar__link" href="#home">Home</a></li>
-                                <li><a class="navbar__link" href="#about">About</a></li>
-                                <li><a class="navbar__link" href="#programs">Programs</a></li>
-                                <li><a class="navbar__link" href="#tracks">Tracks</a></li>
-                                <li><a class="navbar__link" href="#process">Process</a></li>
-                                <li><a class="navbar__link" href="#team">Team</a></li>
-                                <li><a class="navbar__link" href="#events">Events</a></li>
-                                <li><a class="navbar__link--active" href="#projects">Projects</a></li>
-                                <li><a class="navbar__link" href="#contacts">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <div class="container">
-                    <h5>HTML DOCUMENTATION FOR SLIDE-IN NAV BAR</h5>
-                    <pre>
-&lt;div class="navbar__list"&gt;
-      &lt;div class="row"&gt;
-         &lt;div class="navbar-icon clearfix"&gt;
-            &lt;img class="nav-icon-style" src="../img/logo/metalab-icon.png" alt="metalab-icon"&gt;
-            &lt;a class="navbar-select closebtn pull-right" id="javascript:void(0)"
-            onclick="closeNav()"&gt;&lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
-         &lt;/div&gt;
-         &lt;ul class="navbar__list--display"&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#programs"&gt;Programs&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#tracks"&gt;Tracks&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#process"&gt;Process&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#events"&gt;Events&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link--active" href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a class="navbar__link" href="#contacts"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
-         &lt;/ul&gt;
-      &lt;/div&gt;
-&lt;/div&gt;
-    </pre>
                 </div>
             </div>
         </div>
