@@ -3651,11 +3651,6 @@ ol {
   margin: 0px 0px 20px 0px;
 }
 
-hr {
-  color: #B1B3B2;
-  background-color: #B1B3B2;
-}
-
 .line {
   background-color: #D6D6D6;
   width: auto;
@@ -3739,7 +3734,7 @@ hr {
 }
 
 .small {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 .type--light {
