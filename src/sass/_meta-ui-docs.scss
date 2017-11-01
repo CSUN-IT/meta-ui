@@ -1,4 +1,4 @@
-@import "clearfix/mixins";
+@import "mixins/clearfix";
 
 .clearfix {
   @include clearfix;
@@ -9,7 +9,7 @@
 .margin-right { margin-right: 10px; }
 .margin-top { margin-top: 10px;}
 
-// Demonstrates clearfix
+// Demonstrates mixins
 .clearfix--border {
   padding: .5rem;
   border-style: solid;
