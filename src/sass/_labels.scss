@@ -1,0 +1,19 @@
+.label{
+  // width: 12%;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  font-family: $font-base;
+  color: $white;
+  font-size: 12px;
+}
+
+.label--default{ background-color: $grey; color: $white; }
+.label--fixed{ background-color: $red; }
+.label--changed{ background-color: $blue; }
+.label--added{ background-color: $teal;}
+
+
+
+
+

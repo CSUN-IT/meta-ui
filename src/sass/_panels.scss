@@ -1,0 +1,88 @@
+// General
+.panel__content{
+  width:100%;
+  height:auto;
+  padding: 65px;
+}
+
+.panel__img{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Panel with Dark Blue Background
+.panel__color{
+  background-color: $blue-dark;
+  width: 90%;
+  height: auto;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+    h4{
+      font-size: 30px;
+    }
+  }
+}
+
+// Panel with Picture in the Background
+.panel__img--box{
+  width: 70%;
+  height: auto;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+.panel__flex--cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  // min-width: 130px;
+}
+
+.panel__title--box{
+  width:90%;
+  position: absolute;
+  bottom: 55px;
+  right: 55px;
+  text-align: right;
+  z-index:10;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    text-align: center;
+    right: 0px;
+    width: 100%;
+  }
+}
+
+// Small Panel with Picture in the Background
+.panel__img-box--small{
+  width: 40%;
+  height: 575px;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+.panel__flex-cover--small{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 575px;
+  // min-width: 130px;
+}
+
+.panel__title{
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    text-align: center;
+    right: 0px;
+    width: 100%;
+  }
+}
