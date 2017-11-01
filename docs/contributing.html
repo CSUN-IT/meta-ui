@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contributing | META+LAB UI Kit</title>
+  <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
+</head>
+<body>
+  <div class="main--fullpage section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="margin__less-top"><b>Getting Started</b></p>
+          <ul class="sidebar">
+            <li class="sidebar__item">
+              <a href="../docs/introduction.html" class="sidebar__link">Introduction</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/installation.html" class="sidebar__link">Installation</a>
+            </li>
+            <li class="sidebar__item active">
+              <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+            </li>
+          </ul>
+          <p><b>Components</b></p>
+          <ul class="sidebar">
+            <li class="sidebar__item">
+              <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/images.html" class="sidebar__link">Images</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/labels.html" class="sidebar__link">Labels</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/panels.html" class="sidebar__link">Panels</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/type.html" class="sidebar__link">Typography</a>
+            </li>
+          </ul>
+          <p><b>Resources</b></p>
+          <ul class="sidebar">
+            <li class="sidebar__item">
+              <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <h1 class="h5">Contributing to META-UI Kit</h1>
+          <p>We think it would be great for you to help improve the Meta-UI Kit by forking and making beneficial changes. Please adhere to the guidelines below to make the best out of your contributions. It will also make it easier for our developers to determine if your changes are to be added to our kit.</p>
+          <h2 class="h6">#Developer Setup Instructions</h2>
+          <p><b>1.</b> First, clone our repository from Github.</p>
+<pre>
+  <code>
+  $ git clone https://github.com/csun-metalab/meta-ui.git
+  </code>
+</pre>
+          <p><b>2.</b> Next, install the necessary repo dependencies.</p>
+<pre>
+  <code>
+  $ yarn install
+  </code>
+</pre>
+          <p><b>3.</b> Now with yarn, add the necessary dev dependencies.</p>
+          <p class="small"><em><b>Note:</b> Please take a look at the <a href="https://github.com/csun-metalab/meta-ui" target="_blank" class="small">Webpack Front-End Commands</a> section on the Github repository to learn how to use yarn throughout development.</em></p>
+<pre>
+  <code>
+  $ yarn add laravel-mix
+  $ yarn add cross-env
+  $ yarn add font-awesome
+  $ yarn add normalize
+  </code>
+</pre>
+          <div class="line"></div>
+
+          <h2 class="h6">#Github Workflow & Pull Requests</h2>
+          <p>It is important to understand how to properly push and pull code. Please take a moment to look through this article writen by Github: <a href="https://guides.github.com/introduction/flow/">Understanding the Github Workflow</a>.</p>
+
+          <div class="line"></div>
+
+          <h2 class="h6">#Feature Requests</h2>
+          <p>We would love to view your feature requests! Keep in mind though, that your ideas will be reviewed under the scrutiny of our developers, and thus should be well worded and detailed.</p>
+          <p>Here is a link to our <a href="https://github.com/csun-metalab/meta-ui/issues">Github issues page</a>.</p>
+
+          <div class="line"></div>
+
+          <h2 class="h6">#Product Versioning</h2>
+          <p>Increment the version number according to this format: <code>MAJOR.MINOR.PATCH</code></p>
+          <p><code>MAJOR</code> when you create incompatible API changes,<code>MINOR</code> when you add functionality that is backwards-compatible, and <code>PATCH</code> when you make backwards-compatible bug fixes.</p>
+          <p class="small"><em><b>Note:</b> Here's a link for more information on <a href="http://semver.org/" target="_blank" class="small">Symantic Versionings</a>.</em></p>
+
+          <div class="line"></div>
+
+          <h2 class="h6">#Issue Tracking & Task Management</h2>
+          <p>We utilize Github's issue tracking system to manage improvements, bugs, and feature requests. This allows us to issue contributors to tasks. Please take a look at <a href="https://guides.github.com/features/issues/"> Github's Mastering Issues Guide</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="metalab-footer">
+      <div class="metalab-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="metalab-branding">
+                <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
+                    <image href="../img/logo/metalab-horizontal.svg"></image>
+                </svg>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="metalab-social">
+                <a href="#" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"></a><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i>
+                <a href="#" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

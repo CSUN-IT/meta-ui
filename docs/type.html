@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Typography | META+LAB UI Kit</title>
   <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
@@ -20,6 +21,12 @@
             <li class="sidebar__item">
               <a href="../docs/installation.html" class="sidebar__link">Installation</a>
             </li>
+            <li class="sidebar__item">
+              <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
+            </li>
+            <li class="sidebar__item">
+                <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+            </li>
           </ul>
           <p><b>Components</b></p>
           <ul class="sidebar">
@@ -36,7 +43,7 @@
               <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
             </li>
             <li class="sidebar__item">
-              <a href="../docs/helpers.html" class="sidebar__link">Helpers</a>
+              <a href="../docs/images.html" class="sidebar__link">Images</a>
             </li>
             <li class="sidebar__item">
               <a href="../docs/labels.html" class="sidebar__link">Labels</a>
@@ -51,13 +58,17 @@
               <a href="../docs/type.html" class="sidebar__link">Typography</a>
             </li>
           </ul>
-          <p class=""><b>Resources</b></p>
+          <p><b>Resources</b></p>
           <ul class="sidebar">
+            <li class="sidebar__item">
+              <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
+            </li>
             <li class="sidebar__item">
               <a href="../docs/examples.html" class="sidebar__link">Examples</a>
             </li>
           </ul>
         </div>
+      <!-- Headers -->
         <div class="col-md-9">
           <div class="row">
             <h1>Header Examples (h1-h6)</h1>
@@ -89,6 +100,7 @@
   </code>
 </pre>
           </div>
+
           <div class="row">
             <h1 class="h5">Paragraph Tag</h1>
             <p>Paragraph Example: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam adipisci enim repudiandae non illum velit voluptates, laudantium obcaecati vitae, cumque earum, quidem asperiores deleniti temporibus dolorum beatae, ex nihil natus.</p>
@@ -118,6 +130,7 @@
   </code>
 </pre>
           </div>
+
           <div class="row">
             <h1 class="h5">Title Bar Thin</h1>
             <div class="title__bar--thin"></div>
@@ -172,60 +185,57 @@
             <h1 class="h5">Modifiers</h1>
 <pre>
   <code>
-  <span class="type--grey-darker">
-  <b>//Type Modifier:</b>
-  <b>Type Style:</b>
-  .type--center
-  .type--emphasis
-  .type--strike
-  .type--left
-  .type--center
-  .type--right
-  .type--thin
-  .type--bold
-  .type--italic
-  .type--marginless
-  .type--uppercase
-  .type--link
+    <span class="type--grey-darker">Type Modifier:</span>
+    .type--center
+    .type--emphasis
+    .type--strike
+    .type--left
+    .type--center
+    .type--right
+    .type--thin
+    .type--bold
+    .type--italic
+    .type--marginless
+    .type--uppercase
+    .type--link
 
-  <b>Type Size</b>
-  .small
+    <span class="type--grey-darker">Type Size:</span>
+    .small
 
-  <b>Type Weight</b>
-  .type--light
-  .type--plus
-  </span>
+    <span class="type--grey-darker">Type Weight</span>
+    .type--light
+    .type--plus
 
   </code>
 </pre>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<footer>
-    <div class="metalab-footer">
-      <div class="metalab-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="metalab-branding">
-                <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
-                  <image href="../img/logo/metalab-horizontal.svg"></image>
-                </svg>
+  <footer>
+      <div class="metalab-footer">
+        <div class="metalab-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="metalab-branding">
+                  <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
+                    <image href="../img/logo/metalab-horizontal.svg"></image>
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="metalab-social">
-                <a href="#" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
-                <a href="#" target="_blank"></a><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i>
-                <a href="#" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+              <div class="col-md-6">
+                <div class="metalab-social">
+                  <a href="#" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
+                  <a href="#" target="_blank"></a><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i>
+                  <a href="#" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-</footer>
+  </footer>
 </body>
 </html>

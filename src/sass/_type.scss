@@ -89,11 +89,6 @@ ul, ol { line-height: 1.6; }
   margin: 0px 0px 20px 0px;
 }
 
-hr{
-  color: $grey;
-  background-color: $grey;
-}
-
 .line{
   background-color: $grey-clear;
   width: auto;
@@ -142,7 +137,7 @@ hr{
 
 
 // Type Size
-.small{ font-size: 0.7rem; }
+.small{ font-size: 0.75rem; }
 
 //Type Weight
 .type--light{ font-family: $font-banner; }
