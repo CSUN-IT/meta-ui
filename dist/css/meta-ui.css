@@ -3750,19 +3750,7 @@ ol {
   float: right !important;
 }
 
-.clear-left {
-  clear: left !important;
-}
-
-.clear-right {
-  clear: right !important;
-}
-
-.clear-both {
-  clear: both !important;
-}
-
-.margin--less {
+.margin__less {
   margin: 0px;
 }
 
@@ -3786,10 +3774,6 @@ ol {
   color: #FFFFFF;
 }
 
-.type--red {
-  color: #D00D20;
-}
-
 .type--grey {
   color: #B1B3B2;
 }
@@ -3802,16 +3786,20 @@ ol {
   color: #55565a;
 }
 
-.type--blue {
-  color: #000063;
-}
-
 .type--yellow {
   color: #F8BC35;
 }
 
+.type--red {
+  color: #D00D20;
+}
+
 .type--teal {
   color: #76C6B3;
+}
+
+.type--blue {
+  color: #000063;
 }
 
 .type--blue-dark {
@@ -3822,10 +3810,6 @@ ol {
   background-color: #D6D6D6;
 }
 
-.bg--red {
-  background-color: #D00D20;
-}
-
 .bg--grey {
   background-color: #B1B3B2;
 }
@@ -3834,8 +3818,8 @@ ol {
   background-color: #3F3F3F;
 }
 
-.bg--blue {
-  background-color: #000063;
+.bg--red {
+  background-color: #D00D20;
 }
 
 .bg--yellow {
@@ -3844,6 +3828,10 @@ ol {
 
 .bg--teal {
   background-color: #76C6B3;
+}
+
+.bg--blue {
+  background-color: #000063;
 }
 
 .bg--blue-dark {
@@ -4973,6 +4961,12 @@ code {
   background-color: #76C6B3;
 }
 
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .margin-left {
   margin-left: 10px;
 }
@@ -4985,7 +4979,19 @@ code {
   margin-top: 10px;
 }
 
-.no-decoration {
-  text-decoration: none;
+.clearfix--border {
+  padding: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D6D6D6;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+.highlight {
+  background-color: black;
 }
 

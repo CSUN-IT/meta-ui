@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Helpers | META+LAB UI Kit</title>
+  <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
+</head>
+<body>
+<div class="main--fullpage section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+          <p class="margin__less-top"><b>Getting Started</b></p>
+          <ul class="sidebar">
+              <li class="sidebar__item">
+                  <a href="../docs/introduction.html" class="sidebar__link">Introduction</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/installation.html" class="sidebar__link">Installation</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/version-history.html" class="sidebar__link">Version History</a>
+              </li>
+          </ul>
+          <p><b>Components</b></p>
+          <ul class="sidebar">
+              <li class="sidebar__item">
+                  <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+              </li>
+              <li class="sidebar__item active">
+                  <a href="../docs/helpers.html" class="sidebar__link">Helpers</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/images.html" class="sidebar__link">Images</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/labels.html" class="sidebar__link">Labels</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/panels.html" class="sidebar__link">Panels</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/type.html" class="sidebar__link">Typography</a>
+              </li>
+          </ul>
+          <p><b>Resources</b></p>
+          <ul class="sidebar">
+              <li class="sidebar__item">
+                  <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
+              </li>
+              <li class="sidebar__item">
+                  <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-md-9">
+        <h1 class="h5">Helpers</h1>
+        <p>These classes can be used to alter general elements on the webpage, but are not required.</p>
+        <h2 class="h5">Backgrounds Colors</h2>
+        <p>Here is the Meta-UI background color pallete.</p>
+        <div class="container">
+          <div class="row">
+            <div class="bg--grey-clear box pull-left"></div>
+            <div class="bg--grey-dark box pull-left"></div>
+            <div class="bg--red box pull-left"></div>
+            <div class="bg--blue box pull-left"></div>
+            <div class="bg--yellow box pull-left"></div>
+            <div class="bg--teal box pull-left"></div>
+            <div class="bg--blue-dark box pull-left"></div>
+          </div>
+        </div>
+<pre>
+  <code>
+    &lt;div class="bg--grey-clear"&gt;&lt;/div&gt;
+    &lt;div class="bg--grey-dark"&gt;&lt;/div&gt;
+    &lt;div class="bg--red"&gt;&lt;/div&gt;
+    &lt;div class="bg--blue"&gt;&lt;/div&gt;
+    &lt;div class="bg--yellow"&gt;&lt;/div&gt;
+    &lt;div class="bg--teal"&gt;&lt;/div&gt;
+    &lt;div class="bg--blue-dark"&gt;&lt;/div&gt;
+  </code>
+</pre>
+
+        <!-- Type Colors -->
+        <h2 class="h5">Type Colors</h2>
+        <p>Here is the Meta-UI type color pallete. These can be used to change the color of the typography.</p>
+<pre>
+  <code>
+    <span class="type--grey">&lt;div class="type--grey"&gt;&lt;/div&gt;</span>
+    <span class="type--grey-dark">&lt;div class="type--grey-dark"&gt;&lt;/div&gt;</span>
+    <span class="type--grey-darker">&lt;div class="type--grey-darker"&gt;&lt;/div&gt;</span>
+    <span class="type--red">&lt;div class="type--red"&gt;&lt;/div&gt;</span>
+    <span class="type--blue">&lt;div class="type--blue"&gt;&lt;/div&gt;</span>
+    <span class="type--yellow">&lt;div class="type--yellow"&gt;&lt;/div&gt;</span>
+    <span class="type--teal">&lt;div class="type--teal"&gt;&lt;/div&gt;</span>
+    <span class="type--blue-dark">&lt;div class="type--blue-dark"&gt;&lt;/div&gt;</span>
+    <span class="type--white highlight">&lt;div class="type--white"&gt;&lt;/div&gt;</span>
+  </code>
+</pre>
+
+        <!-- Floats & Clears -->
+        <h2 class="h5">Floats & Positioning</h2>
+        <p><code>pull-left</code> positions the element to the very left. <code>pull-right</code> positions the element to the very right.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bg--grey-clear box pull-left"></div>
+            <div class="bg--blue box pull-left"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg--red box pull-right"></div>
+            <div class="bg--yellow box pull-right"></div>
+          </div>
+        </div>
+
+
+<pre>
+  <code>
+  &lt;div class="bg--grey-clear pull-left"&gt;&lt;/div&gt;
+  &lt;div class="bg--blue pull-left"&gt;&lt;/div&gt;
+  &lt;div class="bg--red pull-right"&gt;&lt;/div&gt;
+  &lt;div class="bg--yellow pull-right"&gt;&lt;/div&gt;
+  </code>
+</pre>
+        <!-- Clearfix -->
+        <h2 class="h5">Clearfix</h2>
+        <p>The clearfix class clears floats when it is added to the parent element. This can also be used as a mixin by adding <code>@include clearfix</code> to the CSS class.</p>
+        <p>In this example, the clearfix class allows the border to span around the boxes.</p>
+        <div class="clearfix--border clearfix">
+          <div class="bg--grey-clear box pull-left"></div>
+          <div class="bg--yellow box pull-right"></div>
+        </div>
+<pre>
+  <code>
+  &lt;div class="clearfix--border clearfix"&gt;
+  &lt;div class="bg--grey-clear pull-left"&gt;&lt;/div&gt;
+  &lt;div class="bg--red pull-right"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="metalab-footer">
+    <div class="metalab-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="metalab-branding">
+              <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
+                <image href="../img/logo/metalab-horizontal.svg"></image>
+              </svg>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="metalab-social">
+              <a href="https://www.linkedin.com/company/meta-lab/" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/csunmetalab/" target="_blank"><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/csunmetalab/" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+              <a href="https://github.com/csun-metalab?tab=repositories" target="_blank"><i class="margin-left fa fa-github fa-lg type--white" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+

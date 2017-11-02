@@ -1,5 +1,6 @@
 
 // CONFIGURATIOINS
+@import "mixins/clearfix";
 @import "variables";
 
 // RESETS
@@ -23,7 +24,7 @@
 @import "buttons";
 @import "labels";
 
-// DOCUMENTION STYLING
+// DOCUMENTATION STYLING
 @import "meta-ui-docs";
 
 
