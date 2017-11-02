@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Standards | META+LAB UI Kit</title>
+  <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
+</head>
+<body>
+<div class="main--fullpage section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <p class="margin__less-top"><b>Getting Started</b></p>
+        <ul class="sidebar">
+          <li class="sidebar__item">
+            <a href="../docs/introduction.html" class="sidebar__link">Introduction</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/installation.html" class="sidebar__link">Installation</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
+          </li>
+          <li class="sidebar__item active">
+            <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/version-history.html" class="sidebar__link">Version History</a>
+          </li>
+        </ul>
+        <p><b>Components</b></p>
+        <ul class="sidebar">
+          <li class="sidebar__item">
+            <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/images.html" class="sidebar__link">Images</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/labels.html" class="sidebar__link">Labels</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/panels.html" class="sidebar__link">Panels</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/type.html" class="sidebar__link">Typography</a>
+          </li>
+        </ul>
+        <p><b>Resources</b></p>
+        <ul class="sidebar">
+          <li class="sidebar__item">
+            <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <h1 class="h5">Code Standards</h1>
+        <p>In order to ensure quality across products we recommend following the standards provided below for developing flexible, durable, and sustainable <b>HTML</b> and <b>CSS</b>.</p>
+
+        <div class="line"></div>
+
+        <h2 class="h6">#BEM Syntax</h2>
+        <p>All our components are built using the <b>BEM Syntax</b>. BEM ( <code>Block, Element, Modifier</code> ), is a simple naming convention that makes Front-End code easier to understand, easier to work with, and easier to scale.
+        <br>
+        The BEM approach ensures that everyone who participates in the development of a website works with a single codebase and speaks the same language. Using proper naming convention will help future design changes and will ease the process of onboarding new team members to project.</p>
+
+<pre>
+  <code>
+    <span class="type--grey-darker">
+    // Block: .alert
+    // Element: .alert__close
+    // Modifier: .alert--success
+    </span>
+    &lt;div class="alert alert--success"&gt;&lt;strong&gt;Heads Up!&lt;/strong&gt; Alert Message...
+      &lt;a href="#" class="alert__close" data-alert-close&gt;×&lt;/a&gt;
+    &lt;/div&gt;
+  </code>
+</pre>
+
+        <p><a href="https://en.bem.info/methodology/quick-start/" target="_blank">For More information on BEM visit their documentation.</a></p>
+
+        <div class="line"></div>
+
+        <h2 class="h6">#HTML</h2>
+        <p>When coding HTML make sure to abide strictly to the following <a href="http://codeguide.co/#html" target="_blank"> Code Guide by @MDO</a>.</p>
+
+        <ul>
+          <li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags).</li>
+          <li>Use CDNs and HTTPS for third-party JS when possible. We don't use protocol-relative URLs in this case because they break when viewing the page locally via <code>file://.</code></li>
+          <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank">WAI-ARIA</a> attributes in documentation examples to promote accessibility.</li>
+        </ul>
+
+        <div class="line"></div>
+
+        <h2 class="h6">#CSS</h2>
+        <p>When coding CSS make sure to abide strictly to the following <a href="http://codeguide.co/#css" target="_blank">Code Guide by @MDO</a>.</p>
+
+        <ul>
+          <li>When feasible, default color palettes should comply with <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">WCAG color contrast guidelines</a>.</li>
+          <li>Except in rare cases, don't remove default <code>:focus</code> styles (via e.g. <code>outline: none;</code> ) without providing alternative styles. See <a href="http://a11yproject.com/posts/never-remove-css-outlines/" target="_blank">this A11Y Project post</a> for more details.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="metalab-footer">
+      <div class="metalab-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="metalab-branding">
+                <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
+                  <image href="../img/logo/metalab-horizontal.svg"></image>
+                </svg>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="metalab-social">
+                <a href="#" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"></a><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i>
+                <a href="#" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
