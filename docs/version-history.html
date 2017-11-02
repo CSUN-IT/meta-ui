@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Buttons | META+LAB UI Kit</title>
+  <title>Contributing | META+LAB UI Kit</title>
   <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
@@ -25,9 +25,9 @@
               <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
             </li>
             <li class="sidebar__item">
-                <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+              <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
             </li>
-            <li class="sidebar__item">
+            <li class="sidebar__item active">
               <a href="../docs/version-history.html" class="sidebar__link">Version History</a>
             </li>
           </ul>
@@ -36,7 +36,7 @@
             <li class="sidebar__item">
               <a href="../docs/banners.html" class="sidebar__link">Banners</a>
             </li>
-            <li class="sidebar__item active">
+            <li class="sidebar__item">
               <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
             </li>
             <li class="sidebar__item">
@@ -72,33 +72,83 @@
           </ul>
         </div>
         <div class="col-md-9">
-          <h1 class="h5">Buttons</h1>
-          <div class="col-md-4">
-            <p class="type--red" role="button"><a href="#" class="fa fa-long-arrow-left button__right type--link"></a>Button</p>
-          </div>
-          <div class="col-md-4">
-            <div role="button">
-              <a href="#" class="fa fa-long-arrow-up type--red button__top"></a>
-              <p class="type--red margin--less">Back To Top</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <p class="type--red" role="button">Button<a href="#" class="fa fa-long-arrow-right type--red button__left type--link"></a></p>
-          </div>
+          <h1 class="h5">Version History</h1>
+          <p>Previous versions of META-UI are available through our Content Delivery Network (CDN). However, we recommend using the latest version for the most up-to-date functionality.</p>
 <pre>
   <code>
-    &lt;p class="type--red" role="button"&gt;&lt;a href="#" class="fa fa-long-arrow-left button__right type--link"&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;div role="button"&gt;
-      &lt;a href="#" class="fa fa-long-arrow-up type--red button__top"&gt;&lt;/a&gt;
-      &lt;p class="type--red margin--less" role="button"&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;p class="type--red" role="button"&gt;&lt;a href="#" class="fa fa-long-arrow-right button__left type--link"&gt;&lt;/a&gt;&lt;/p&gt;
+    <span class="type--grey-darker">// CSS</span>
+    &lt;link rel="stylesheet" href="//cdn.metalab.csun.edu/meta-ui/css/meta-ui.css"&gt;
+
+    <span class="type--grey-darker">// JavaScript</span>
+    &lt;script src="//cdn.metalab.csun.edu/meta-ui/js/meta-ui.js"&gt;&lt;/script&gt;
   </code>
 </pre>
+
+          <p class="small"><em><b>Note:</b> Specific versions and information about their features can be found on <a href="https://github.com/csun-metalab/meta-ui/releases" target="_blank" class="small">Github</a>.</em></p>
+
+<!-- FOR NEW VERSION / FEATURES
+    ADD THE NEWEST STUFF TO THE TOP OF THE PREVIOUS CONTAINER . WRITE NEW FEAUTES IN PascalCase (example: This Is Pascal Case (first letter of each word captial)
+    1. CREATE CONTAINER
+    2. CREATE ROW
+    3. p tag (with a h6 class) and b tag for VERSION NAME and Release Date
+    4. Div Class - Label with a pull left and margin right
+    5. p tag for new features
+    6. repeat steps 4 and 5 for each new feature
+    7. close the row and container -->
+
+        <div class="container">
+          <div class="row">
+            <p class="h6"><b> Metabyte 0.1.0 - Alpha Release: 11/2/17</b></p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Added Version History Page</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p class="h6"><b> Metabyte 0.0.0 - Alpha Release: 10/26/17</b></p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Created Project</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Introduction</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Installation</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Contributing</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Code Standard</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Banner</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Buttons</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Footer</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Grid</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Images</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Labels</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Panels</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Sidebar</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Typography</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Design Assets</p>
+            <div class="label label--added pull-left margin-right">ADDED</div>
+              <p>Examples</p>
+
+          </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+
   <footer>
     <div class="metalab-footer">
       <div class="metalab-wrapper">
@@ -107,7 +157,7 @@
             <div class="col-md-6">
               <div class="metalab-branding">
                 <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
-                  <image href="../img/logo/metalab-horizontal.svg"></image>
+                    <image href="../img/logo/metalab-horizontal.svg"></image>
                 </svg>
               </div>
             </div>
