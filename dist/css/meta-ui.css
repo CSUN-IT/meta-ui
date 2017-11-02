@@ -4861,7 +4861,6 @@ code {
 
 .banner__flex--title {
   text-align: center;
-  color: white;
   font-family: FFDINWebProLight;
   margin: 0px;
 }
@@ -4984,5 +4983,9 @@ code {
 
 .margin-top {
   margin-top: 10px;
+}
+
+.no-decoration {
+  text-decoration: none;
 }
 
