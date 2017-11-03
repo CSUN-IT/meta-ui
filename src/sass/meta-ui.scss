@@ -1,8 +1,9 @@
 
+
+@import "base";
 // CONFIGURATIOINS
 @import "mixins/clearfix";
 @import "variables";
-
 // RESETS
 @import "normalize";
 
@@ -16,6 +17,8 @@
 @import "grid";
 @import "base";
 
+
+
 // COMPONENTS
 @import "image";
 @import "footer";
@@ -24,8 +27,13 @@
 @import "banner";
 @import "buttons";
 @import "labels";
+@import "navbar";
 
 // DOCUMENTATION STYLING
 @import "meta-ui-docs";
 
+
+
+//clearfix
+@import "clearfix";
 

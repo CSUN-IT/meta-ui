@@ -75,8 +75,34 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
+
 // LET'S GET STARTED
 console.log('META+LAB UI Kit');
+
+// Maps names of included libraries to their filepaths.
+var includedDependencies = {};
+
+function includeOnce(file) {
+    var libraryName = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+
+    if (libraryName === '') {
+        libraryName = file;
+    }
+    //If library is not included yet, then include it
+    if (!(libraryName in includedDependencies)) {
+        var script = document.createElement('script');
+        script.src = file;
+        script.type = 'text/javascript';
+        // script.defer = true;
+
+        document.head.appendChild(script);
+        // Add it our global list of libraries.
+        includedDependencies[libraryName] = file;
+    }
+}
+
+includeOnce('../src/js/navbar.js');
+includeOnce('../src/js/multiCarousel.js');
 
 /***/ }),
 /* 2 */
