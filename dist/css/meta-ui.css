@@ -4891,7 +4891,14 @@ code {
 }
 
 .form__group {
-  line-height: 50px;
+  line-height: 55px;
+  border-bottom: solid;
+  width: 600px;
+}
+
+.form__text {
+  margin-top: 8px;
+  margin-bottom: -3px;
 }
 
 .form__line {
@@ -4950,7 +4957,7 @@ input form[type=text] {
   color: #0E1821;
 }
 
-.dropbtn {
+.form__btn {
   background-color: transparent;
   color: #0E1821;
   font-family: "Open Sans", sans-serif;
