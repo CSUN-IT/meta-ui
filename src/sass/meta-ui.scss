@@ -3,7 +3,6 @@
 // CONFIGURATIOINS
 @import "mixins/clearfix";
 @import "variables";
-
 // RESETS
 @import "normalize";
 
@@ -28,8 +27,13 @@
 @import "buttons";
 @import "labels";
 @import "form";
+@import "navbar";
 
 // DOCUMENTATION STYLING
 @import "meta-ui-docs";
 
-@import "icon";
+
+
+//clearfix
+@import "clearfix";
+

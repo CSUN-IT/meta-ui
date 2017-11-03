@@ -1,271 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carousel | META+LAB UI Kit</title>
-    <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carousel | META+LAB UI Kit</title>
+  <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
 <body>
 <div class="main--fullpage section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <p class="margin__less-top"><b>Getting Started</b></p>
-                <ul class="sidebar">
-                    <li class="sidebar__item">
-                        <a href="../docs/introduction.html" class="sidebar__link">Introduction</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/installation.html" class="sidebar__link">Installation</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/version-history.html" class="sidebar__link">Version History</a>
-                    </li>
-                </ul>
-                <p><b>Components</b></p>
-                <ul class="sidebar">
-                    <li class="sidebar__item">
-                        <a href="../docs/banners.html" class="sidebar__link">Banners</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
-                    </li>
-                    <li class="sidebar__item active">
-                        <a href="../docs/carousel.html" class="sidebar__link">Carousel</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/footer.html" class="sidebar__link">Footer</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/form.html" class="sidebar__link">Form</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/helpers.html" class="sidebar__link">Helpers</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/images.html" class="sidebar__link">Images</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/labels.html" class="sidebar__link">Labels</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/panels.html" class="sidebar__link">Panels</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/type.html" class="sidebar__link">Typography</a>
-                    </li>
-                </ul>
-                <p><b>Resources</b></p>
-                <ul class="sidebar">
-                    <li class="sidebar__item">
-                        <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a href="../docs/examples.html" class="sidebar__link">Examples</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-9">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="h5"><strong>Dot Carousel</strong></h1>
-                            <p>The dots below the picture can be clicked to change the photo.</p>
-                            <div class="carousel">
-                                <div class="carousel__slide fade">
-                                    <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
-                                </div>
-                                <div class="carousel__slide fade">
-                                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
-                                </div>
-                                <div class="carousel__slide fade">
-                                    <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
-                                </div>
-                            </div>
-                            <br>
-                            <!-- Dots -->
-                            <div class="carousel__controls">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-                        </div>
-                    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <p class="margin__less-top"><b>Getting Started</b></p>
+        <ul class="sidebar">
+          <li class="sidebar__item">
+            <a href="../docs/introduction.html" class="sidebar__link">Introduction</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/installation.html" class="sidebar__link">Installation</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/version-history.html" class="sidebar__link">Version History</a>
+          </li>
+        </ul>
+        <p><b>Components</b></p>
+        <ul class="sidebar">
+          <li class="sidebar__item">
+            <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
+          </li>
+          <li class="sidebar__item active">
+            <a href="../docs/carousel.html" class="sidebar__link">Carousel</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/helpers.html" class="sidebar__link">Helpers</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/images.html" class="sidebar__link">Images</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/labels.html" class="sidebar__link">Labels</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/navbar.html" class="sidebar__link">Navbar</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/panels.html" class="sidebar__link">Panels</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/type.html" class="sidebar__link">Typography</a>
+          </li>
+        </ul>
+        <p><b>Resources</b></p>
+        <ul class="sidebar">
+          <li class="sidebar__item">
+            <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+          </li>
+        </ul>
+      </div>
+        <div class="col-md-9">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="h5"><strong>Dot Carousel</strong></h1>
+                <p>The dots below the picture can be clicked to change the photo.</p>
+                <div class="carousel">
+                  <div class="carousel__slide fade">
+                    <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
+                  </div>
+                  <div class="carousel__slide fade">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
+                  </div>
+                  <div class="carousel__slide fade">
+                    <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
+                  </div>
                 </div>
+                <br>
+                <!-- Dots -->
+                <div class="carousel__controls">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <!-- Carousel HTML Code -->
-            <div class="container">
-                <div class="row">
+      <!-- Carousel HTML Code -->
+      <div class="container">
+        <div class="row">
 <pre>
-<code>
-&lt;div class="carousel"&gt;
+  <code>
+  &lt;div class="carousel"&gt;
     &lt;div class="carousel__slide fade"&gt;
-        &lt;img src="#"&gt;
+      &lt;img src="#"&gt;
     &lt;/div&gt;
     &lt;div class="carousel__slide fade"&gt;
-        &lt;img src="#"&gt;
+      &lt;img src="#"&gt;
     &lt;/div&gt;
     &lt;div class="carousel__slide fade"&gt;
-        &lt;img src="#"&gt;
+      &lt;img src="#"&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;!-- Dots --&gt;
-&lt;div class="carousel__controls"&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  <span class=type--grey-darker>&lt;!-- Dots --&gt;</span>
+  &lt;div class="carousel__controls"&gt;
     &lt;span class="dot" onclick="currentSlide(1)"&gt;&lt;/span&gt;
     &lt;span class="dot" onclick="currentSlide(2)"&gt;&lt;/span&gt;
     &lt;span class="dot" onclick="currentSlide(3)"&gt;&lt;/span&gt;
-&lt;/div&gt;
-</code>
+  &lt;/div&gt;
+  </code>
 </pre>
-                </div>
-            </div>
-            <!-- Automatic Carousel -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="h5">Automatic Carousel</h1>
-                        <p>This Carousel will automatically display the slides one at a time.
-                        </p>
-                        <div class="carousel--auto">
-                            <div class="carousel__slide fade">
-                                <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
-                            </div>
-
-                            <div class="carousel__slide fade">
-                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
-                            </div>
-
-                            <div class="carousel__slide fade">
-                                <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Automatic Carousel HTML Code -->
-            <div class="container">
-                <div class="row">
-<pre>
-<code>
-&lt;div class="carousel--auto"&gt;
-    &lt;div class="carousel__slide fade"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-    &lt;div class="carousel__slide fade"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-    &lt;div class="carousel__slide fade"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-                </div>
-            </div>
-            <!-- Multi Image Carousel -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="h5">Multi-image Carousel</h1>
-                        <p>This Carousel will automatically display multiple slides at a time, dependent on
-                            the value you place in the multiSlides() parameter, located in the JavaScript code.
-                            (Example: multiSlides(3) shows three images).
-                        </p>
-
-                        <div class="carousel--multi">
-                            <div id="0" class="carousel__slide">
-                                <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
-                            </div>
-                            <div id="1" class="carousel__slide">
-                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
-                            </div>
-                            <div id="2" class="carousel__slide">
-                                <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
-                            </div>
-                            <div id="3" class="carousel__slide">
-                                <img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png">
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Multi Image HTML Code -->
-            <div class="container">
-                <div class="row">
-                    <p>* Keeping the <code>id</code> in the correct order is necessary for the carousel
-                        to function properly.</p>
-<pre>
-<code>
-&lt;div class="carousel--multi"&gt;
-    &lt;div id="0" class="carousel__slide"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-    &lt;div id="1" class="carousel__slide"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-    &lt;div id="2" class="carousel__slide"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-    &lt;div id="3" class="carousel__slide"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-    &lt;div id="4" class="carousel__slide"&gt;
-        &lt;img src="#"&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-                    </div>
-                </div>
-            </div>
         </div>
+      </div>
+      <!-- Automatic Carousel -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="h5">Automatic Carousel</h1>
+            <p>This Carousel will automatically display the slides one at a time.
+            </p>
+            <div class="carousel--auto">
+              <div class="carousel__slide fade">
+                <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
+              </div>
+
+              <div class="carousel__slide fade">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
+              </div>
+
+              <div class="carousel__slide fade">
+                <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
+                </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automatic Carousel HTML Code -->
+      <div class="container">
+        <div class="row">
+<pre>
+  <code>
+  &lt;div class="carousel--auto"&gt;
+    &lt;div class="carousel__slide fade"&gt;
+      &lt;img src="#"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel__slide fade"&gt;
+      &lt;img src="#"&gt;
+    &lt;/div&gt;
+    &lt;div class="carousel__slide fade"&gt;
+      &lt;img src="#"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code>
+</pre>
+        </div>
+      </div>
+      <!-- Multi Image Carousel -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="h5">Multi-image Carousel</h1>
+            <p>This Carousel will automatically display multiple slides at a time, dependent on the value you place in the multiSlides() parameter, located in the JavaScript code. (Example: multiSlides(3) shows three images).</p>
+            <div class="carousel--multi">
+              <div id="0" class="carousel__slide">
+                <img src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png">
+              </div>
+              <div id="1" class="carousel__slide">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
+              </div>
+              <div id="2" class="carousel__slide">
+                <img src="http://divinitycomputing.com/wp-content/uploads/2015/12/css.png">
+              </div>
+              <div id="3" class="carousel__slide">
+                <img src="https://cdn.auth0.com/blog/vuejs/vue-logo.png">
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multi Image HTML Code -->
+    <div class="container">
+      <div class="row">
+        <p>* Keeping the <code>id</code> in the correct order is necessary for the carousel
+              to function properly.</p>
+<pre>
+  <code>
+    &lt;div class="carousel--multi"&gt;
+      &lt;div id="0" class="carousel__slide"&gt;
+          &lt;img src="#"&gt;
+      &lt;/div&gt;
+      &lt;div id="1" class="carousel__slide"&gt;
+          &lt;img src="#"&gt;
+      &lt;/div&gt;
+      &lt;div id="2" class="carousel__slide"&gt;
+        &lt;img src="#"&gt;
+      &lt;/div&gt;
+      &lt;div id="3" class="carousel__slide"&gt;
+        &lt;img src="#"&gt;
+      &lt;/div&gt;
+      &lt;div id="4" class="carousel__slide"&gt;
+        &lt;img src="#"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </code>
+</pre>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <footer>
-    <div class="metalab-footer">
-        <div class="metalab-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="metalab-branding">
-                            <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
-                                <image href="../img/logo/metalab-horizontal.svg"></image>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="metalab-social">
-                            <a href="https://www.linkedin.com/company/meta-lab/" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
-                            <a href="https://www.facebook.com/csunmetalab/" target="_blank"><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com/csunmetalab/" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
-                            <a href="https://github.com/csun-metalab?tab=repositories" target="_blank"><i class="margin-left fa fa-github fa-lg type--white" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
+  <div class="metalab-footer">
+    <div class="metalab-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="metalab-branding">
+              <svg width="150" height="15" viewBox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
+                <image href="../img/logo/metalab-horizontal.svg"></image>
+              </svg>
             </div>
+          </div>
+          <div class="col-md-6">
+            <div class="metalab-social">
+              <a href="https://www.linkedin.com/company/meta-lab/" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/csunmetalab/" target="_blank"><i class=" margin-left fa fa-facebook fa-lg type--white" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/csunmetalab/" target="_blank"><i class="margin-left fa fa-instagram fa-lg type--white" aria-hidden="true"></i></a>
+              <a href="https://github.com/csun-metalab?tab=repositories" target="_blank"><i class="margin-left fa fa-github fa-lg type--white" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </footer>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="../src/js/carousel.js"></script>
