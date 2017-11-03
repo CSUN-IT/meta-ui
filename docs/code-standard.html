@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contributing | META+LAB UI Kit</title>
+  <title>Code Standards | META+LAB UI Kit</title>
   <link rel="stylesheet" href="../dist/css/meta-ui.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
@@ -21,10 +21,10 @@
           <li class="sidebar__item">
             <a href="../docs/installation.html" class="sidebar__link">Installation</a>
           </li>
-          <li class="sidebar__item active">
+          <li class="sidebar__item">
             <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
           </li>
-          <li class="sidebar__item">
+          <li class="sidebar__item active">
             <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
           </li>
           <li class="sidebar__item">
@@ -41,9 +41,6 @@
           </li>
           <li class="sidebar__item">
             <a href="../docs/footer.html" class="sidebar__link">Footer</a>
-          </li>
-          <li class="sidebar__item">
-            <a href="../docs/form.html" class="sidebar__link">Form</a>
           </li>
           <li class="sidebar__item">
             <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
@@ -78,53 +75,51 @@
         </ul>
       </div>
       <div class="col-md-9">
-        <h1 class="h5">Contributing to META-UI Kit</h1>
-        <p>We think it would be great for you to help improve the Meta-UI Kit by forking and making beneficial changes. Please adhere to the guidelines below to make the best out of your contributions. It will also make it easier for our developers to determine if your changes are to be added to our kit.</p>
-        <h2 class="h6">#Developer Setup Instructions</h2>
-        <p><b>1.</b> First, clone our repository from Github.</p>
+        <h1 class="h5">Code Standards</h1>
+        <p>In order to ensure quality across products we recommend following the standards provided below for developing flexible, durable, and sustainable <b>HTML</b> and <b>CSS</b>.</p>
+
+        <div class="line"></div>
+
+        <h2 class="h6">#BEM Syntax</h2>
+        <p>All our components are built using the <b>BEM Syntax</b>. BEM ( <code>Block, Element, Modifier</code> ), is a simple naming convention that makes Front-End code easier to understand, easier to work with, and easier to scale.
+        <br>
+        The BEM approach ensures that everyone who participates in the development of a website works with a single codebase and speaks the same language. Using proper naming convention will help future design changes and will ease the process of onboarding new team members to project.</p>
+
 <pre>
   <code>
-  $ git clone https://github.com/csun-metalab/meta-ui.git
+    <span class="type--grey-darker">
+    // Block: .alert
+    // Element: .alert__close
+    // Modifier: .alert--success
+    </span>
+    &lt;div class="alert alert--success"&gt;&lt;strong&gt;Heads Up!&lt;/strong&gt; Alert Message...
+      &lt;a href="#" class="alert__close" data-alert-close&gt;×&lt;/a&gt;
+    &lt;/div&gt;
   </code>
 </pre>
-        <p><b>2.</b> Next, install the necessary repo dependencies.</p>
-<pre>
-  <code>
-  $ yarn install
-  </code>
-</pre>
-        <p><b>3.</b> Now with yarn, add the necessary dev dependencies.</p>
-        <p class="small"><em><b>Note:</b> Please take a look at the <a href="https://github.com/csun-metalab/meta-ui" target="_blank" class="small">Webpack Front-End Commands</a> section on the Github repository to learn how to use yarn throughout development.</em></p>
-<pre>
-  <code>
-  $ yarn add laravel-mix
-  $ yarn add cross-env
-  $ yarn add font-awesome
-  $ yarn add normalize
-  </code>
-</pre>
-        <div class="line"></div>
 
-        <h2 class="h6">#Github Workflow & Pull Requests</h2>
-        <p>It is important to understand how to properly push and pull code. Please take a moment to look through this article writen by Github: <a href="https://guides.github.com/introduction/flow/">Understanding the Github Workflow</a>.</p>
+        <p><a href="https://en.bem.info/methodology/quick-start/" target="_blank">For More information on BEM visit their documentation.</a></p>
 
         <div class="line"></div>
 
-        <h2 class="h6">#Feature Requests</h2>
-        <p>We would love to view your feature requests! Keep in mind though, that your ideas will be reviewed under the scrutiny of our developers, and thus should be well worded and detailed.</p>
-        <p>Here is a link to our <a href="https://github.com/csun-metalab/meta-ui/issues">Github issues page</a>.</p>
+        <h2 class="h6">#HTML</h2>
+        <p>When coding HTML make sure to abide strictly to the following <a href="http://codeguide.co/#html" target="_blank"> Code Guide by @MDO</a>.</p>
+
+        <ul>
+          <li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags).</li>
+          <li>Use CDNs and HTTPS for third-party JS when possible. We don't use protocol-relative URLs in this case because they break when viewing the page locally via <code>file://.</code></li>
+          <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank">WAI-ARIA</a> attributes in documentation examples to promote accessibility.</li>
+        </ul>
 
         <div class="line"></div>
 
-        <h2 class="h6">#Product Versioning</h2>
-        <p>Increment the version number according to this format: <code>MAJOR.MINOR.PATCH</code></p>
-        <p><code>MAJOR</code> when you create incompatible API changes,<code>MINOR</code> when you add functionality that is backwards-compatible, and <code>PATCH</code> when you make backwards-compatible bug fixes.</p>
-        <p class="small"><em><b>Note:</b> Here's a link for more information on <a href="http://semver.org/" target="_blank" class="small">Symantic Versionings</a>.</em></p>
+        <h2 class="h6">#CSS</h2>
+        <p>When coding CSS make sure to abide strictly to the following <a href="http://codeguide.co/#css" target="_blank">Code Guide by @MDO</a>.</p>
 
-        <div class="line"></div>
-
-        <h2 class="h6">#Issue Tracking & Task Management</h2>
-        <p>We utilize Github's issue tracking system to manage improvements, bugs, and feature requests. This allows us to issue contributors to tasks. Please take a look at <a href="https://guides.github.com/features/issues/"> Github's Mastering Issues Guide</a>.</p>
+        <ul>
+          <li>When feasible, default color palettes should comply with <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">WCAG color contrast guidelines</a>.</li>
+          <li>Except in rare cases, don't remove default <code>:focus</code> styles (via e.g. <code>outline: none;</code> ) without providing alternative styles. See <a href="http://a11yproject.com/posts/never-remove-css-outlines/" target="_blank">this A11Y Project post</a> for more details.</li>
+        </ul>
       </div>
     </div>
   </div>

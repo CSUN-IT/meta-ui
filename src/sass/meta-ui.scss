@@ -1,6 +1,7 @@
 
 @import "base";
 // CONFIGURATIOINS
+@import "mixins/clearfix";
 @import "variables";
 
 // RESETS
@@ -18,6 +19,7 @@
 
 
 // COMPONENTS
+@import "image";
 @import "footer";
 @import "panels";
 @import "sidebar";
@@ -26,7 +28,7 @@
 @import "labels";
 @import "form";
 
-// DOCUMENTION STYLING
+// DOCUMENTATION STYLING
 @import "meta-ui-docs";
 
 @import "icon";
