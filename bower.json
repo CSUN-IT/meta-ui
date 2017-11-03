@@ -1,6 +1,6 @@
 {
   "name": "meta-ui",
-  "version": 0.1.0,
+  "version": "0.2.1",
   "description": "Offical META+LAB UI KIT",
   "main": "[meta-ui.scss, meta-ui.js]",
   "authors": [
