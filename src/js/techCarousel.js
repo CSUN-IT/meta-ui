@@ -1,7 +1,6 @@
 var autoIndex = 0;
 var i;
 var autoSlides = $(".carousel--auto>.carousel__slide");
-displaySlides();
 
 function displaySlides() {
     for (i = 0; i < autoSlides.length; i++) {
@@ -18,3 +17,5 @@ function displaySlides() {
 function timer() {
     setTimeout(displaySlides, 3000); // Change image every 3 seconds
 }
+
+displaySlides();

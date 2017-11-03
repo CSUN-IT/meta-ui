@@ -11,7 +11,7 @@ function multiSlides(nShown) {
         multiSlides.slideIndex = 0;
     }
 
-    let slides = $('.carousel--multi>.carousel__slide');
+    let slides = $('.carousel--multi > .carousel__slide');
     var slideIndex = multiSlides.slideIndex + 1;
 
     // Do not display the other images
@@ -45,7 +45,6 @@ function multiSlides(nShown) {
 
         //Reorder the divs
         $("#"+positions[0]).toggle();
-        console.log(positions);
         for (let j = 1; j < positions.length; j++) {
             $("#"+positions[j]).insertAfter('#'+positions[j-1]).toggle();
         }
