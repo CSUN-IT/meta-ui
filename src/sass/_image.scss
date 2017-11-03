@@ -1,0 +1,94 @@
+// General
+.img {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Team Page //
+.img__team-large {
+  height: 448px;
+  width: 60%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+.img__team-med {
+  height: 255px;
+  width: 30%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+.img__team-small {
+  height: 172px;
+  width: 20%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+// Long Image //
+.img__large-one {
+  height: 366px;
+  width: 90%;
+  border: none;
+  // background-size: 60px 60px;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+// Events Page //
+.img__events--list {
+  height: 362px;
+  width: 70%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+
+}
+
+.img__events--grid {
+  height: 192px;
+  width: 30%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+
+
+// Side Image //
+.img__side-image {
+  height: 336px;
+  width: 175%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+
+// Black Panel //
+.blue-bar {
+  height: 432px;
+  width: 288px;
+  padding-bottom: 46px;
+  padding-top: 46px;
+  background-color: black;
+}
