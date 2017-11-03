@@ -22,5 +22,6 @@ function includeOnce(file, libraryName = '') {
     }
 }
 
+includeOnce('../src/js/form.js');
 includeOnce('../src/js/navbar.js');
 includeOnce('../src/js/multiCarousel.js');
