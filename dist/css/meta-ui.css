@@ -5119,6 +5119,152 @@ code {
   background-color: #76C6B3;
 }
 
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #B1B3B2;
+}
+
+.form__group {
+  line-height: 55px;
+  border-bottom: solid;
+  width: 600px;
+}
+
+.form__text {
+  margin-top: 8px;
+  margin-bottom: -3px;
+  color: #0E1821;
+  font-weight: bold;
+}
+
+.form__line {
+  width: 600px;
+  margin-left: 0px;
+  color: #B1B3B2;
+}
+
+.form {
+  color: #0E1821;
+}
+
+.form::-webkit-input-placeholder {
+  color: #0E1821;
+}
+
+.form:-moz-placeholder {
+  color: #0E1821;
+}
+
+.form::-moz-placeholder {
+  color: #0E1821;
+}
+
+.form:-ms-input-placeholder {
+  color: #0E1821;
+}
+
+input form[type=text] {
+  color: #0E1821;
+}
+
+.form__header {
+  font-family: FFDINWebProBold;
+  font-size: 30px;
+  color: #0E1821;
+  padding-bottom: 15px;
+}
+
+.fa-angle-down {
+  padding-left: 335px;
+  color: #B1B3B2;
+}
+
+.form__input {
+  font-family: FFDINWebProBold;
+  text-decoration: none;
+  border: 0px solid;
+  height: 40px;
+  width: 220px;
+  color: #B1B3B2;
+  font-weight: normal;
+}
+
+.form--text {
+  font-family: FFDINWebProBold;
+}
+
+.form__btn {
+  background-color: transparent;
+  color: #B1B3B2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding-left: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: transparent;
+}
+
+.form___content {
+  position: relative;
+  margin-left: -15px;
+}
+
+.form__select {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 600px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.form__select a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.form___content a:hover {
+  background-color: #f1f1f1;
+}
+
+.form__link:nth-child(odd) {
+  font-family: FFDINWebProBold;
+  color: black;
+  background-color: white;
+}
+
+.form__link:nth-child(even) {
+  font-family: FFDINWebProBold;
+  color: white;
+  background-color: black;
+}
+
+.show {
+  display: block;
+}
+
+.form__submit {
+  color: #D00D20;
+  line-height: 70 px;
+}
+
+.fa-long-arrow-right {
+  padding-left: 5px;
+}
+
+pre {
+  color: #D00D20;
+}
+
 .nav {
   position: relative;
   padding-top: 40px;

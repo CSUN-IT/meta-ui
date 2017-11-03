@@ -1,0 +1,122 @@
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: $grey;
+}
+.form__group{
+  line-height: 55px;
+  border-bottom: solid;
+  width: 600px;
+
+}
+.form__text{
+  margin-top: 8px;
+  margin-bottom: -3px;
+  color: $blue-dark;
+  font-weight: bold;
+}
+.form__line{
+  width: 600px;
+  margin-left: 0px;
+  color: $grey;
+}
+.form {
+  color: $blue-dark;
+  @include placeholder{
+    color: $blue-dark;
+  }
+}
+input form[type=text]{
+  color: $blue-dark;
+}
+.form__header{
+  font-family: $font;
+  font-size: 30px;
+  color: $blue-dark;
+  padding-bottom: 15px;
+}
+.fa-angle-down{
+  padding-left: 335px;
+  color: $grey;
+}
+.form__input{
+  font-family: $font;
+  text-decoration: none;
+  border: 0px solid;
+  height: 40px;
+  width: 220px;
+  color: $grey;
+  font-weight: normal;
+
+}
+.form--text{
+  font-family: $font;
+}
+
+//dropdown stuff
+.form__btn {
+  background-color: transparent;
+  color: $grey;
+  font-family: $font-base;
+  font-weight: bold;
+  padding-left: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: transparent;
+}
+
+.form___content {
+  position: relative;
+  margin-left: -15px;
+}
+
+.form__select {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 600px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.form__select a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.form___content a:hover {background-color: #f1f1f1}
+.form__link:nth-child(odd){
+  font-family:$font;
+  color:black;
+  background-color:white;
+}
+.form__link:nth-child(even) {
+  font-family: $font;
+  color: white;
+  background-color: black;
+}
+.show {display:block;}
+
+.form__submit{
+  color: $red;
+  line-height: 70 px;
+}
+.fa-long-arrow-right{
+  padding-left: 5px;
+
+}
+pre{
+  color: $red;
+}

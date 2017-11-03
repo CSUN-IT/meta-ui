@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../dist/css/meta-ui.css">
+    <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
+    <title>Document</title>
+    <script src="../src/js/meta-ui.js"></script>
+</head>
+<body>
+<div class="main--fullpage section form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="margin__less-top"><b>Getting Started</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/introduction.html" class="sidebar__link">Introduction</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/installation.html" class="sidebar__link">Installation</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/contributing.html" class="sidebar__link">Contributing</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/code-standard.html" class="sidebar__link">Code Standard</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/version-history.html" class="sidebar__link">Version History</a>
+                    </li>
+                </ul>
+                <p><b>Components</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/banners.html" class="sidebar__link">Banners</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/buttons.html" class="sidebar__link">Buttons</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/carousel.html" class="sidebar__link">Carousel</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/footer.html" class="sidebar__link">Footer</a>
+                    </li>
+                    <li class="sidebar__item active">
+                        <a href="../docs/form.html" class="sidebar__link">Form</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/grids.html" class="sidebar__link">Grid System</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/helpers.html" class="sidebar__link">Helpers</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/images.html" class="sidebar__link">Images</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/labels.html" class="sidebar__link">Labels</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/panels.html" class="sidebar__link">Panels</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/sidebar.html" class="sidebar__link">Sidebar</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/type.html" class="sidebar__link">Typography</a>
+                    </li>
+                </ul>
+                <p><b>Resources</b></p>
+                <ul class="sidebar">
+                    <li class="sidebar__item">
+                        <a href="../docs/design-assets.html" class="sidebar__link">Design Assets</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="../docs/examples.html" class="sidebar__link">Examples</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <p class="form__header">Adventurer Program</p>
+                <div class="form__group">
+                    <p class="form__text">Name</p>
+                    <input type="text" placeholder="Your Name" class="form__input">
+                </div>
+                <div class="form__group">
+                    <p class="form__text">Phone Number</p>
+                    <input type="text" placeholder="Your Phone Number" class="form__input">
+                </div>
+                <div class="form__group">
+                    <p class="form__text">E-mail Address</p>
+                    <input type="text" placeholder="Your Email Address" class="form__input">
+                </div>
+                <div class="form__group">
+                    <p class="form__text">Select Field</p>
+                    <div class="form___content">
+                        <button onclick="myFunction()" class="form__btn">How Did You Hear About  Us?
+                        <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                        <div id="myDropdown" class="form__select">
+                            <a class="form__link" href="#home">Home</a>
+                            <a class="form__link" href="#about">About</a>
+                            <a class="form__link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="type--red" role="button">Submit<a href="#"
+                                                            class="fa fa-long-arrow-right button__left type--link"></a>
+                </p>
+                <div class="form__documentation">
+        <pre>
+            <code>
+&lt;p class="form__header"&gt;Adventurer Program&lt;/p&gt;
+   &lt;div class="form__group"&gt;
+        &lt;p class="form__text"&gt;Name&lt;/p&gt;
+        &lt;input type="text" placeholder="Your Name" class="form__input"&gt;
+   &lt;/div&gt;
+   &lt;div class="form__group"&gt;
+        &lt;p class="form__text"&gt;Phone Number&lt;/p&gt;
+        &lt;input type="text" placeholder="Your Phone Number" class="form__input"&gt;
+   &lt;/div&gt;
+   &lt;div class="form__group"&gt;
+        &lt;p class="form__text"&gt;E-mail Address&lt;/p&gt;
+        &lt;input type="text" placeholder="Your Email Address" class="form__input"&gt;
+   &lt;/div&gt;
+   &lt;div class="form__group"&gt;
+         &lt;div class="form___content"&gt;
+               &lt;button onclick="myFunction()" class="dropbtn"&gt;How did your Hear about us?
+               &lt;i class="fa fa-angle-down" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+         &lt;div id="myDropdown" class="form__select"&gt;
+               &lt;a class="form__link" href="#home"&gt;Home&lt;/a&gt;
+               &lt;a class="form__link" href="#about"&gt;About&lt;/a&gt;
+               &lt;a class="form__link" href="#contact"&gt;Contact&lt;/a&gt;
+         &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;p class="type--red" role="button"&gt;Submit&lt;a href="#"
+class="fa fa-long-arrow-right button__left type--link"&gt;&lt;/a&gt;&lt;/p&gt;
+                </code>
+        </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="metalab-footer">
+        <div class="metalab-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="metalab-branding">
+                            <svg width="150" height="15" viewbox="0 0 300 35" preserveAspectRatio="xMinYMin meet">
+                                <image href="../img/logo/metalab-horizontal.svg"></image>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="metalab-social">
+                            <a href="#" target="_blank"><i class="margin-left fa fa-linkedin-square fa-lg type--white"
+                                                           aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i class="margin-left fa fa-facebook fa-lg type--white"
+                                                           aria-hidden="true"></i></a>
+                            <a href="#" target="_blank"><i
+                                    class="margin-left fa fa-instagram fa-lg type--white"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
