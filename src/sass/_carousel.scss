@@ -1,0 +1,142 @@
+/* Carousel */
+
+// Sets defaults
+* {box-sizing:border-box}
+
+.carousel__slide {
+  display: none;
+}
+
+// Fixes images to a 500x500 size
+.carousel img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+  text-align: center;
+}
+
+.carousel {
+  //max-width: 50%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+// Keeps dots centered
+.carousel__controls {
+  text-align: center;
+}
+
+.dot__active {
+  background-color: #060707;
+}
+
+// Changes color when cursor is over the dot
+.dot:hover {
+  background-color: #060707;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Automatic Carousel */
+
+// Fixes images to a specific size
+.carousel--auto img {
+  width: auto;
+  height: 250px;
+  max-height: 250px;
+}
+
+.carousel--auto {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Multiple Slides Automatic Carousel */
+
+//.carousel--multi__slide {
+//  display: none;
+//}
+
+// Fixes images to a specific size
+.carousel--multi img {
+  width: auto;
+  height: 250px;
+  max-height: 250px;
+  float: left;
+}
+
+.carousel--multi {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Success Story Page */
+.success--text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.darken {
+  filter: brightness(50%);
+}
+
+/* Page specific */
+
+.carousel--text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.events__carousel--date {
+  text-align: center;
+  font-size: 2em;
+  color: #3C3C3C
+}
+
+.events__carousel--year {
+  text-align: center;
+  font-size: 1em;
+  color: #3C3C3C;
+  margin-top: -30px;
+}
+
