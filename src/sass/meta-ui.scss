@@ -2,7 +2,7 @@
 
 @import "base";
 // CONFIGURATIOINS
-@import "mixins/mixins";
+@import "mixins/clearfix";
 @import "variables";
 // RESETS
 @import "normalize";
@@ -13,21 +13,23 @@
 // CORE
 @import "type";
 @import "helpers";
+@import "carousel";
 @import "grid";
 @import "base";
 
 
 
 // COMPONENTS
+@import "image";
 @import "footer";
 @import "panels";
 @import "sidebar";
 @import "banner";
 @import "buttons";
 @import "labels";
-@import "icon";
 @import "navbar";
-// DOCUMENTION STYLING
+
+// DOCUMENTATION STYLING
 @import "meta-ui-docs";
 
 
