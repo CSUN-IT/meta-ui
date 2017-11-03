@@ -5121,7 +5121,7 @@ code {
 
 ::-webkit-input-placeholder {
   /* Chrome */
-  color: #0E1821;
+  color: #B1B3B2;
 }
 
 .form__group {
@@ -5133,12 +5133,14 @@ code {
 .form__text {
   margin-top: 8px;
   margin-bottom: -3px;
+  color: #0E1821;
+  font-weight: bold;
 }
 
 .form__line {
   width: 600px;
   margin-left: 0px;
-  color: #0E1821;
+  color: #B1B3B2;
 }
 
 .form {
@@ -5183,17 +5185,17 @@ input form[type=text] {
   border: 0px solid;
   height: 40px;
   width: 220px;
-  color: #0E1821;
+  color: #B1B3B2;
+  font-weight: normal;
 }
 
 .form--text {
   font-family: FFDINWebProBold;
-  color: #0E1821;
 }
 
 .form__btn {
   background-color: transparent;
-  color: #0E1821;
+  color: #B1B3B2;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   padding-left: 16px;

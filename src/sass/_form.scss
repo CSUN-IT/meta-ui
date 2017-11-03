@@ -6,7 +6,7 @@
   &:-ms-input-placeholder      {@content}
 }
 ::-webkit-input-placeholder { /* Chrome */
-  color: $blue-dark;
+  color: $grey;
 }
 .form__group{
   line-height: 55px;
@@ -17,11 +17,13 @@
 .form__text{
   margin-top: 8px;
   margin-bottom: -3px;
+  color: $blue-dark;
+  font-weight: bold;
 }
 .form__line{
   width: 600px;
   margin-left: 0px;
-  color: $blue-dark;
+  color: $grey;
 }
 .form {
   color: $blue-dark;
@@ -48,17 +50,18 @@ input form[type=text]{
   border: 0px solid;
   height: 40px;
   width: 220px;
-  color: $blue-dark;
+  color: $grey;
+  font-weight: normal;
+
 }
 .form--text{
   font-family: $font;
-  color: $blue-dark;
 }
 
 //dropdown stuff
 .form__btn {
   background-color: transparent;
-  color: $blue-dark;
+  color: $grey;
   font-family: $font-base;
   font-weight: bold;
   padding-left: 16px;
