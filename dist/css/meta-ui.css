@@ -5339,7 +5339,7 @@ pre {
   width: 30px;
 }
 
-.navbar__icon--filler {
+.nav__icon--filler {
   position: inherit;
   display: block;
   height: 50%;
@@ -5352,6 +5352,20 @@ pre {
   position: relative;
   height: 35px;
   width: 35px;
+}
+
+.nav__icon--holder {
+  top: 83px;
+  position: relative;
+}
+
+.nav__icon--holder2 {
+  position: relative;
+  bottom: 125px;
+}
+
+.navbar__slider {
+  background-color: yellow;
 }
 
 pre {
