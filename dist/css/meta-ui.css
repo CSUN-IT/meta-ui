@@ -5355,17 +5355,13 @@ pre {
 }
 
 .nav__icon--holder {
-  top: 83px;
   position: relative;
+  top: 83px;
 }
 
 .nav__icon--holder2 {
   position: relative;
   bottom: 125px;
-}
-
-.navbar__slider {
-  background-color: yellow;
 }
 
 pre {
