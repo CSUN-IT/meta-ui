@@ -5265,111 +5265,68 @@ pre {
   color: #D00D20;
 }
 
-.nav {
-  position: relative;
-  padding-top: 40px;
+#navbar {
+  overflow: hidden;
   width: 100%;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
-  padding-bottom: 50px;
-}
-
-.nav--top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-}
-
-.nav__brand {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 40px;
-}
-
-.nav__menu {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 40px;
-}
-
-.nav__list {
-  position: fixed;
-  margin: auto;
   z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: #FFFFFF;
-  text-align: center;
-  list-style: none;
-  font-family: FFDINWebProBold;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 50px;
-  height: 10em;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
-.nav__link--active a {
-  color: #D00D20;
+.navbar--border {
+  padding: .5rem;
+  background-color: white;
 }
 
-.nav__list a {
-  text-decoration: none;
-  color: black;
-}
-
-.nav--show .nav__brand,
-.nav--show .nav__menu {
+.sticky {
   position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1140px;
 }
 
-.nav__logo {
-  height: 30px;
-  width: 30px;
-}
-
-.nav__icon--filler {
-  position: inherit;
-  display: block;
-  height: 50%;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
-
-.nav__icon {
-  position: relative;
+.nav__icon--left {
   height: 35px;
   width: 35px;
 }
 
-.nav__icon--holder {
-  top: 83px;
-  position: relative;
+.nav__icon--right {
+  margin-top: 5px;
+  cursor: pointer;
 }
 
-.nav__icon--holder2 {
-  position: relative;
-  bottom: 125px;
+.slidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.navbar__slider {
-  background-color: yellow;
+.slidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-pre {
-  color: #D00D20;
+.closebtn {
+  cursor: pointer;
+}
+
+.slidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .clearfix::after {
