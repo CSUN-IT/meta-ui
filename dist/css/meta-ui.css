@@ -5271,43 +5271,57 @@ pre {
   z-index: 2;
 }
 
-.navbar--border {
+.nav {
   padding: .5rem;
   background-color: white;
 }
 
-.sticky {
+.nav--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 500px;
+}
+
+.nav--sticky {
   position: fixed;
   top: 0;
   width: 100%;
   max-width: 1140px;
 }
 
-.nav__icon--left {
+.nav--top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+.nav__brand {
   height: 35px;
   width: 35px;
 }
 
-.nav__icon--right {
+.nav__btn {
   margin-top: 5px;
   cursor: pointer;
 }
 
-.slidenav {
+.nav__slider {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #FFFFFF;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
 }
 
-.slidenav a {
+.nav__slider a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -5317,16 +5331,42 @@ pre {
   transition: 0.3s;
 }
 
-.closebtn {
+.btn__close {
   cursor: pointer;
 }
 
-.slidenav .closebtn {
+.nav__slider .btn__close {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.nav__item {
+  text-align: center;
+  padding-left: 0;
+}
+
+.nav__link {
+  font-size: 20px;
+  list-style: none;
+}
+
+.nav__link:hover {
+  color: #D00D20;
+}
+
+.nav__link.active {
+  color: #D00D20;
+}
+
+.nav__link.active:hover {
+  color: #B1B3B2;
+}
+
+.pos-fix {
+  position: absolute;
 }
 
 .clearfix::after {

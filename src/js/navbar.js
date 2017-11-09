@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var navbar = $("#navbar");
     var sticky = $(navbar).offset().top;
+    var navTop = $(".nav--top");
 
     $(document).on('scroll', function() {
         makeNavbarSticky();
@@ -8,15 +9,17 @@ $(document).ready(function() {
     function makeNavbarSticky() {
         console.log(sticky);
         if (window.pageYOffset >= sticky) {
-            $(navbar).addClass("sticky");
+            $(navbar).addClass("nav--sticky");
             console.log(window.pageYOffset);
         }
         else {
-            $(navbar).removeClass("sticky");
+            $(navbar).removeClass("nav--sticky");
         }
     }
 
-    $(".nav__icon--right").click(function() {
+    navTop.removeClass("nav--sticky");
+
+    $(".nav__btn").click(function() {
         openNav();
     });
 
@@ -25,7 +28,7 @@ $(document).ready(function() {
         console.log("open clicked");
     }
 
-    $(".closebtn").click(function() {
+    $(".btn__close").click(function() {
         closeNav();
     });
 
