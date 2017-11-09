@@ -9,10 +9,10 @@
   background-color: white;
 }
 
-.nav--center {
-  justify-content: center;
-  min-height: 500px;
-}
+//.nav--center {
+//  justify-content: center;
+//  min-height: 500px;
+//}
 
 .nav--sticky {
   position: fixed;
@@ -28,10 +28,25 @@
   height: 100px;
 }
 
+.nav--center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
 // Corrects Metalab logo's size
 .nav__brand {
   height: 35px;
   width: 35px;
+  left: 0;
 }
 
 // Positions hamburger menu
@@ -60,6 +75,16 @@
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+
+// Positions left icon to the very left
+// and positions right icon to the very right
+.nav__positioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
 }
 
 .btn__close {
