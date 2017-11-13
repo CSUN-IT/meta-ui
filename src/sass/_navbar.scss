@@ -4,22 +4,13 @@
   z-index: 0;
 }
 
-#mySlidenav {
-
-}
-
 .nav {
   padding: .5rem;
   background-color: white;
 }
 
-//.nav--center {
-//  justify-content: center;
-//  min-height: 500px;
-//}
-
-.nav--show, .nav__brand, .nav--top, .nav__btn {
-  position: fixed;
+.nav--show {
+  position: relative;
 }
 
 .nav--sticky {
@@ -27,6 +18,7 @@
   top: 0;
   width: 100%;
   max-width: 1140px;
+  pointer-events: none;
 }
 
 .nav--top{
@@ -36,42 +28,29 @@
   height: 100px;
 }
 
-.nav--center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    min-height: 500px;
-}
 
 // Corrects Meta+lab logo's size
 .nav__brand {
-  position: absolute;
+  z-index: 3;
   height: 35px;
   width: 35px;
   left: 0;
-  z-index: 3;
+  pointer-events: auto;
 }
 
 // Positions hamburger menu
 .nav__btn {
-  position: absolute;
   z-index: 3;
   margin-top: 5px;
   cursor: pointer;
-  right: 0;
+  right: 35px;
+  pointer-events: auto;
 }
 
 .nav__list {
   position: fixed;
   margin: auto;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -87,23 +66,7 @@
   transition: 0.5s;
 }
 
-
-//.nav__slider {
-//  height: 100%;
-//  width: 0;
-//  position: fixed;
-//  z-index: 3;
-//  top: 0;
-//  left: 0;
-//  background-color: #FFFFFF;
-//  overflow-x: hidden;
-//  transition: 0.5s;
-//  padding-top: 60px;
-//}
-
-
-
-.nav__slider a {
+.nav__list a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -112,19 +75,54 @@
   transition: 0.3s;
 }
 
+.nav__list li {
+  z-index: 4;
+
+  &:hover {
+    z-index: 4;
+  }
+}
+
+.nav__link {
+  font-size: 20px;
+  list-style: none;
+  z-index: 3;
+
+  &:hover {
+    color: $red;
+  }
+
+  &.active {
+    color: $red;
+
+    &:hover {
+      color: $grey ;
+    }
+  }
+}
+
+.nav__slider {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
 // Positions left icon to the very left
 // and positions right icon to the very right
 .nav__positioning {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 500px;
-    width: 100%;
-}
-
-// Brings META+Lab logo to the very front
-.icon__front {
-  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 725px;
+  width: 100%;
+  pointer-events: none;
 }
 
 .btn__close {
@@ -139,32 +137,9 @@
   margin-left: 50px;
 }
 
-.nav__item {
-  text-align: center;
-  padding-left: 0;
-  z-index: 3;
-}
-
 .nav__logo{
   height: 30px;
   width: 30px;
-}
-
-.nav__link{
-  font-size: 20px;
-  list-style: none;
-
-  &:hover {
-    color: $red;
-  }
-
-  &.active {
-    color: $red;
-
-    &:hover {
-      color: $grey ;
-    }
-  }
 }
 
 .pos-fix {

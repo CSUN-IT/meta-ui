@@ -5276,11 +5276,8 @@ pre {
   background-color: white;
 }
 
-.nav--show,
-.nav__brand,
-.nav--top,
-.nav__btn {
-  position: fixed;
+.nav--show {
+  position: relative;
 }
 
 .nav--sticky {
@@ -5288,6 +5285,7 @@ pre {
   top: 0;
   width: 100%;
   max-width: 1140px;
+  pointer-events: none;
 }
 
 .nav--top {
@@ -5297,40 +5295,26 @@ pre {
   height: 100px;
 }
 
-.nav--center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 500px;
-}
-
 .nav__brand {
-  position: absolute;
+  z-index: 3;
   height: 35px;
   width: 35px;
   left: 0;
-  z-index: 3;
+  pointer-events: auto;
 }
 
 .nav__btn {
-  position: absolute;
   z-index: 3;
   margin-top: 5px;
   cursor: pointer;
-  right: 0;
+  right: 35px;
+  pointer-events: auto;
 }
 
 .nav__list {
   position: fixed;
   margin: auto;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -5347,7 +5331,7 @@ pre {
   transition: 0.5s;
 }
 
-.nav__slider a {
+.nav__list a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -5355,6 +5339,46 @@ pre {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.nav__list li {
+  z-index: 4;
+}
+
+.nav__list li:hover {
+  z-index: 4;
+}
+
+.nav__link {
+  font-size: 20px;
+  list-style: none;
+  z-index: 3;
+}
+
+.nav__link:hover {
+  color: #D00D20;
+}
+
+.nav__link.active {
+  color: #D00D20;
+}
+
+.nav__link.active:hover {
+  color: #B1B3B2;
+}
+
+.nav__slider {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
 .nav__positioning {
@@ -5368,12 +5392,9 @@ pre {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 500px;
+  min-height: 725px;
   width: 100%;
-}
-
-.icon__front {
-  z-index: 4;
+  pointer-events: none;
 }
 
 .btn__close {
@@ -5388,32 +5409,9 @@ pre {
   margin-left: 50px;
 }
 
-.nav__item {
-  text-align: center;
-  padding-left: 0;
-  z-index: 3;
-}
-
 .nav__logo {
   height: 30px;
   width: 30px;
-}
-
-.nav__link {
-  font-size: 20px;
-  list-style: none;
-}
-
-.nav__link:hover {
-  color: #D00D20;
-}
-
-.nav__link.active {
-  color: #D00D20;
-}
-
-.nav__link.active:hover {
-  color: #B1B3B2;
 }
 
 .pos-fix {
