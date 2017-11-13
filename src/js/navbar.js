@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+    // $(document).ready(function() {
 //         $(this).scrollTop(0);
 //     $(window).scroll(function () {
 //         var p = $( ".nav--show" );
