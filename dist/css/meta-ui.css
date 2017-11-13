@@ -5320,6 +5320,10 @@ pre {
   transition: 0.5s;
 }
 
+.nav__list a:hover {
+  color: #D00D20;
+}
+
 .nav__link--active a {
   color: #D00D20;
 }
@@ -5330,7 +5334,11 @@ pre {
 }
 
 .nav--show .nav__brand,
-.nav--show .nav__menu {
+.nav__menu {
+  position: fixed;
+}
+
+.nav_test {
   position: fixed;
 }
 
@@ -5362,6 +5370,11 @@ pre {
 .nav__icon--holder2 {
   position: relative;
   bottom: 125px;
+}
+
+.sticky {
+  position: fixed;
+  max-width: 1140px;
 }
 
 pre {

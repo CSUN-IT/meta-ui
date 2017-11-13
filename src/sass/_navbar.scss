@@ -6,6 +6,16 @@
   padding-bottom: 50px;
 
 }
+//.nav1 {
+//  z-index: 2;
+//  position: relative;
+//  padding-top: 40px;
+//  width: 100%;
+//  transition: top 0.3s;
+//  padding-bottom: 50px;
+//
+//}
+
 
 .nav--top{
   position: absolute;
@@ -48,6 +58,9 @@
   height: 10em;
   transition: 0.5s;
 }
+.nav__list a:hover{
+  color: $red;
+}
 
 .nav__link--active a{
   color: $red;
@@ -57,9 +70,12 @@
   text-decoration: none;
   color: black
 }
-.nav--show .nav__brand, .nav--show .nav__menu{
+.nav--show .nav__brand, .nav__menu{
   position: fixed;
 
+}
+.nav_test{
+  position: fixed;
 }
 .nav__logo{
   height: 30px;
@@ -90,7 +106,12 @@
   bottom: 125px;
 }
 
-
+.sticky{
+  position: fixed;
+  //top: 0;
+  //width: 100%;
+  max-width: 1140px;
+}
 
 pre{
   color: $red;
