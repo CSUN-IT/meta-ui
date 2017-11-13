@@ -5268,12 +5268,19 @@ pre {
 #navbar {
   overflow: hidden;
   width: 100%;
-  z-index: 2;
+  z-index: 0;
 }
 
 .nav {
   padding: .5rem;
   background-color: white;
+}
+
+.nav--show,
+.nav__brand,
+.nav--top,
+.nav__btn {
+  position: fixed;
 }
 
 .nav--sticky {
@@ -5305,14 +5312,19 @@ pre {
 }
 
 .nav__brand {
+  position: absolute;
   height: 35px;
   width: 35px;
   left: 0;
+  z-index: 5;
 }
 
 .nav__btn {
+  position: absolute;
   margin-top: 5px;
   cursor: pointer;
+  z-index: 5;
+  right: 0;
 }
 
 .nav__slider {
@@ -5354,6 +5366,10 @@ pre {
   width: 100%;
 }
 
+.icon__front {
+  z-index: 4;
+}
+
 .btn__close {
   cursor: pointer;
 }
@@ -5369,6 +5385,12 @@ pre {
 .nav__item {
   text-align: center;
   padding-left: 0;
+  z-index: 3;
+}
+
+.nav__logo {
+  height: 30px;
+  width: 30px;
 }
 
 .nav__link {

@@ -1,7 +1,11 @@
 #navbar {
   overflow: hidden;
   width: 100%;
-  z-index: 2;
+  z-index: 0;
+}
+
+#mySlidenav {
+
 }
 
 .nav {
@@ -13,6 +17,10 @@
 //  justify-content: center;
 //  min-height: 500px;
 //}
+
+.nav--show, .nav__brand, .nav--top, .nav__btn {
+  position: fixed;
+}
 
 .nav--sticky {
   position: fixed;
@@ -42,17 +50,22 @@
     min-height: 500px;
 }
 
-// Corrects Metalab logo's size
+// Corrects Meta+lab logo's size
 .nav__brand {
+  position: absolute;
   height: 35px;
   width: 35px;
   left: 0;
+  z-index: 5;
 }
 
 // Positions hamburger menu
 .nav__btn {
+  position: absolute;
   margin-top: 5px;
   cursor: pointer;
+  z-index: 5;
+  right: 0;
 }
 
 .nav__slider {
@@ -87,6 +100,11 @@
     width: 100%;
 }
 
+// Brings META+Lab logo to the very front
+.icon__front {
+  z-index: 4;
+}
+
 .btn__close {
   cursor: pointer;
 }
@@ -102,7 +120,14 @@
 .nav__item {
   text-align: center;
   padding-left: 0;
+  z-index: 3;
 }
+
+.nav__logo{
+  height: 30px;
+  width: 30px;
+}
+
 .nav__link{
   font-size: 20px;
   list-style: none;
