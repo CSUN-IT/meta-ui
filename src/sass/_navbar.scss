@@ -1,5 +1,4 @@
 #navbar {
-  overflow: hidden;
   width: 100%;
   z-index: 0;
 }
@@ -34,7 +33,7 @@
   z-index: 3;
   height: 50px;
   width: 50px;
-  left: 0;
+  margin-left: -70px;
   pointer-events: auto;
 }
 
@@ -43,11 +42,12 @@
   z-index: 3;
   margin-top: 10px;
   cursor: pointer;
-  right: 35px;
+  right: -50px;
   pointer-events: auto;
 }
 
 .nav__list {
+  max-height: 100%;
   position: fixed;
   margin: auto;
   z-index: 3;
