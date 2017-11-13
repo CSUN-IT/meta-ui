@@ -5316,29 +5316,35 @@ pre {
   height: 35px;
   width: 35px;
   left: 0;
-  z-index: 5;
+  z-index: 3;
 }
 
 .nav__btn {
   position: absolute;
+  z-index: 3;
   margin-top: 5px;
   cursor: pointer;
-  z-index: 5;
   right: 0;
 }
 
-.nav__slider {
-  height: 100%;
-  width: 0;
+.nav__list {
   position: fixed;
-  z-index: 3;
+  margin: auto;
+  z-index: 2;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #FFFFFF;
-  overflow-x: hidden;
+  text-align: center;
+  list-style: none;
+  font-family: FFDINWebProBold;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  height: 10em;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 .nav__slider a {

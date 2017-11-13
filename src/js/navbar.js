@@ -21,6 +21,18 @@ $(document).ready(function() {
         $("#mySlidenav").width(0);
     }
 
+    $('.navbar-select2').on('click',function(event){
+        $('.nav--slider').show({right:'1000px'});
+    });
+
+
+    $(".nav--slider").hide();
+    $('.nav--slider').on('click', function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $(this).toggle('.closebtn');
+    });
+
 });
 
 
