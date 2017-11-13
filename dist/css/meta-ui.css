@@ -5297,15 +5297,15 @@ pre {
 
 .nav__brand {
   z-index: 3;
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   left: 0;
   pointer-events: auto;
 }
 
 .nav__btn {
   z-index: 3;
-  margin-top: 5px;
+  margin-top: 10px;
   cursor: pointer;
   right: 35px;
   pointer-events: auto;
@@ -5327,8 +5327,8 @@ pre {
   font-size: 50px;
   line-height: 50px;
   height: 10em;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
 }
 
 .nav__list a {
@@ -5337,8 +5337,12 @@ pre {
   font-size: 25px;
   color: #818181;
   display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+}
+
+.nav--slider {
+  z-index: 3;
 }
 
 .nav__list li {
@@ -5365,20 +5369,6 @@ pre {
 
 .nav__link.active:hover {
   color: #B1B3B2;
-}
-
-.nav__slider {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 60px;
 }
 
 .nav__positioning {

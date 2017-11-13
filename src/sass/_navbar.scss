@@ -32,8 +32,8 @@
 // Corrects Meta+lab logo's size
 .nav__brand {
   z-index: 3;
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   left: 0;
   pointer-events: auto;
 }
@@ -41,7 +41,7 @@
 // Positions hamburger menu
 .nav__btn {
   z-index: 3;
-  margin-top: 5px;
+  margin-top: 10px;
   cursor: pointer;
   right: 35px;
   pointer-events: auto;
@@ -63,7 +63,7 @@
   font-size: 50px;
   line-height: 50px;
   height: 10em;
-  transition: 0.5s;
+  transition: opacity .1s ease-in-out;
 }
 
 .nav__list a {
@@ -72,7 +72,11 @@
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: opacity .1s ease-in-out;
+}
+
+.nav--slider {
+  z-index: 3;
 }
 
 .nav__list li {
@@ -99,19 +103,6 @@
       color: $grey ;
     }
   }
-}
-
-.nav__slider {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
 }
 
 // Positions left icon to the very left
