@@ -62,8 +62,9 @@
   font-weight: bold;
   font-size: 50px;
   line-height: 50px;
-  height: 10em;
+  height: 15em;
   transition: opacity .1s ease-in-out;
+  //transform: translateY(-50%);
 }
 
 .nav__list a {
@@ -81,6 +82,7 @@
 
 .nav__list li {
   z-index: 4;
+  padding-top: 15px;
 
   &:hover {
     z-index: 4;
@@ -135,4 +137,8 @@
 
 .pos-fix {
   position: absolute;
+}
+
+.margin--right {
+  margin-right: 8em;
 }

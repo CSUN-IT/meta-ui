@@ -5326,7 +5326,7 @@ pre {
   font-weight: bold;
   font-size: 50px;
   line-height: 50px;
-  height: 10em;
+  height: 15em;
   -webkit-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
 }
@@ -5347,6 +5347,7 @@ pre {
 
 .nav__list li {
   z-index: 4;
+  padding-top: 15px;
 }
 
 .nav__list li:hover {
@@ -5406,6 +5407,10 @@ pre {
 
 .pos-fix {
   position: absolute;
+}
+
+.margin--right {
+  margin-right: 8em;
 }
 
 .clearfix::after {

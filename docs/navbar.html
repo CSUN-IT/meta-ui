@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="https://cdn.metalab.csun.edu/fonts/din/MyFontsWebfontsKit.css">
 </head>
 <body>
+<div class="nav--slider">
+    <div class="nav--show">
+        <div class="row">
+            <ul class="nav__list">
+                <li><a class="nav__link active" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#programs">Programs</a></li>
+                <li><a class="nav__link" href="#tracks">Tracks</a></li>
+                <li><a class="nav__link" href="#process">Process</a></li>
+                <li><a class="nav__link" href="#team">Team</a></li>
+                <li><a class="nav__link" href="#events">Events</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="main--fullpage section">
     <div class="container">
         <div class="row">
@@ -82,37 +99,29 @@
                 </ul>
             </div>
             <div class="col-md-9">
+                <!--<div id="navbar" class="nav&#45;&#45;sticky">-->
+                    <!--<div class="nav__positioning">-->
+                        <!--<div class="clearfix">-->
+                            <!--<a href="index.html"><img class="nav__brand" src="https://avatars2.githubusercontent.com/u/11095982?s=280&v=4"></a>-->
+                            <!--<i class="pull-right nav__btn fa fa-bars fa-2x" aria-hidden="true"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <h1 class="h5">Navigation Bar</h1>
                 <p>
                     This navigation bar is designed to stick to the sides of
                     the screen. The META+Lab Icon will navigate you to the homepage.
                     The menu icon will slide open the bar's links.
                 </p>
-                <div class="nav">
-                    <div class="container">
-                        <div id="mySlidenav" class="nav__slider">
-                            <div class="btn__close">&times;</div>
-                            <ul class="nav__item">
-                                <li class="nav__link active"><a href="#" ></a>Home</li>
-                                <li class="nav__link"><a href="#" ></a>About</li>
-                                <li class="nav__link"><a href="#" ></a>Programs</li>
-                                <li class="nav__link"><a href="#" ></a>Tracks</li>
-                                <li class="nav__link"><a href="#" ></a>Process</li>
-                                <li class="nav__link"><a href="#" ></a>Team</li>
-                                <li class="nav__link"><a href="#" ></a>Events</li>
-                                <li class="nav__link"><a href="#" ></a>Projects</li>
-                                <li class="nav__link"><a href="#" ></a>Contacts</li>
-                            </ul>
+                    <div id="navbar" class="nav--sticky">
+                        <div class="nav__positioning">
+                            <div class="clearfix">
+                                <a href="index.html"><img class="nav__brand" src="https://avatars2.githubusercontent.com/u/11095982?s=280&v=4"></a>
+                                <i class="pull-right margin--right nav__btn fa fa-bars fa-2x" aria-hidden="true"></i>
+                            </div>
                         </div>
                     </div>
-                    <div id="navbar" class="clearfix">
-                        <div class="container">
-                            <a href="index.html"><img class="nav__brand pull-left"
-                                                      src="https://avatars2.githubusercontent.com/u/11095982?s=280&v=4"></a>
-                            <i class="nav__btn pull-right fa fa-bars fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
+
 
 
 
@@ -184,6 +193,7 @@
     </div>
 </footer>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="../src/js/meta-ui.js"></script>
+<!--<script type="text/javascript" src="../src/js/meta-ui.js"></script>-->
+<script type="text/javascript" src="../src/js/navbar.js"></script>
 </body>
 </html>
