@@ -64,6 +64,7 @@
   line-height: 50px;
   height: 15em;
   transition: opacity .1s ease-in-out;
+  overflow-y: auto;
   //transform: translateY(-50%);
 }
 
@@ -77,6 +78,13 @@
 }
 
 .nav--slider {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
   z-index: 3;
 }
 

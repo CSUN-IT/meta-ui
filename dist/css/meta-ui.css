@@ -5329,6 +5329,7 @@ pre {
   height: 15em;
   -webkit-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
+  overflow-y: auto;
 }
 
 .nav__list a {
@@ -5342,6 +5343,13 @@ pre {
 }
 
 .nav--slider {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
   z-index: 3;
 }
 
