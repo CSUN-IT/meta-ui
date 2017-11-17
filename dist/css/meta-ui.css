@@ -5282,10 +5282,6 @@ pre {
   position: relative;
 }
 
-nav--top a {
-  margin-top: 3px;
-}
-
 .nav__brand {
   z-index: 3;
   height: 50px;
@@ -5400,10 +5396,11 @@ nav--top a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 70px;
+  top: 0;
   width: inherit;
   pointer-events: none;
   position: fixed;
+  height: 100px;
 }
 
 .btn__close {
@@ -5428,7 +5425,7 @@ nav--top a {
 }
 
 .margin--right {
-  margin-right: 8em;
+  margin-right: 7em;
 }
 
 .clearfix::after {
