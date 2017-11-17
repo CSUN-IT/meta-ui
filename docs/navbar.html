@@ -11,10 +11,10 @@
 </head>
 <body>
 <div class="nav--slider">
-    <div class="nav--show">
+    <div class="nav--cover">
         <div class="row">
             <ul class="nav__list">
-                <li><a class="nav__link active" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#home">Home</a></li>
                 <li><a class="nav__link" href="#about">About</a></li>
                 <li><a class="nav__link" href="#programs">Programs</a></li>
                 <li><a class="nav__link" href="#tracks">Tracks</a></li>
@@ -99,62 +99,53 @@
                 </ul>
             </div>
             <div class="col-md-9">
-                <!--<div id="navbar" class="nav&#45;&#45;sticky">-->
-                    <!--<div class="nav__positioning">-->
-                        <!--<div class="clearfix">-->
-                            <!--<a href="index.html"><img class="nav__brand" src="https://avatars2.githubusercontent.com/u/11095982?s=280&v=4"></a>-->
-                            <!--<i class="pull-right nav__btn fa fa-bars fa-2x" aria-hidden="true"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
                 <h1 class="h5">Navigation Bar</h1>
                 <p>
-                    This navigation bar is designed to stick to the sides of
-                    the screen. The META+Lab Icon will navigate you to the homepage.
+                    This navigation bar is designed to stick to the top of screen.
+                    The META+Lab Icon will navigate you to the homepage.
                     The menu icon will slide open the bar's links.
+                    <code>nav--top</code> can be substituted with <code>nav--center</code>
+                    to display the icons in the center.
                 </p>
-                    <div id="navbar" class="nav--sticky">
-                        <div class="nav__positioning">
-                            <div class="clearfix">
-                                <a href="index.html"><img class="nav__brand" src="https://avatars2.githubusercontent.com/u/11095982?s=280&v=4"></a>
-                                <i class="pull-right margin--right nav__btn fa fa-bars fa-2x" aria-hidden="true"></i>
-                            </div>
+                <div id="navbar" class="nav--sticky">
+                    <div class="nav--center">
+                        <div class="clearfix">
+                            <a href="index.html"><img class="nav__brand" src="https://avatars2.githubusercontent.com/u/11095982?s=280&v=4"></a>
+                            <i class="nav__btn pull-right margin--right fa fa-bars fa-2x" aria-hidden="true"></i>
                         </div>
                     </div>
-
-
-
+                </div>
 
 <pre>
 <code>
-&lt;div class="nav"&gt;
-    &lt;div class="container"&gt;
-        &lt;div id="mySlidenav" class="nav__slider"&gt;
-            &lt;div class="btn__close"&gt;&amp;times;&lt;/div&gt;
-            &lt;ul class="nav__item"&gt;
-                &lt;li class="nav__link active"&gt;&lt;a href="#" &gt;&lt;/a&gt;Home&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;About&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Programs&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Tracks&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Process&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Team&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Events&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Projects&lt;/li&gt;
-                &lt;li class="nav__link"&gt;&lt;a href="#" &gt;&lt;/a&gt;Contacts&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
+&lt;div class="nav--slider"&gt;
+  &lt;div class="nav--cover"&gt;
+    &lt;div class="row"&gt;
+      &lt;ul class="nav__list"&gt;
+        &lt;li&gt;&lt;a class="nav__link active" href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#programs"&gt;Programs&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#tracks"&gt;Tracks&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#process"&gt;Process&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#events"&gt;Events&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="nav__link" href="#contacts"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
     &lt;/div&gt;
-    &lt;div id="navbar" class="clearfix"&gt;
-        &lt;div class="container"&gt;
-            &lt;a href="#"&gt;&lt;img class="nav__brand pull-left"
-                src="https://avatars2.githubusercontent.com/u/11095982?s=280&amp;v=4"&gt;&lt;/a&gt;
-            &lt;i class="nav__btn pull-right fa fa-bars fa-lg" aria-hidden="true"&gt;&lt;/i&gt;
-        &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="navbar" class="nav--sticky"&gt;
+  &lt;div class="nav--top"&gt;
+    &lt;div class="clearfix"&gt;
+      &lt;a href="#"&gt;&lt;img class="nav__brand" src="https://avatars2.githubusercontent.com/u/11095982?s=280&amp;v=4"&gt;&lt;/a&gt;
+      &lt;i class="nav__btn pull-right fa fa-bars fa-2x" aria-hidden="true"&gt;&lt;/i&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 <span class="type--grey-dark">
 <b>//NAV BAR MODIFIERS</b>
-.nav--show
+.nav--center
 .nav--top
 </span>
 </code>

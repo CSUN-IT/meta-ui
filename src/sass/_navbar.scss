@@ -1,6 +1,11 @@
 #navbar {
   width: 100%;
   z-index: 0;
+  position: absolute;
+  max-width: 1140px;
+  pointer-events: none;
+  //transform: translateY(-50%);
+  //top: 50%;
 }
 
 .nav {
@@ -8,25 +13,13 @@
   background-color: white;
 }
 
-.nav--show {
+.nav--cover {
   position: relative;
 }
 
-.nav--sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 1140px;
-  pointer-events: none;
+nav--top a {
+  margin-top: 3px;
 }
-
-.nav--top{
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 100px;
-}
-
 
 // Corrects Meta+lab logo's size
 .nav__brand {
@@ -35,15 +28,23 @@
   width: 50px;
   margin-left: -70px;
   pointer-events: auto;
+  //position: fixed;
+  //transform: translateY(-50%);
+  //top: 50%;
 }
 
 // Positions hamburger menu
 .nav__btn {
   z-index: 3;
-  margin-top: 10px;
   cursor: pointer;
-  right: -50px;
+  margin-right: -45px;
   pointer-events: auto;
+  margin-top: 3px;
+  right: 0;
+  //position: fixed;
+  //transform: translateY(-50%);
+  //top: 50%;
+
 }
 
 .nav__list {
@@ -88,7 +89,7 @@
   z-index: 3;
 }
 
-.nav__list li {
+.nav__list {
   z-index: 4;
   padding-top: 15px;
 
@@ -115,15 +116,26 @@
   }
 }
 
-// Positions left icon to the very left
-// and positions right icon to the very right
-.nav__positioning {
+// Positions left and right icons in the center
+.nav--center {
+  //position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 725px;
+  min-height: 725px !important;
   width: 100%;
   pointer-events: none;
+}
+
+// Positions left and right icons on the top
+.nav--top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70px;
+  width: inherit;
+  pointer-events: none;
+  position: fixed;
 }
 
 .btn__close {

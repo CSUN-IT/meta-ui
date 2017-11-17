@@ -5268,6 +5268,9 @@ pre {
 #navbar {
   width: 100%;
   z-index: 0;
+  position: absolute;
+  max-width: 1140px;
+  pointer-events: none;
 }
 
 .nav {
@@ -5275,23 +5278,12 @@ pre {
   background-color: white;
 }
 
-.nav--show {
+.nav--cover {
   position: relative;
 }
 
-.nav--sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 1140px;
-  pointer-events: none;
-}
-
-.nav--top {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 100px;
+nav--top a {
+  margin-top: 3px;
 }
 
 .nav__brand {
@@ -5304,10 +5296,11 @@ pre {
 
 .nav__btn {
   z-index: 3;
-  margin-top: 10px;
   cursor: pointer;
-  right: -50px;
+  margin-right: -45px;
   pointer-events: auto;
+  margin-top: 3px;
+  right: 0;
 }
 
 .nav__list {
@@ -5353,12 +5346,12 @@ pre {
   z-index: 3;
 }
 
-.nav__list li {
+.nav__list {
   z-index: 4;
   padding-top: 15px;
 }
 
-.nav__list li:hover {
+.nav__list:hover {
   z-index: 4;
 }
 
@@ -5380,7 +5373,7 @@ pre {
   color: #B1B3B2;
 }
 
-.nav__positioning {
+.nav--center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5391,9 +5384,26 @@ pre {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 725px;
+  min-height: 725px !important;
   width: 100%;
   pointer-events: none;
+}
+
+.nav--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 70px;
+  width: inherit;
+  pointer-events: none;
+  position: fixed;
 }
 
 .btn__close {
