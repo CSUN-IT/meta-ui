@@ -1,9 +1,22 @@
+// The html code for the navbar is located in navbar.html.
+// Apply it to index.html to test functionality.
+
+
 #navbar {
   width: 100%;
   z-index: 0;
   position: absolute;
   max-width: 1140px;
   pointer-events: none;
+
+  // These two attributes below can be uncommented, for nav--top to
+  // have a decent navbar, but it breaks nav--center functionality.
+  // A fix is for navbar.js to detect nav--center,
+  // and if it's there will take off background-color
+  // and margin.
+
+  //background-color: white;
+  //margin-top: 100px;
 }
 
 .nav {
@@ -34,13 +47,29 @@
   right: 0;
 }
 
+//div.container4 {
+//  height: 10em;
+//  position: relative
+//}
+
+div.container4 p {
+  margin: 0;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .nav__list {
+  z-index: 4;
+  padding-top: 15px;
   max-height: 100%;
-  position: fixed;
-  margin: auto;
-  z-index: 3;
-  top: 0;
-  left: 0;
+  //position: fixed;
+  //margin: auto;
+  //top: 0;
+  //left: 0;
   bottom: 0;
   right: 0;
   background-color: $white;
@@ -53,6 +82,24 @@
   height: 15em;
   transition: opacity .1s ease-in-out;
   overflow-y: auto;
+  // Centering
+  vertical-align: middle;
+  horiz-align: middle;
+
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+
+  //margin: 0;
+  //top: 50%;
+  //left: 50%;
+  //margin-right: -50%;
+  //transform: translate(-50%, -50%);
+  //position: absolute;
+}
+
+.nav__list li {
+  margin: 0;
 }
 
 .nav__list a {
@@ -62,6 +109,14 @@
   color: #818181;
   display: block;
   transition: opacity .1s ease-in-out;
+  // Centers words
+
+  // margin: 0;
+  //top: 50%;
+  //left: 50%;
+  //margin-right: -50%;
+  //transform: translate(-50%, -50%);
+  //position: absolute;
 }
 
 .nav--slider {
@@ -76,8 +131,6 @@
 }
 
 .nav__list {
-  z-index: 4;
-  padding-top: 15px;
 
   &:hover {
     z-index: 4;
@@ -107,7 +160,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 725px !important;
+  min-height: 100vh !important;
   width: 100%;
   pointer-events: none;
 }
@@ -123,27 +176,16 @@
   pointer-events: none;
   position: fixed;
   height: 100px;
+  background-color: white;
 }
 
 .btn__close {
   cursor: pointer;
 }
 
-.nav__slider .btn__close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
 .nav__logo{
   height: 30px;
   width: 30px;
-}
-
-.pos-fix {
-  position: absolute;
 }
 
 .margin--right {
