@@ -4029,7 +4029,7 @@ div {
 /* Standard 12 column grid */
 
 .section {
-  padding: 60px 0px;
+  padding: 30px 0px;
 }
 
 .container {
@@ -5281,7 +5281,6 @@ pre {
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
   padding: 10px;
-  z-index: 500;
 }
 
 .nav-container {
