@@ -21,7 +21,7 @@ function includeOnce(file, libraryName = '') {
         includedDependencies[libraryName] = file;
     }
 }
-
-includeOnce('../src/js/form.js');
 includeOnce('../src/js/navbar.js');
+includeOnce('../src/js/form.js');
+// includeOnce('../src/js/navbar.js');
 includeOnce('../src/js/multiCarousel.js');

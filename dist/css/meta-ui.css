@@ -5265,47 +5265,55 @@ pre {
   color: #D00D20;
 }
 
-.nav {
-  position: relative;
-  padding-top: 40px;
+#navbar {
   width: 100%;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
-  padding-bottom: 50px;
+  z-index: 0;
+  position: absolute;
+  max-width: 1140px;
+  pointer-events: none;
 }
 
-.nav--top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
+.nav {
+  padding: .5rem;
+  background-color: white;
+}
+
+.nav--cover {
+  position: relative;
 }
 
 .nav__brand {
-  position: absolute;
   z-index: 3;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 40px;
+  height: 50px;
+  width: 50px;
+  margin-left: -70px;
+  pointer-events: auto;
 }
 
-.nav__menu {
-  position: absolute;
+.nav__btn {
   z-index: 3;
+  cursor: pointer;
+  margin-right: -45px;
+  pointer-events: auto;
+  margin-top: 3px;
+  right: 0;
+}
+
+div.container4 p {
+  margin: 0;
+  background: yellow;
+  position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 40px;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .nav__list {
-  position: fixed;
-  margin: auto;
-  z-index: 2;
-  top: 0;
-  left: 0;
+  z-index: 4;
+  padding-top: 15px;
+  max-height: 100%;
   bottom: 0;
   right: 0;
   background-color: #FFFFFF;
@@ -5315,23 +5323,98 @@ pre {
   font-weight: bold;
   font-size: 50px;
   line-height: 50px;
-  height: 10em;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  height: 15em;
+  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  overflow-y: auto;
+  vertical-align: middle;
+  horiz-align: middle;
 }
 
-.nav__link--active a {
-  color: #D00D20;
+.nav__list li {
+  margin: 0;
 }
 
 .nav__list a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  color: black;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
 }
 
-.nav--show .nav__brand,
-.nav--show .nav__menu {
+.nav--slider {
+  display: none;
+  height: 100%;
+  left: 0;
   position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 3;
+}
+
+.nav__list:hover {
+  z-index: 4;
+}
+
+.nav__link {
+  font-size: 20px;
+  list-style: none;
+  z-index: 3;
+}
+
+.nav__link:hover {
+  color: #D00D20;
+}
+
+.nav__link.active {
+  color: #D00D20;
+}
+
+.nav__link.active:hover {
+  color: #B1B3B2;
+}
+
+.nav--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh !important;
+  width: 100%;
+  pointer-events: none;
+}
+
+.nav--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  width: inherit;
+  pointer-events: none;
+  position: fixed;
+  height: 100px;
+  background-color: white;
+}
+
+.btn__close {
+  cursor: pointer;
 }
 
 .nav__logo {
@@ -5339,23 +5422,8 @@ pre {
   width: 30px;
 }
 
-.navbar__icon--filler {
-  position: inherit;
-  display: block;
-  height: 50%;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
-
-.nav__icon {
-  position: relative;
-  height: 35px;
-  width: 35px;
-}
-
-pre {
-  color: #D00D20;
+.margin--right {
+  margin-right: 7em;
 }
 
 .clearfix::after {
