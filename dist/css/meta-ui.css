@@ -4029,7 +4029,7 @@ div {
 /* Standard 12 column grid */
 
 .section {
-  padding: 30px 0px;
+  padding: 60px 0px;
 }
 
 .container {
@@ -5266,12 +5266,37 @@ pre {
 }
 
 .nav {
+  display: block;
   position: relative;
-  padding-top: 40px;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  padding-bottom: 50px;
+  padding: 10px;
+}
+
+.nav--sticky {
+  display: block;
+  position: relative;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  padding: 10px;
+  z-index: 500;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.nav--show {
+  width: inherit;
+  position: fixed;
+  top: 0;
+}
+
+.nav--black {
+  background-color: #0E1821;
+  color: #FFFFFF;
 }
 
 .nav--top {
@@ -5280,6 +5305,7 @@ pre {
   left: 0;
   right: 0;
   height: 100px;
+  margin: 0 10px;
 }
 
 .nav__brand {

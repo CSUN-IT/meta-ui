@@ -1,115 +1,181 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1);
-module.exports = __webpack_require__(2);
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-
-// LET'S GET STARTED
-console.log('META+LAB UI Kit');
-
-// Maps names of included libraries to their filepaths.
-var includedDependencies = {};
-
-function includeOnce(file) {
-    var libraryName = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-
-    if (libraryName === '') {
-        libraryName = file;
-    }
-    //If library is not included yet, then include it
-    if (!(libraryName in includedDependencies)) {
-        var script = document.createElement('script');
-        script.src = file;
-        script.type = 'text/javascript';
-        // script.defer = true;
-
-        document.head.appendChild(script);
-        // Add it our global list of libraries.
-        includedDependencies[libraryName] = file;
-    }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
 }
 
-includeOnce('../src/js/form.js');
-includeOnce('../src/js/navbar.js');
-includeOnce('../src/js/multiCarousel.js');
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+$(document).ready(function(){
 
-// removed by extract-text-webpack-plugin
+  var navOffset = $('.nav--sticky').offset().top;
+  $('.nav--sticky').wrap('<div class="nav-container"></div>');
+  $('.nav-container').height($('.nav--sticky').outerHeight());
+  $('.nav-container').width($('.nav--sticky').outerWidth());
+  $(window).scroll(function(){
+    var scrollPos = $(window).scrollTop();
 
-/***/ })
-/******/ ]);
+    if(scrollPos >= navOffset){
+      $('.nav--sticky').addClass('nav--show');
+    }else {
+      $('.nav--sticky').removeClass('nav--show');
+    }
+  });
+
+});
+
+
+// var navbar = document.querySelector('.nav');
+
+// window.addEventListener('scroll', function(){
+//   var navRect  = navbar.getBoundingClientRect();
+//   if (navRect.y < 0 ){
+//     navbar.className = "nav nav--show nav--black";
+//   }
+// });
+
+
+var index = 1;
+var slides = $(".carousel > .carousel__slide");
+var dots = document.getElementsByClassName("dot");
+
+function currentSlide(n) {
+    index = n;
+
+    for (let i = 0; i < slides.length; i++) {
+        $(slides[i]).css('display',"none");
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" dot__active", "");
+    }
+
+    $(slides[index-1]).toggle();
+    dots[index-1].className += " dot__active";
+}
+
+function showSlides(n) {
+    if (n < 1) {
+        index = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        $(slides[i]).css('display',"none");
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" dot__active", "");
+    }
+
+    if (index > slides.length) {
+        index = 1;
+    }
+    slides[index-1].style.display = "block";
+    dots[index-1].className += " dot__active";
+    index++;
+    dotTimer();
+
+}
+
+function dotTimer() {
+    setTimeout(showSlides, 15000); // Change image every 15 seconds
+}
+
+showSlides(index);
+
+// The parameter in multiSlides() is the amount of images displayed at once
+// multiTimer() also has multiSlides() and its parameter must also be changed
+$(document).ready(function() {
+    multiSlides(3);
+});
+
+function multiSlides(nShown) {
+    // Check if this is the first time running the function.
+    if(typeof multiSlides.slideIndex == 'undefined') {
+        // Initialize the variable.
+        multiSlides.slideIndex = 0;
+    }
+
+    let slides = $('.carousel--multi > .carousel__slide');
+    var slideIndex = multiSlides.slideIndex + 1;
+
+    // Do not display the other images
+    for (let i = 0; i < slides.length; i++) {
+        $(slides[i]).css('display',"none");
+    }
+
+    // Clamps value to stay within number of slides
+    if (nShown > slides.length) {
+        nShown = slides.length;
+    }
+
+    else if (nShown < 0) {
+        nShown = 0;
+    }
+
+    // Displays all images if there's not enough images to carousel
+    if (slides.length <= nShown) {
+        for (let i = 0; i < slides.length; i++) {
+            $(slides[i]).toggle();
+        }
+    }
+
+    else {
+        // Determine which divs to show
+        let positions = [];
+        for (let i = 0; i < nShown; i++) {
+            let j = (multiSlides.slideIndex + i) % slides.length;
+            positions.push(j);
+        }
+
+        //Reorder the divs
+        $("#"+positions[0]).toggle();
+        for (let j = 1; j < positions.length; j++) {
+            $("#"+positions[j]).insertAfter('#'+positions[j-1]).toggle();
+        }
+
+        // Never go over number of slides
+        multiSlides.slideIndex = (multiSlides.slideIndex + 1) % slides.length;
+    }
+    multiTimer();
+}
+
+function multiTimer() {
+    // Ensure that the multiSlides() parameter corresponds to the parameter
+    // in the document.ready function
+    let carousel = function () {
+        multiSlides(3);
+    };
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+var autoIndex = 0;
+var i;
+var autoSlides = $(".carousel--auto>.carousel__slide");
+
+function displaySlides() {
+    for (i = 0; i < autoSlides.length; i++) {
+        autoSlides[i].style.display = "none";
+    }
+    autoIndex++;
+    if (autoIndex > autoSlides.length) {
+        autoIndex = 1;
+    }
+    autoSlides[autoIndex-1].style.display = "block";
+    timer();
+}
+
+function timer() {
+    setTimeout(displaySlides, 3000); // Change image every 3 seconds
+}
+
+displaySlides();
