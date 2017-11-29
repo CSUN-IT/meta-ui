@@ -3847,6 +3847,20 @@ ol {
   display: block;
 }
 
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 550px;
+}
+
 /* Carousel */
 
 * {
@@ -4032,6 +4046,25 @@ div {
   padding: 30px 0px;
 }
 
+/* This Section Is For The Banners Without The Blue Background */
+
+.section__banner {
+  padding: 60px 0px;
+}
+
+/* This Section Is For The Buttons At The Top */
+
+.section__button {
+  padding: 0px 0px;
+}
+
+/* This Section Is For The Parallax Content */
+
+.section__parallax {
+  padding: 130px 0px;
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -4049,6 +4082,55 @@ div {
   display: inline-grid;
 }
 
+/* This Container Is For the Parallax Content */
+
+.container__parallax {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/* This Container Is For the Parallax Content */
+
+.container__parallax::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* This Container Is For Inline */
+
+.container--inline {
+  display: inline-grid;
+}
+
+/* This Container Is For the Button Content At The Top */
+
+.container__button {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 4.9375rem;
+  padding-right: 4.9375rem;
+}
+
+/* These Containers Are For Parallax Images On The Side */
+
+.container__img--right {
+  padding-right: 0.9375rem;
+}
+
+.container__img--left {
+  padding-left: 0.9375rem;
+}
+
+/* This Container Is For the Content On The Opposite Side */
+
+.container__content {
+  padding-left: 5rem;
+  padding-right: 6.5rem;
+}
+
 .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -4060,7 +4142,25 @@ div {
   content: "";
 }
 
+.row__main {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
+
+.row__main::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 .col {
+  float: left;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.column {
   float: left;
   width: 100%;
   padding-left: 30px;
@@ -4076,6 +4176,15 @@ div {
   position: relative;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
+}
+
+/*Makes all columns float left and have 100% width */
+
+[class^="column-"],
+[class*=" column-"] {
+  float: left;
+  width: 100%;
+  position: relative;
 }
 
 @media (min-width: 376px) {
@@ -4683,6 +4792,34 @@ code {
   min-height: calc(100vh - 80px);
 }
 
+.parallax {
+  position: absolute;
+  width: 70%;
+  opacity: 1;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  bottom: 15%;
+  left: 30%;
+  trasnform: translate -50%, -50%;
+  margin: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.4s cubic-bezier(0.42, 0.01, 0.23, 1);
+  transition: opacity 0.4s cubic-bezier(0.42, 0.01, 0.23, 1);
+}
+
+.parallax__img--letters {
+  width: 80%;
+  height: auto;
+  opacity: 0.25;
+}
+
+.parallax__img--numbers {
+  width: 80%;
+  height: auto;
+  opacity: 0.25;
+}
+
 .img {
   position: relative;
   background-size: cover;
@@ -4779,6 +4916,48 @@ code {
   padding-bottom: 46px;
   padding-top: 46px;
   background-color: black;
+}
+
+/* Side Image */
+
+.img__side {
+  height: 448px;
+  width: 155%;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 741px) {
+  .img__side {
+    width: 100%;
+  }
+}
+
+/* Blue Panel */
+
+.blue-box {
+  height: 600px;
+  width: 415px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: #0E1821;
+}
+
+.img__main {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img--grid {
+  height: 192px;
+  width: 100%;
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 741px) {
+  .img--grid {
+    width: 100%;
+  }
 }
 
 .metalab-wrapper {
@@ -5275,15 +5454,18 @@ pre {
 }
 
 .nav--sticky {
-  display: block;
+  display: inline-block;
   position: relative;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  padding: 10px;
+  padding: 10px 70px 10px 50px;
+  margin-top: 245px;
+  z-index: 500;
 }
 
 .nav-container {
+  position: absolute;
   width: 100%;
 }
 
@@ -5291,6 +5473,8 @@ pre {
   width: inherit;
   position: fixed;
   top: 0;
+  margin-top: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav--black {

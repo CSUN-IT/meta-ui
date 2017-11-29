@@ -7,21 +7,26 @@
 }
 
 .nav--sticky{
-  display: block;
+  display: inline-block;
   position: relative;
   width: 100%;
   transition: top 0.3s;
-  padding: 10px;
+  padding: 10px 70px 10px 50px;
+  margin-top: 245px;
+  z-index: 500;
+
 }
 
 .nav-container {
+  position: absolute;
   width: 100%;
 }
 .nav--show{
   width: inherit;
   position: fixed;
   top: 0;
-
+  margin-top: 0px;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .nav--black{

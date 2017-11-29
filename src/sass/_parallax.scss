@@ -1,0 +1,25 @@
+.parallax {
+    position: absolute;
+    width: 70%;
+    opacity: 1;
+    z-index: -1;
+    backface-visibility: hidden;
+    bottom: 15%;
+    left: 30%;
+    trasnform: translate (-50%, -50%);
+    margin: 0;
+    pointer-events: none;
+    transition: opacity .4s cubic-bezier(.42, .01, .23, 1);
+}
+
+.parallax__img--letters{
+    width: 80%;
+    height: auto;
+    opacity: 0.25;
+}
+
+.parallax__img--numbers{
+    width: 80%;
+    height: auto;
+    opacity: 0.25;
+}
