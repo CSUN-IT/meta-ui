@@ -1,17 +1,16 @@
 $(document).ready(function(){
-
-  var navOffset = $('.nav--sticky').offset().top;
-  $('.nav--sticky').wrap('<div class="nav-container clearfix"></div>');
-  $('.nav-container').width($('.nav--sticky').outerWidth());
+  var nav = $('.nav--sticky');
+  var navOffset = nav.offset().top;
+  nav.wrap('<div class="nav-container clearfix"></div>');
+  $('.nav-container').width(nav.outerWidth());
   $(window).scroll(function(){
     var scrollPos = $(window).scrollTop();
     if(scrollPos >= navOffset){
-      $('.nav--sticky').addClass('nav--show');
+      nav.addClass('nav--show');
     }else {
-      $('.nav--sticky').removeClass('nav--show');
+      nav.removeClass('nav--show');
     }
   });
-
 });
 
 

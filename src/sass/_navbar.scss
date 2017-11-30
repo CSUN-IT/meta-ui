@@ -1,4 +1,7 @@
+@import "mixins/clearfix";
+
 .nav {
+  @include clearfix;
   display: block;
   position: relative;
   width: 100%;
@@ -7,11 +10,12 @@
 }
 
 .nav--sticky{
+  @include clearfix;
   display: inline-block;
   position: relative;
   width: 100%;
   transition: top 0.3s;
-  padding: 10px 70px 10px 50px;
+  padding: 10px 60px;
   margin-top: 245px;
   z-index: 500;
 
@@ -45,11 +49,10 @@
 
 
 .nav__brand{
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 40px;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  float: left !important;
 }
 
 .nav__menu{
@@ -106,7 +109,9 @@
   position: relative;
   height: 35px;
   width: 35px;
+  float: right !important;
 }
+
 pre{
   color: $red;
 }

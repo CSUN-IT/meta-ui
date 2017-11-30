@@ -5453,15 +5453,27 @@ pre {
   padding: 10px;
 }
 
+.nav::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .nav--sticky {
   display: inline-block;
   position: relative;
   width: 100%;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  padding: 10px 70px 10px 50px;
+  padding: 10px 60px;
   margin-top: 245px;
   z-index: 500;
+}
+
+.nav--sticky::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .nav-container {
@@ -5492,12 +5504,10 @@ pre {
 }
 
 .nav__brand {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 40px;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  float: left !important;
 }
 
 .nav__menu {
@@ -5561,6 +5571,7 @@ pre {
   position: relative;
   height: 35px;
   width: 35px;
+  float: right !important;
 }
 
 pre {
