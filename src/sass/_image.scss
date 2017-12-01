@@ -92,3 +92,39 @@
   padding-top: 46px;
   background-color: black;
 }
+
+/* Side Image */
+.img__side {
+  height: 448px;
+  width: 155%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}
+
+/* Blue Panel */
+.blue-box {
+  height: 600px;
+  width: 415px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  background-color: $black;
+}
+
+.img__main {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img--grid {
+  height: 192px;
+  width: 100%;
+  border: none;
+
+    @media (min-width: 320px) and (max-width: 741px ) {
+    width: 100%;
+  }
+}

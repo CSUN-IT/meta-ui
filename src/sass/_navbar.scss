@@ -1,10 +1,41 @@
+@import "mixins/clearfix";
+
 .nav {
+  @include clearfix;
+  display: block;
   position: relative;
-  padding-top: 40px;
   width: 100%;
   transition: top 0.3s;
-  padding-bottom: 50px;
+  padding: 10px;
+}
 
+.nav--sticky{
+  @include clearfix;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  transition: top 0.3s;
+  padding: 10px 60px;
+  margin-top: 245px;
+  z-index: 500;
+
+}
+
+.nav-container {
+  position: absolute;
+  width: 100%;
+}
+.nav--show{
+  width: inherit;
+  position: fixed;
+  top: 0;
+  margin-top: 0px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.nav--black{
+  background-color: $black;
+  color: $white;
 }
 
 .nav--top{
@@ -13,14 +44,15 @@
   left: 0;
   right: 0;
   height: 100px;
+  margin: 0 10px;
 }
 
+
 .nav__brand{
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 40px;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  float: left !important;
 }
 
 .nav__menu{
@@ -77,7 +109,9 @@
   position: relative;
   height: 35px;
   width: 35px;
+  float: right !important;
 }
+
 pre{
   color: $red;
 }

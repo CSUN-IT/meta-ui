@@ -82,7 +82,11 @@
       </div>
       <div class="col-md-9">
         <h1 class="h5">NAVIGATION BAR</h1>
-        <div class="nav clearfix">
+        <div class="nav  clearfix">
+          <img class="margin-left nav__icon pull-left" src="../img/logo/metalab-icon.png" alt="metalab-icon">
+          <a class="nav-top pull-right"><i class="fa fa-bars fa-lg nav-top--bars icon--padding" aria-hidden="true"></i></a>
+        </div>
+        <div class="nav--sticky nav--black clearfix">
           <img class="margin-left nav__icon pull-left" src="../img/logo/metalab-icon.png" alt="metalab-icon">
           <a class="nav-top pull-right"><i class="fa fa-bars fa-lg nav-top--bars icon--padding" aria-hidden="true"></i></a>
         </div>
@@ -92,10 +96,16 @@
       &lt;img class="margin-left nav__icon pull-left" src="../img/logo/metalab-icon.png" alt="metalab-icon"&gt;
       &lt;a class="nav-top pull-right"&gt;&lt;i class="fa fa-bars fa-lg nav-top--bars icon--padding" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;/div&gt;
+    &lt;div class="nav--sticky nav--black clearfix"&gt;
+      &lt;img class="margin-left nav__icon pull-left" src="../img/logo/metalab-icon.png" alt="metalab-icon"&gt;
+      &lt;a class="nav-top pull-right"&gt;&lt;i class="fa fa-bars fa-lg nav-top--bars icon--padding" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
     <span class="type--grey-dark">
       <b>//NAV BAR MODIFIERS</b>
       .nav--show
+      .nav--sticky
       .nav--top
+      .nav--black
     </span>
   </code>
 </pre>
@@ -128,7 +138,7 @@
     </div>
   </div>
 </footer>
-<script src="dist/js/meta-ui.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../dist/js/meta-ui.js"></script>
 </body>
 </html>
