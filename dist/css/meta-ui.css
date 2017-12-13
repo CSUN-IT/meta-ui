@@ -5022,24 +5022,21 @@ code {
 }
 
 .panel__img {
-  position: relative;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .panel__color {
   background-color: #0E1821;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 360px;
 }
 
-@media (min-width: 320px) and (max-width: 741px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .panel__color {
-    width: 100%;
-  }
-
-  .panel__color h4 {
-    font-size: 30px;
+    height: auto;
   }
 }
 
@@ -5113,13 +5110,18 @@ code {
 .panel__title {
   width: 100%;
   text-align: center;
+  font-size: 40px;
 }
 
 @media (min-width: 320px) and (max-width: 741px) {
   .panel__title {
-    text-align: center;
-    right: 0px;
-    width: 100%;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 742px) and (max-width: 1024px) {
+  .panel__title {
+    font-size: 30px;
   }
 }
 

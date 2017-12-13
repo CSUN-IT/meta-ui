@@ -6,22 +6,20 @@
 }
 
 .panel__img{
-  position: relative;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 // Panel with Dark Blue Background
 .panel__color{
   background-color: $blue-dark;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 360px;
 
-  @media (min-width: 320px) and (max-width: 741px ) {
-    width: 100%;
-    h4{
-      font-size: 30px;
-    }
+  @media (min-width: 320px) and (max-width: 1024px ) {
+    height: auto;
   }
 }
 
@@ -79,10 +77,13 @@
 .panel__title{
   width: 100%;
   text-align: center;
+  font-size: 40px;
 
   @media (min-width: 320px) and (max-width: 741px ) {
-    text-align: center;
-    right: 0px;
-    width: 100%;
+    font-size: 30px;
+  }
+
+  @media (min-width: 742px) and (max-width: 1024px ) {
+    font-size: 30px;
   }
 }
