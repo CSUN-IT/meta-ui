@@ -4040,97 +4040,6 @@ div {
   display: block;
 }
 
-/* Standard 12 column grid */
-
-.section {
-  padding: 30px 0px;
-}
-
-/* This Section Is For The Banners Without The Blue Background */
-
-.section__banner {
-  padding: 60px 0px;
-}
-
-/* This Section Is For The Buttons At The Top */
-
-.section__button {
-  padding: 0px 0px;
-}
-
-/* This Section Is For The Parallax Content */
-
-.section__parallax {
-  padding: 130px 0px;
-  overflow: hidden;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
-.container::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.container--inline {
-  display: inline-grid;
-}
-
-/* This Container Is For the Parallax Content */
-
-.container__parallax {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
-/* This Container Is For the Parallax Content */
-
-.container__parallax::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-/* This Container Is For Inline */
-
-.container--inline {
-  display: inline-grid;
-}
-
-/* This Container Is For the Button Content At The Top */
-
-.container__button {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 4.9375rem;
-  padding-right: 4.9375rem;
-}
-
-/* These Containers Are For Parallax Images On The Side */
-
-.container__img--right {
-  padding-right: 0.9375rem;
-}
-
-.container__img--left {
-  padding-left: 0.9375rem;
-}
-
-/* This Container Is For the Content On The Opposite Side */
-
-.container__content {
-  padding-left: 5rem;
-  padding-right: 6.5rem;
-}
-
 .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -4142,25 +4051,7 @@ div {
   content: "";
 }
 
-.row__main {
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
-}
-
-.row__main::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
 .col {
-  float: left;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.column {
   float: left;
   width: 100%;
   padding-left: 30px;
@@ -4176,15 +4067,6 @@ div {
   position: relative;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-}
-
-/*Makes all columns float left and have 100% width */
-
-[class^="column-"],
-[class*=" column-"] {
-  float: left;
-  width: 100%;
-  position: relative;
 }
 
 @media (min-width: 376px) {
