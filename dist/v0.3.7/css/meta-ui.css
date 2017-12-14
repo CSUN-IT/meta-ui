@@ -4040,10 +4040,6 @@ div {
   display: block;
 }
 
-.section {
-  padding: 30px 0px;
-}
-
 .row {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -4071,19 +4067,6 @@ div {
   position: relative;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
-.container::after {
-  display: table;
-  clear: both;
-  content: "";
 }
 
 @media (min-width: 376px) {
