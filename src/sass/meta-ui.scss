@@ -1,8 +1,9 @@
 
-@import "base";
-// CONFIGURATIOINS
-@import "mixins/clearfix";
 @import "variables";
+
+// MIXINS
+@import "mixins/clearfix";
+
 // RESETS
 @import "normalize";
 
@@ -12,15 +13,11 @@
 // CORE
 @import "type";
 @import "helpers";
-@import "carousel";
 @import "grids";
 @import "base";
 
-
-
-
 // COMPONENTS
-@import "parallax";
+@import "carousel";
 @import "image";
 @import "footer";
 @import "panels";
@@ -33,9 +30,3 @@
 
 // DOCUMENTATION STYLING
 @import "meta-ui-docs";
-
-
-
-//clearfix
-@import "clearfix";
-
