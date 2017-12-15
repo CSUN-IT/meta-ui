@@ -3,66 +3,58 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-// Team Page //
-.img__team-large {
-  height: 448px;
-  width: 60%;
+// Team Size //
+.img__square-lg {
+  min-height: 500px;
+  width: 100%;
   border: none;
+  max-width: 100%;
+  object-fit:cover;
+
 
     @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
   }
 }
 
-.img__team-med {
-  height: 255px;
-  width: 30%;
+.img__square-md {
+  height: 400px;
+  max-width: 100%;
   border: none;
+  width: 100%;
+  object-fit:cover;
 
     @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
   }
 }
 
-.img__team-small {
-  height: 172px;
-  width: 20%;
+.img__square-sm {
+  height: 312px;
+  max-width: 100%;
   border: none;
+  width: 100%;
+  object-fit: cover;
 
     @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
   }
 }
 
-// Long Image //
-.img__large-one {
-  height: 366px;
-  width: 90%;
-  border: none;
-  // background-size: 60px 60px;
-
-    @media (min-width: 320px) and (max-width: 741px ) {
-    width: 100%;
-  }
-}
 
 // Events Page //
-.img__events--list {
-  height: 362px;
-  width: 70%;
-  border: none;
-
-    @media (min-width: 320px) and (max-width: 741px ) {
-    width: 100%;
-  }
+.img__rectangle-lg {
+  height: 400px;
+  width: 100%;
 
 }
 
-.img__events--grid {
+.img__rectangle-sm {
   height: 192px;
-  width: 30%;
+  width: 100%;
   border: none;
 
     @media (min-width: 320px) and (max-width: 741px ) {
@@ -84,15 +76,6 @@
 }
 
 
-// Black Panel //
-.blue-bar {
-  height: 432px;
-  width: 288px;
-  padding-bottom: 46px;
-  padding-top: 46px;
-  background-color: black;
-}
-
 /* Side Image */
 .img__side {
   height: 448px;
@@ -101,30 +84,63 @@
 
     @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
+    height: 50%;
   }
 }
 
 /* Blue Panel */
 .blue-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 600px;
   width: 415px;
-  padding-bottom: 80px;
-  padding-top: 80px;
-  background-color: $black;
-}
 
-.img__main {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $black;
 }
 
 .img--grid {
   height: 192px;
-  width: 100%;
+  width: 95%;
   border: none;
 
     @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
+    margin-bottom: 20px;
   }
+}
+
+.image__container{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 312px;
+}
+
+.image__container:hover .overlay{
+  opacity: .6;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: $black;
 }
