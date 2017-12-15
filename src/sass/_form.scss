@@ -41,8 +41,9 @@ input form[type=text]{
   padding-bottom: 15px;
 }
 .fa-angle-down{
-  padding-left: 335px;
-  color: $grey;
+  padding-top: 8px;
+  float: right;
+  color: $blue-dark;
 }
 .form__input{
   font-family: $font;
