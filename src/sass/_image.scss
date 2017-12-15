@@ -8,9 +8,11 @@
 
 // Team Size //
 .img__square-lg {
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   border: none;
+  max-width: 100%;
+  object-fit:cover;
 
 
     @media (min-width: 320px) and (max-width: 741px ) {

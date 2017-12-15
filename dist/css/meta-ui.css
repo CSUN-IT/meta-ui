@@ -3658,16 +3658,6 @@ ol {
   margin: 20px 0;
 }
 
-.giga {
-  font-family: FFDINWebProBold;
-  color: #D6D6D6;
-  font-size: 700px;
-  line-height: 902px;
-  letter-spacing: 0em;
-  margin: 0px;
-  padding: 0px;
-}
-
 .kilo {
   font-family: FFDINWebProBold;
   color: #0E1821;
@@ -4828,9 +4818,12 @@ code {
 }
 
 .img__square-lg {
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   border: none;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 320px) and (max-width: 741px) {
