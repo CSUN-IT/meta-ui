@@ -3,25 +3,36 @@
   width:100%;
   height:auto;
   padding: 65px;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    padding: 45px;
+  }
 }
 
 .panel__img{
-  position: relative;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 // Panel with Dark Blue Background
 .panel__color{
   background-color: $blue-dark;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  // height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
 
-  @media (min-width: 320px) and (max-width: 741px ) {
-    width: 100%;
-    h4{
-      font-size: 30px;
-    }
+  @media (min-width: 320px) and (max-width: 742px ) {
+    height: auto;
+  }
+
+  @media (min-width: 742px) and (max-width: 1024px ) {
+    min-height: 640px;
+
   }
 }
 
@@ -36,35 +47,45 @@
 }
 
 .panel__flex--cover{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 500px;
-  // min-width: 130px;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    min-height: 350px;
+  }
 }
 
 .panel__title--box{
-  width:90%;
-  position: absolute;
-  bottom: 55px;
-  right: 55px;
   text-align: right;
-  z-index:10;
+  z-index: 10;
+  position: absolute;
+  top: 75%;
+  right: 10%;
+  color: $white;
+  line-height: 1.2;
+  font-size: 40px;
 
   @media (min-width: 320px) and (max-width: 741px ) {
-    text-align: center;
-    right: 0px;
-    width: 100%;
+    top: 60%;
+    right: 10%;
+    font-size: 30px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px ) {
+    top: 70%;
+    right: 10%;
+    font-size: 30px;
   }
 }
 
 // Small Panel with Picture in the Background
 .panel__img-box--small{
-  width: 40%;
+  width: 100%;
   height: 575px;
 
   @media (min-width: 320px) and (max-width: 741px ) {
-    width: 100%;
+    // width: 100%;
+    // margin-top: 20px;
+    height: 220px;
   }
 }
 
@@ -72,17 +93,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 575px;
-  // min-width: 130px;
+  min-height: 500px;
+
+  @media (min-width: 320px) and (max-width: 741px ) {
+    min-height: 200px;
+  }
 }
 
 .panel__title{
   width: 100%;
   text-align: center;
+  font-size: 40px;
 
   @media (min-width: 320px) and (max-width: 741px ) {
-    text-align: center;
-    right: 0px;
-    width: 100%;
+    font-size: 30px;
+  }
+
+  @media (min-width: 742px) and (max-width: 1024px ) {
+    font-size: 30px;
   }
 }
+

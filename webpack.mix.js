@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 
+mix.copy('node_modules/font-awesome/fonts', 'dist/fonts');
+
 mix.scripts([
   'src/js/form.js',
   'src/js/navbar.js',
@@ -9,7 +11,6 @@ mix.scripts([
 ], 'dist/js/meta-ui.js');
 
 mix.sass('src/sass/meta-ui.scss', 'dist/css');
-
 
 // Needed for Windows Users for yarn run dev
 mix.setPublicPath('./');
