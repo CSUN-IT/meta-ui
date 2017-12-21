@@ -1,5 +1,3 @@
-@import "mixins/clearfix";
-
 .nav {
   @include clearfix;
   display: block;
@@ -110,8 +108,4 @@
   height: 35px;
   width: 35px;
   float: right !important;
-}
-
-pre{
-  color: $red;
 }

@@ -1,4 +1,4 @@
-// General
+/* General */
 .panel__content{
   width:100%;
   height:auto;
@@ -16,11 +16,10 @@
   position: relative;
 }
 
-// Panel with Dark Blue Background
+/* Panel with Dark Blue Background */
 .panel__color{
   background-color: $blue-dark;
   width: 100%;
-  // height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,8 +82,6 @@
   height: 575px;
 
   @media (min-width: 320px) and (max-width: 741px ) {
-    // width: 100%;
-    // margin-top: 20px;
     height: 220px;
   }
 }

@@ -1,3 +1,21 @@
+/* Resets box sizing across all elements */
+html {
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+}
+div {
+  display: block;
+}
 
 .main--fullpage {
   min-height: calc(100vh - 80px);

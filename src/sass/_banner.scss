@@ -1,7 +1,15 @@
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 550px;
+}
+
 .banner__img{
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .banner__flex--cover{
@@ -24,9 +32,9 @@
 .banner__img--box{
   width: 90%;
   min-height: 500px;
-  // position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media (min-width: 320px) and (max-width: 741px ) {
     width: 100%;
@@ -68,7 +76,6 @@
   height: 100%;
   background-color: rgba(14, 24, 33, 0.4);
   display: block;
-  /*z-index: 0;*/
 }
 
 .pre-overlay{
