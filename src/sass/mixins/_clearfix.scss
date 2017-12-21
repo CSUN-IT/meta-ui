@@ -6,7 +6,5 @@
   }
 }
 
-// Usage as a mixin
-.clearfix {
-  @include clearfix;
-}
+/* Usage as a mixin */
+.clearfix { @include clearfix; }

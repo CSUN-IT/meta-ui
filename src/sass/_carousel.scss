@@ -1,13 +1,13 @@
 /* Carousel */
 
-// Sets defaults
+/* Sets defaults */
 * {box-sizing:border-box}
 
 .carousel__slide {
   display: none;
 }
 
-// Fixes images to a 500x500 size
+/* Fixes images to a 500x500 size */
 .carousel img {
   width: auto;
   height: 500px;
@@ -16,7 +16,6 @@
 }
 
 .carousel {
-  //max-width: 50%;
   position: relative;
   margin: auto;
   text-align: center;
@@ -34,7 +33,7 @@
   transition: background-color 0.6s ease;
 }
 
-// Keeps dots centered
+/* Keeps dots centered */
 .carousel__controls {
   text-align: center;
 }
@@ -43,7 +42,7 @@
   background-color: #060707;
 }
 
-// Changes color when cursor is over the dot
+/* Changes color when cursor is over the dot */
 .dot:hover {
   background-color: #060707;
 }
@@ -63,7 +62,7 @@
 
 /* Automatic Carousel */
 
-// Fixes images to a specific size
+/* Fixes images to a specific size */
 .carousel--auto img {
   width: auto;
   height: 250px;
@@ -77,13 +76,7 @@
   text-align: center;
 }
 
-/* Multiple Slides Automatic Carousel */
-
-//.carousel--multi__slide {
-//  display: none;
-//}
-
-// Fixes images to a specific size
+/* Fixes images to a specific size */
 .carousel--multi img {
   width: auto;
   height: 250px;
@@ -115,7 +108,6 @@
 }
 
 /* Page specific */
-
 .carousel--text {
   color: #f2f2f2;
   font-size: 30px;

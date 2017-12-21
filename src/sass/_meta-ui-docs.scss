@@ -1,15 +1,9 @@
-@import "mixins/clearfix";
-
-.clearfix {
-  @include clearfix;
-}
-
-// Margin styling
+/* Margin styling */
 .margin-left { margin-left: 10px; }
 .margin-right { margin-right: 10px; }
 .margin-top { margin-top: 10px;}
 
-// Demonstrates mixins
+/* Demonstrates mixins */
 .clearfix--border {
   padding: .5rem;
   border-style: solid;
@@ -17,13 +11,13 @@
   border-color: $grey-clear;
 }
 
-// Box
+/* Box */
 .box {
   height: 50px;
   width: 50px;
 }
 
-// Helps Documentation display white typography
+/* Helps Documentation display white typography */
 .highlight {
   background-color: black;
 }

@@ -1,15 +1,15 @@
-// Floats
+/* Floats */
 .pull-left{ float: left !important; }
 .pull-right{ float: right !important; }
 
-// Margins
+/* Margins */
 .margin__less { margin: 0px; }
 .margin__less-top {margin-top: 0px; }
 .margin__less-right {margin-rigth: 0px; }
 .margin__less-bottom {margin-bottom: 0px; }
 .margin__less-left {margin-left: 0px; }
 
-// Type Colors
+/* Type Colors */
 .type--white { color: $white; }
 .type--grey { color: $grey; }
 .type--grey-dark { color: $grey-dark; }
@@ -20,7 +20,7 @@
 .type--blue { color: $blue; }
 .type--blue-dark { color: $blue-dark; }
 
-// Background Colors
+/* Background Colors */
 .bg--grey-clear { background-color: $grey-clear; }
 .bg--grey { background-color: $grey; }
 .bg--grey-dark { background-color: $grey-dark; }
@@ -30,14 +30,8 @@
 .bg--blue { background-color: $blue; }
 .bg--blue-dark { background-color: $blue-dark}
 
-// Image
+/* Image */
 .image--center{
   margin: auto;
   display: block;
-}
-.banner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 550px;
 }
