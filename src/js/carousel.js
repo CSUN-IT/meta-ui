@@ -1,5 +1,5 @@
 var index = 1;
-var slides = $(".carousel > .carousel__slide");
+var slides = $('.carousel > .carousel__slide');
 var dots = document.getElementsByClassName("dot");
 
 function currentSlide(n) {
@@ -43,5 +43,6 @@ function showSlides(n) {
 function dotTimer() {
     setTimeout(showSlides, 15000); // Change image every 15 seconds
 }
-
-showSlides(index);
+if(slides.length > 0){
+  showSlides(index);
+}

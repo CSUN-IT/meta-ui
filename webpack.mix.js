@@ -1,10 +1,8 @@
 const mix = require('laravel-mix');
-
 mix.copy('node_modules/font-awesome/fonts', 'dist/latest/fonts');
 
 mix.scripts([
   'src/js/form.js',
-  'src/js/navbar.js',
   'src/js/carousel.js',
   'src/js/multiCarousel.js',
   'src/js/techCarousel.js',
