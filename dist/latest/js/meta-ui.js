@@ -16,8 +16,9 @@ window.onclick = function(event) {
         }
     }
 }
+
 var index = 1;
-var slides = $(".carousel > .carousel__slide");
+var slides = $('.carousel > .carousel__slide');
 var dots = document.getElementsByClassName("dot");
 
 function currentSlide(n) {
@@ -61,8 +62,9 @@ function showSlides(n) {
 function dotTimer() {
     setTimeout(showSlides, 15000); // Change image every 15 seconds
 }
-
-showSlides(index);
+if(slides.length > 0){
+  showSlides(index);
+}
 
 // The parameter in multiSlides() is the amount of images displayed at once
 // multiTimer() also has multiSlides() and its parameter must also be changed
@@ -148,5 +150,6 @@ function displaySlides() {
 function timer() {
     setTimeout(displaySlides, 3000); // Change image every 3 seconds
 }
-
-displaySlides();
+if(autoSlides.length > 0){
+  displaySlides();
+}

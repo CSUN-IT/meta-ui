@@ -17,5 +17,6 @@ function displaySlides() {
 function timer() {
     setTimeout(displaySlides, 3000); // Change image every 3 seconds
 }
-
-displaySlides();
+if(autoSlides.length > 0){
+  displaySlides();
+}
